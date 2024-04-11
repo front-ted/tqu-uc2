@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Inserir o tíutlo do conhecimento na tag title -->
+    <title>Processos organizacionais: conceito, etapas, componentes e desdobramentos </title>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../assets/css/hover-min.css" />
+    <!--Splide - slideshow-->
+    <link rel="stylesheet" href="../assets/css/splide.min.css">
+    <!-- Print -->
+    <link rel="stylesheet" href="../assets/css/print.css">
+    <!-- Preloader -->
+    <link rel="stylesheet" href="../assets/css/preloader.css">
+    <!-- Áudio customizado -->
+    <link rel="stylesheet" href="../assets/css/player.css">
+    <!-- Estilos do template -->
+    <link rel="stylesheet" href="../assets/css/cores.css">
+    <link rel="stylesheet" href="../assets/css/template.css">
+    <link rel="stylesheet" href="./custom.css">
+</head>
+
+<body class="bg-claro">
+    <!-- Preloader OBRIGATÓRIO -->
+    <div class="preloader">
+        <div class="anim"></div>
+        <p>Aguarde enquanto o conteúdo é carregado.</p>
+    </div>
+    <!-- Marca d'água OBRIGATÓRIA -->
+    <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+    <header id="topo">
+        <div class="topo-logo">
+            <div class="container">
+                <h1 id="nome-curso" class="only-print">Técnico em Qualidade</h1>
+            </div>
+            <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"></div>
+
+        </div>
+    </header>
+
+    <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->
+    <section id="booklet">
+        <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+        <div class="layer-preta no-print"></div>
+        <section class="paginas">
+            <div class="pagina container">
+                <img src="./img/elemento_esq.png" class="elemento-esquerda no-print">
+                <img src="./img/elemento_dir.png" class="elemento-direita no-print">
+                <h2>Eras da qualidade: inspeção, controle de qualidade estatístico, garantia da qualidade total, gestão
+                    estratégica da qualidade e qualidade 4.0</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, officiis. Pariatur provident maiores autem officiis iusto quisquam velit adipisci laborum, dolor ab laboriosam aperiam reiciendis veritatis asperiores? Harum, eos pariatur!
+                </p>
+                <div class="espera-video d-block mx-auto no-print">
+                    Espera video
+                </div>
+                <div class="acessivel only-print">
+                
+                </div>
+                <h3>Encerramento</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos pariatur possimus eius quibusdam ipsa blanditiis, nemo sequi alias rerum mollitia architecto, illum voluptates molestias minus vitae voluptate laborum adipisci deserunt?
+                </p>
+                
+
+
+
+                <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a>
+                <img src="./img/elemento_final.png" class="figure-img mx-auto mb-4 img-fluid d-block no-print">
+            </div>
+        </section>
+
+        <!-- Paginação-->
+        <footer class="text-center no-print d-flex justify-content-center mx-auto">
+            <ul class="pagination">
+
+            </ul>
+        </footer>
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--Jquery-->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <!--Áudio customizado-->
+    <script src="../assets/js/audio-player.js"></script>
+    <!--Splide - slideshow-->
+    <script src="../assets/js/splide.min.js"></script>
+    <!--Prog'n'roll - barra de progresso conforme rola a página-->
+    <script src="../assets/js/prognroll.min.js"></script>
+    <!--Scripts gerais-->
+    <script src="../assets/js/geral.js"></script>
+
+    <script>
+        $(function () {
+            $("body").prognroll();
+        });
+
+        $(".btn-tema_pagina").click(function () {
+            console.log($(".btn-tema_pagina"))
+            if ($("body").hasClass('bg-claro')) {
+                console.log("sim");
+                $("body").removeClass('bg-claro')
+                $("body").addClass("bg-escuro");
+            } else if ($("body").hasClass('bg-escuro')) {
+                console.log("não");
+                $("body").removeClass('bg-escuro')
+                $("body").addClass("bg-claro")
+            }
+        });
+    </script>
+
+    <!-- Handtalk -->
+    <script>
+        var scriptElem = document.createElement("script");
+        scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset = "UTF-8",
+            scriptElem.onload = function () {
+                window.ht = new HT({
+                    token: "bf5b7efb148a829a126a0e0c9fd533bf",
+                    align: "top",
+                    videoEnabled: true,
+                    ytEmbedReplace: true,
+                    mobileConfig: {
+                        align: "right",
+                        actionsAlign: "top",
+                        customButtonStyle: {
+                            borderRadius: "6px",
+                            size: "38px",
+                            horizontalMargin: "13px",
+                            bottomMargin: "140px",
+                            rightMargin: "40px"
+                        }
+                    }
+                });
+                $('.ht-skip').attr("aria-hidden", "true")
+            },
+            document.body.appendChild(scriptElem);
+
+    </script>
+</body>
+
+</html>

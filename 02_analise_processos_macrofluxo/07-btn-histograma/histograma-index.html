@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Inserir o tíutlo do conhecimento na tag title -->
+    <title>Ferramentas da qualidade: conceito, características e aplicação de <i>brainstorming</i>; fluxograma; matriz
+        GUT (gravidade, urgência e tendência); diagrama de causa e efeito ou espinha de peixe; folha de
+        verificação; diagrama de Pareto; histograma; diagrama de dispersão; cartas de controle; 5W2H;
+        técnica dos 5 porquês</title>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../../assets/css/hover-min.css" />
+    <!--Splide - slideshow-->
+    <link rel="stylesheet" href="../../assets/css/splide.min.css">
+    <!-- Print -->
+    <link rel="stylesheet" href="../../assets/css/print.css">
+    <!-- Preloader -->
+    <link rel="stylesheet" href="../../assets/css/preloader.css">
+    <!-- Áudio customizado -->
+    <link rel="stylesheet" href="../../assets/css/player.css">
+    <!-- Estilos do template -->
+    <link rel="stylesheet" href="../../assets/css/cores.css">
+    <link rel="stylesheet" href="../../assets/css/template.css">
+    <link rel="stylesheet" href="./custom.css">
+</head>
+
+<body class="bg-claro" aria-hidden="true">
+    <!-- Preloader OBRIGATÓRIO -->
+    <div class="preloader">
+        <div class="anim"></div>
+        <p>Aguarde enquanto o conteúdo é carregado.</p>
+    </div>
+    <!-- Marca d'água OBRIGATÓRIA -->
+    <img src="../../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+    <header id="topo">
+        <div class="topo-logo">
+            <div class="container">
+                <h1 id="nome-curso" class="only-print">Técnico em Qualidade</h1>
+            </div>
+            <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"></div>
+
+        </div>
+    </header>
+
+    <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->
+    <section id="booklet">
+        <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+        <div class="layer-preta no-print"></div>
+        <section class="paginas">
+            <div class="pagina no-print">
+                <div class="container">
+                    <h2>Histograma</h2>
+                    <h4>O que é</h4>
+                    <p>
+                        <strong>Histograma</strong> é uma ferramenta da qualidade, de representação gráfica, que tem
+                        como função
+                        organizar dados divididos em classes. Ele pode ser utilizado tanto para a identificação
+                        e
+                        priorização de problemas quanto para a verificação de resultados. É uma ferramenta que
+                        permite tirar conclusões imediatas da distribuição de valores (dispersão) e de quantas
+                        vezes
+                        um determinado valor ou grupo de valores ocorre (frequência), determinando como uma
+                        amostra
+                        de dados ou população está distribuída, de modo a facilitar a visualização da
+                        distribuição
+                        dos dados.
+                    </p>
+                    <p>
+                        Entendidos o conceito e a aplicação de histograma, é possível que você se questione
+                        sobre as
+                        diferenças entre ele e o gráfico de barras.
+                    </p>
+                    <div class="grafismo">
+                        <div class="destaque borda-colorida icone nota">
+                            <p>
+                                Muitas pessoas confundem essas duas formas de representação. Ao contrário do
+                                histograma,
+                                o gráfico de barras mede uma certa informação e não um grupo de dados. Usualmente,
+                                ele
+                                representa dados que podem ser divididos em categorias distintas.
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        Por exemplo, imagine que, ao analisar os dados de uma pesquisa de satisfação da empresa
+                        fictícia Sonho Doce, 50 clientes foram convidados a avaliar os serviços, atribuindo
+                        notas em
+                        uma escala de 1 a 5. Os resultados detalhados ficam desta forma:
+                    </p>
+                    <div class="table-responsive">
+                        <table class="text-center align-middle">
+                            <tr>
+                                <td>5</td>
+                                <td>4</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>4</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>2</td>
+                                <td>4</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>3</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <figcaption class="figure-caption text-center">Dados referentes à nota dada pelos serviços
+                        prestados da empresa Sonho Doce <br>
+                        Fonte: Senac EAD (2024)
+                    </figcaption>
+                    <p class="mt-3">
+                        Apenas observando as informações compiladas nessa tabela é difícil saber qual é a
+                        percepção
+                        dos clientes quanto ao serviço realizado. Porém, com o gráfico de barras a seguir, é
+                        possível visualizar graficamente quantas vezes cada nota foi dada, permitindo ao gestor
+                        da
+                        Sonho Doce identificar o grau de satisfação de seus clientes.
+                    </p>
+                    <figure>
+                    <img src="./img/modal7_grafico1.jpg"
+                        class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block" alt="Imagem"
+                        style="max-width: 100%; height: auto;">
+                    <a href="./img/modal7_grafico1.jpg" target="_blank"
+                        class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                        <img src="./img/modal7_grafico1.jpg"
+                            class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none img-lista1"
+                            alt="Imagem" style="max-width: 100%; height: auto;">
+                    </a>
+                    <figcaption class="figure-caption text-center">Pesquisa de satisfação de clientes Sonho Doce
+                        <br>
+                        Fonte: Senac EAD (2024)
+                    </figcaption>
+                    </figure>
+                    <p class="mt-3">
+                        O gráfico de barras identificou que existe uma concentração muito mais alta das notas 3
+                        da
+                        pesquisa de satisfação. Com isso, pode-se concluir que grande parte dos clientes
+                        concorda
+                        que o serviço prestado não está sendo muito satisfatório, por isso houve um resultado
+                        mais
+                        negativo do que positivo. Dessa forma, são necessárias ações da empresa Sonho Doce para
+                        melhorar aquele índice.
+                    </p>
+                    <h4>Quando usar cada uma das ferramentas</h4>
+                    <p>Confira as melhores situações de uso para o gráfico de barras e o histograma:</p>
+                    <p> Clique ou toque para visualizar o conteúdo. </p>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                                type="button" role="tab" aria-controls="home" aria-selected="true">Gráfico de barras
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                type="button" role="tab" aria-controls="profile" aria-selected="false">Histograma
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            Use um gráfico de barras quando estiver lidando com dados numéricos, representados por
+                            números inteiros, não negativos, ou seja, dados que podem ser classificados em categorias
+                            distintas. Ele é ótimo para comparar quantidades entre diferentes categorias. </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            Use um histograma quando estiver lidando com dados numéricos contínuos (“números quebrados”)
+                            e quiser entender a distribuição desses dados. Essa ferramenta é útil para identificar
+                            padrões e tendências nos seus dados. </div>
+                    </div>
+                    <p>
+                        Analisar dados pode se tornar uma tarefa desafiadora, especialmente diante de uma grande
+                        quantidade de informações. O uso do histograma é amplamente aceito e apropriado,
+                        principalmente quando se lida com volumes extensos de dados, como variáveis
+                        quantitativas
+                        (gramatura, largura, comprimento, temperatura, entre outras grandezas). Essas
+                        informações
+                        podem ser coletadas em situações cotidianas de trabalho, e, com o histograma, é possível
+                        compreender a distribuição dos dados.
+                    </p>
+                    <div class="grafismo">
+                        <div class="destaque borda-colorida icone importante">
+                            <p>
+                                O histograma facilita a identificação de forma, ponto central, variação da
+                                distribuição,
+                                amplitude, média, desvio padrão, entre outros parâmetros, auxiliando na
+                                identificação de
+                                ajustes necessários nos processos.
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        Quando os dados são representados no histograma, o gráfico pode adotar diversos
+                        formatos,
+                        como exemplificado no seguinte quadro.
+                    </p>
+                    <figure class="my-5 no-print">
+                        <img src="./img/modal7_infografico.png"
+                            class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block"
+                            alt="Imagem" style="max-width: 100%; height: auto;">
+                        <a href="./img/modal7_infografico.png" target="_blank"
+                            class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                            <img src="./img/modal7_infografico.png"
+                                class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none img-lista1"
+                                alt="Imagem" style="max-width: 100%; height: auto;">
+                        </a>
+                        <figcaption class="figure-caption text-center">Tipos de histogramas
+                            <br>
+                            Fonte: Senac EAD (2024)
+                        </figcaption>
+                    </figure>
+                    <h4>Como aplicar</h4>
+                    <p>Para construir um histograma, é preciso seguir estes passos:</p>
+                    <ul class="custom-bullet">
+                        <li>Colete dados. </li>
+                        <li>Organize os valores em uma tabela. </li>
+                        <li>Identifique os valores de máximo e mínimo encontrados. </li>
+                        <li>Defina o número de classes. </li>
+                        <li>Calcule a amplitude da amostra. </li>
+                        <li>Determine o intervalo e a frequência de cada valor ou classe. </li>
+                        <li>Desenhe o histograma. </li>
+                        <li>Ao usar um histograma, você deve considerar variáveis quantitativas, ou seja,
+                            números resultantes de contagens ou medições. </li>
+                    </ul>
+                    <p>
+                        Além disso, o histograma pode ser aplicado a dados mais complexos, que envolvem
+                        variáveis
+                        quantitativas contínuas, como gramatura, largura, comprimento, temperatura etc.
+                    </p>
+                    <div class="grafismo">
+                        <div class="destaque borda-colorida">
+                            <p>
+                                Considere este exemplo prático: uma empresa precisa avaliar o peso de seus produtos
+                                durante
+                                o processo de produção. Para isso, os produtos foram monitorados em gramas ao
+                                passarem
+                                pela
+                                esteira de pesagem. Foram analisadas 60 unidades e os dados estão apresentados nesta
+                                tabela:
+                            </p>
+
+                            <div class="table-responsive">
+                                <table class="text-left align-middle">
+                                    <tr>
+                                        <td>70,25 </td>
+                                        <td>75,49</td>
+                                        <td>67,25</td>
+                                        <td>73,24 </td>
+                                        <td>68,73</td>
+                                        <td>77,54</td>
+                                        <td>75,54 </td>
+                                        <td>74,69 </td>
+                                        <td>77,02</td>
+                                        <td>72,65</td>
+                                    </tr>
+                                    <tr>
+                                        <td>72,59</td>
+                                        <td>77,25</td>
+                                        <td>78,24</td>
+                                        <td>73,87</td>
+                                        <td>75,25</td>
+                                        <td>79,86</td>
+                                        <td>78,62</td>
+                                        <td>77,25</td>
+                                        <td>73,54</td>
+                                        <td>75,48</td>
+                                    </tr>
+                                    <tr>
+                                        <td>77</td>
+                                        <td>71,28</td>
+                                        <td>67,28</td>
+                                        <td>72,6</td>
+                                        <td>75,39</td>
+                                        <td>71,54</td>
+                                        <td>69,54</td>
+                                        <td>69,25</td>
+                                        <td>65,88</td>
+                                        <td>66,58</td>
+                                    </tr>
+                                    <tr>
+                                        <td>71,25 </td>
+                                        <td>70,41</td>
+                                        <td>72,18</td>
+                                        <td>73,25</td>
+                                        <td>67,28</td>
+                                        <td>71,04</td>
+                                        <td>72,36</td>
+                                        <td>71,68</td>
+                                        <td>71,64</td>
+                                        <td>72,41</td>
+                                    </tr>
+                                    <tr>
+                                        <td>70,84</td>
+                                        <td>75,26</td>
+                                        <td>71,26</td>
+                                        <td>73,24</td>
+                                        <td>70,25</td>
+                                        <td>71,58</td>
+                                        <td>75,48</td>
+                                        <td>71,64</td>
+                                        <td>71,54</td>
+                                        <td>72,58</td>
+                                    </tr>
+                                    <tr>
+                                        <td>65,27</td>
+                                        <td>67,18</td>
+                                        <td>70,01</td>
+                                        <td>69,59</td>
+                                        <td>72,24</td>
+                                        <td>71,05</td>
+                                        <td>70,58</td>
+                                        <td>71,21</td>
+                                        <td>66,55</td>
+                                        <td>73,25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Média </td>
+                                        <td>72,25</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <figcaption class="figure-caption text-center">Peso de produtos feitos na balança <br>
+                                Fonte: Senac EAD (2024)
+                            </figcaption>
+                            <p class="mt-3">
+                                Com essas informações é possível verificar que a média de peso dos produtos foi de 72,25
+                                gramas, mas, de acordo com os dados, há valores maiores ou menores que essa média.
+                                Agora, é
+                                preciso saber como é o comportamento desses números, como eles variam, descobrir se a
+                                variabilidade é alta, baixa, se o processo é bom ou ruim, se atende à especificação do
+                                cliente. Quando se monta o histograma com as informações da tabela, pode-se ter resposta
+                                para essas perguntas.
+                            </p>
+                            <figure class="my-5">
+                                <img src="./img/modal7_grafico2.jpg"
+                                    class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block"
+                                    alt="Imagem" style="max-width: 100%; height: auto;">
+                                <a href="./img/modal7_grafico2.jpg" target="_blank"
+                                    class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                                    <img src="./img/modal7_grafico2.jpg"
+                                        class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none img-lista1"
+                                        alt="Imagem" style="max-width: 100%; height: auto;">
+                                </a>
+                                <figcaption class="figure-caption text-center">Histograma de peso de produtos em uma
+                                    esteira de pesagem
+                                    <br>
+                                    Fonte: Senac EAD (2024)
+                                </figcaption>
+                            </figure>
+                            <p>
+                                Conclui-se com esse histograma que os pesos coletados dos produtos se concentram muito
+                                em
+                                torno das faixas de 70,70 g a 72,52 g. Com base nessas informações, é possível avaliar
+                                dados
+                                obtidos no processo com os critérios de aceitação do cliente e da própria produção, e
+                                definir se devem ser realizados ajustes para que o processo siga seu curso. Limites de
+                                especificação inferior e superior podem ser definidos para que controles sejam
+                                realizados e
+                                ações de correção possam ser tomadas, caso os limites sejam excedidos. Carta de controle
+                                é
+                                outra ferramenta da qualidade que apresenta esse critério e pode ser utilizada em
+                                conjunto
+                                com o histograma. Essa ferramenta será objeto de estudo ainda neste conhecimento.
+                            </p>
+                        </div>
+                    </div>
+                    <h4> Orientações</h4>
+
+                    <p>
+                        Diversos <i>softwares</i> possibilitam o tratamento estatístico e a criação de gráficos
+                        ou
+                        diagramas para representar a distribuição de dados, especialmente quando há um grande
+                        volume
+                        de informações. O Microsoft Excel atende à maioria dos casos do cotidiano, sendo uma
+                        ferramenta prática, de fácil manuseio e entendimento.
+                    </p>
+                    <p>
+                        Para aprofundar seu conhecimento do histograma, assista ao vídeo a seguir, que contém o
+                        passo a passo da construção dessa ferramenta com o exemplo do peso dos produtos, citado
+                        anteriormente.
+                    </p>
+                    <div class="espera-video">
+                        Video
+                    </div>
+                </div>
+
+                <a href="#" class="voltar-topo no-print" aria-hidden="true"><img
+                        src="../../assets/images/bt_topo.svg"></a>
+            </div>
+        </section>
+
+        <!-- Paginação-->
+        <footer class="text-center no-print d-flex justify-content-center mx-auto">
+            <ul class="pagination">
+
+            </ul>
+        </footer>
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="../../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--Jquery-->
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <!--Áudio customizado-->
+    <script src="../../assets/js/audio-player.js"></script>
+    <!--Splide - slideshow-->
+    <script src="../../assets/js/splide.min.js"></script>
+    <!--Prog'n'roll - barra de progresso conforme rola a página-->
+    <script src="../../assets/js/prognroll.min.js"></script>
+    <!--Scripts gerais-->
+    <script src="./geral.js"></script>
+
+    <script>
+        $(function () {
+            $("body").prognroll();
+        });
+
+        $(".btn-tema_pagina").click(function () {
+            console.log($(".btn-tema_pagina"))
+            if ($("body").hasClass('bg-claro')) {
+                console.log("sim");
+                $("body").removeClass('bg-claro')
+                $("body").addClass("bg-escuro");
+            } else if ($("body").hasClass('bg-escuro')) {
+                console.log("não");
+                $("body").removeClass('bg-escuro')
+                $("body").addClass("bg-claro")
+            }
+        });
+    </script>
+
+    <!-- Handtalk -->
+    <script>
+        var scriptElem = document.createElement("script");
+        scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset = "UTF-8",
+            scriptElem.onload = function () {
+                window.ht = new HT({
+                    token: "bf5b7efb148a829a126a0e0c9fd533bf",
+                    align: "top",
+                    videoEnabled: true,
+                    ytEmbedReplace: true,
+                    mobileConfig: {
+                        align: "right",
+                        actionsAlign: "top",
+                        customButtonStyle: {
+                            borderRadius: "6px",
+                            size: "38px",
+                            horizontalMargin: "13px",
+                            bottomMargin: "140px",
+                            rightMargin: "40px"
+                        }
+                    }
+                });
+                $('.ht-skip').attr("aria-hidden", "true")
+            },
+            document.body.appendChild(scriptElem);
+
+    </script>
+</body>
+
+</html>

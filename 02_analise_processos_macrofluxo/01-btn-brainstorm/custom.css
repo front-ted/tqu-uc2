@@ -1,0 +1,35 @@
+
+
+body {
+    background-image: url('../../01_experimentacao/img/textura.png');
+    background-image: linear-gradient(to right top, #8aacd0, #adbfdc, #ccd3e7, #e7e8f3, #ffffff, #ffffff, #ffffff);
+    position: relative;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center !important;
+	/* background-attachment: fixed !important; */
+	height: auto;
+	overflow-x: hidden;
+}
+
+.imagem-borda{
+    padding:5%;
+    border: red solid;
+    border-radius: 10%;
+    max-width: 250px;
+}
+.borda-esquerda{
+    border-left-width: 6px;
+}
+
+
+
+
+
+
+@media screen and (max-width:1440px) {
+    .borda-esquerda{
+        border-left-width: 5px;
+    }
+}
+

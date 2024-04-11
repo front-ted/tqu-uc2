@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Inserir o tíutlo do conhecimento na tag title -->
+    <title>Ferramentas da qualidade: conceito, características e aplicação de <i>brainstorming</i>; fluxograma; matriz
+        GUT (gravidade, urgência e tendência); diagrama de causa e efeito ou espinha de peixe; folha de
+        verificação; diagrama de Pareto; histograma; diagrama de dispersão; cartas de controle; 5W2H;
+        técnica dos 5 porquês</title>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../../assets/css/hover-min.css" />
+    <!--Splide - slideshow-->
+    <link rel="stylesheet" href="../../assets/css/splide.min.css">
+    <!-- Print -->
+    <link rel="stylesheet" href="../../assets/css/print.css">
+    <!-- Preloader -->
+    <link rel="stylesheet" href="../../assets/css/preloader.css">
+    <!-- Áudio customizado -->
+    <link rel="stylesheet" href="../../assets/css/player.css">
+    <!-- Estilos do template -->
+    <link rel="stylesheet" href="../../assets/css/cores.css">
+    <link rel="stylesheet" href="../../assets/css/template.css">
+    <link rel="stylesheet" href="./custom.css">
+</head>
+
+<body class="bg-claro" aria-hidden="true">
+    <!-- Preloader OBRIGATÓRIO -->
+    <div class="preloader">
+        <div class="anim"></div>
+        <p>Aguarde enquanto o conteúdo é carregado.</p>
+    </div>
+    <!-- Marca d'água OBRIGATÓRIA -->
+    <img src="../../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+    <header id="topo">
+        <div class="topo-logo">
+            <div class="container">
+                <h1 id="nome-curso" class="only-print">Técnico em Qualidade</h1>
+            </div>
+            <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"></div>
+
+        </div>
+    </header>
+
+    <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->
+    <section id="booklet">
+        <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+        <div class="layer-preta no-print"></div>
+        <section class="paginas">
+            <div class="pagina no-print">
+                <div class="container">
+                    <h2>Diagrama de Ishikawa ou espinha de peixe</h2>
+                    <h4> O que é</h4>
+                    <p>
+                        O <strong>diagrama de Ishikawa</strong>, também conhecido como “espinha de peixe” ou “diagrama
+                        de causa e
+                        efeito”,
+                        foi desenvolvido por Ishikawa, em 1943, na Universidade de Tóquio. Seu objetivo era afirmar a
+                        interligação existente entre os diversos fatores de um processo, demonstrando a relação entre um
+                        efeito que se pretende estudar e todas as possibilidades que podem estar relacionadas à sua
+                        ocorrência, atuando como um guia para a identificação da causa fundamental de um problema e a
+                        determinação das medidas corretivas adotadas para a solução dele.
+                    </p>
+                    <p>
+                        Amplamente utilizado e difundido no mundo inteiro, e fazendo parte de um conjunto de ferramentas
+                        criadas por Ishikawa, o diagrama é muito utilizado associado com outras ferramentas da
+                        qualidade,
+                        principalmente o <i>brainstorming</i>, visto anteriormente.
+                    </p>
+                    <h4>Quando usar</h4>
+                    <p>
+                        O diagrama de Ishikawa é uma representação visual que destaca as causas de um problema
+                        específico e que se assemelha a um esqueleto de peixe, o que lhe confere também o nome
+                        de
+                        "diagrama de espinha de peixe". Em seguida será apresentada a estrutura comumente
+                        adotada
+                        pelas organizações ao usar essa ferramenta. O problema, ou efeito indesejado, é descrito
+                        na
+                        cabeça do peixe, enquanto as possíveis causas são representadas ao longo de suas
+                        vértebras.
+                    </p>
+                    <p>
+                        Existem diversas categorias de causas para cada efeito, sendo as seis principais
+                        agrupadas
+                        nos 6 Ms:
+                    </p>
+                    <ul class="custom-bullet">
+                        <li>Medida </li>
+                        <li>Método </li>
+                        <li>Mão de obra </li>
+                        <li>Máquina </li>
+                        <li>Meio ambiente </li>
+                        <li>Material</li>
+                    </ul>
+                    <p>
+                        É importante notar que essas categorias podem variar conforme o tipo, segmento e
+                        contexto da
+                        organização, não sendo, portanto, fixas.
+                    </p>
+                    <p>
+                        Confira a seguir um exemplo prático da aplicação do diagrama de Ishikawa, no qual o
+                        problema
+                        recorrente de falta de etiquetas de preços em produtos de um supermercado é analisado e
+                        categorizado.
+                    </p>
+                    <figure class="my-5">
+                        <img src="./img/modal4_ishikawa.png"
+                            class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block"
+                            alt="Imagem" style="max-width: 100%; height: auto;">
+                        <a href="./img/modal4_ishikawa.png" target="_blank"
+                            class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                            <img src="./img/modal4_ishikawa.png"
+                                class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none img-lista1"
+                                alt="Imagem" style="max-width: 100%; height: auto;">
+                        </a>
+                    </figure>
+
+                    <p> Ao utilizar a ferramenta, você classifica e distribui as possíveis causas em cada um dos 6 Ms
+                        (vértebras). </p>
+                    <p>Clique ou toque para visualizar o conteúdo. </p>
+                    <div class="no-print" aria-hidden="true">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Medida
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Refere-se às métricas utilizadas para medir, controlar e monitorar os
+                                            processos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Método
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Refere-se aos procedimentos e métodos adotados pela organização durante as
+                                            atividades, ou seja, para execução de atividades. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Mão de obra
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Refere-se aos colaboradores na execução das atividades, com situações
+                                            relacionadas a treinamento, competência, conduta e disponibilidade. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        Máquina
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Refere-se a falhas de máquinas e equipamentos, que podem ser causadas pela
+                                            falta de manutenção ou utilização incorreta. Aqui se indica tudo o que for
+                                            relacionado ao funcionamento dos equipamentos, das máquinas e dos sistemas.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                        Meio ambiente
+                                    </button>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Refere-se às possíveis causas relacionadas aos ambientes interno (espaços,
+                                            leiaute e ruído) e externo (poluição e instabilidade do tempo).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading6">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                        Materiais
+                                    </button>
+                                </h2>
+                                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Refere-se ao uso de materiais e/ou matéria-prima, seja fora das
+                                            especificações, seja com quantidade incorreta, por exemplo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4> Como aplicar </h4>
+                    <p>Você pode elaborar o diagrama de Ishikawa seguindo estes passos: </p>
+                    <ul class="custom-bullet">
+                        <li> Promova a participação das pessoas envolvidas no processo. </li>
+                        <li> Defina detalhadamente o problema que foi selecionado (onde ocorre, quando ocorre e
+                            sua extensão). </li>
+                        <li> Para identificar as possíveis causas, promova a associação com a ferramenta
+                            <i>brainstorming</i>, levantando assim dados/causas a serem estudados que podem
+                            auxiliar
+                            você na identificação daquele que está causando o problema.
+                        </li>
+                        <li> Construa o diagrama inserindo o problema na cabeça do peixe e preencha as
+                            categorias
+                            (6 Ms) inserindo as possíveis causas identificadas no <i>brainstorming</i>. As
+                            causas
+                            identificadas pela equipe precisam ser classificadas em cada uma das categorias dos
+                            6 Ms. Lembre-se de não é obrigatório o preenchimento de todos os 6Ms. </li>
+                        <li> Conforme o grau de complexidade das causas identificadas, podem ser geradas
+                            avaliações mais profundas chamadas “causas secundárias” ou, ainda, “causas de
+                            segundo nível”. Se necessário e adequado, deve-se escrever as causas secundárias em
+                            ramificações da espinha principal. É possível que o processo continue se
+                            ramificando, descendo a níveis ainda mais inferiores até que se encontrem todas as
+                            causas mais prováveis, mas o critério de profundidade é decidido pelo grupo do
+                            estudo.
+                        </li>
+                        <li>Analise a consistência do diagrama, avaliando se foram identificadas todas as
+                            possíveis causas, e coloque em discussão juntamente com os participantes o impacto
+                            que cada possível causa pode ter no processo em questão.
+                        </li>
+                        <li>Interprete as causas descritas. Segundo Carpinetti (2016, p. 84), “o grau de
+                            importância de cada causa relacionada no diagrama deve ser estabelecido não somente
+                            com base na experiência e em impressões subjetivas, que muitas vezes podem ser
+                            enganadoras, mas também com base em dados”. Por isso, as causas listadas precisam
+                            ser investigadas, uma a uma, e devem ser eliminadas aquelas que não são responsáveis
+                            pela ocorrência do problema. Observe as causas que aparecem repetidamente,
+                            investigando cada situação e garantindo que a real causa seja encontrada. </li>
+                        <li>Por fim, selecione a(s) causa(s) provável(eis) e, para esta(s), realize um plano de
+                            ação usando uma ferramenta complementar que contribuirá para que o problema não
+                            volte a ocorrer. Uma sugestão é o 5W2H, uma importante ferramenta que será
+                            demonstrada ainda neste conhecimento. </li>
+                    </ul>
+                    <p>Para aprender mais, que tal exercitar seus conhecimentos de forma criativa e divertida?</p>
+                    <p>Clique ou toque no botão para acessar o objeto de aprendizagem sobre o diagrama de Ishikawa.</p>
+                    <div class="espera-video">
+                        ODA
+                    </div>
+                    <h4>Orientações</h4>
+                    <p>
+                        Faça a construção do diagrama de Ishikawa sempre em grupo, envolvendo pessoas que conheçam o
+                        processo e estejam envolvidas com o problema. Use-o sempre associado a outras ferramentas da
+                        qualidade para aprofundar a solução proposta e viabilizar o uso adequado da ferramenta. Use
+                        palavras
+                        simples e claras na identificação das possíveis causas. Reforce sempre, entre os presentes, a
+                        diferença entre causa e efeito, pois muitas pessoas confundem esses conceitos e, se isso
+                        ocorrer, a
+                        aplicação da ferramenta torna-se inadequada e há grandes chances de o problema voltar a
+                        aparecer.
+                    </p>
+                </div>
+
+                <a href="#" class="voltar-topo no-print" aria-hidden="true"><img
+                        src="../../assets/images/bt_topo.svg"></a>
+            </div>
+        </section>
+
+        <!-- Paginação-->
+        <footer class="text-center no-print d-flex justify-content-center mx-auto">
+            <ul class="pagination">
+
+            </ul>
+        </footer>
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="../../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--Jquery-->
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <!--Áudio customizado-->
+    <script src="../../assets/js/audio-player.js"></script>
+    <!--Splide - slideshow-->
+    <script src="../../assets/js/splide.min.js"></script>
+    <!--Prog'n'roll - barra de progresso conforme rola a página-->
+    <script src="../../assets/js/prognroll.min.js"></script>
+    <!--Scripts gerais-->
+    <script src="./geral.js"></script>
+
+    <script>
+        $(function () {
+            $("body").prognroll();
+        });
+
+        $(".btn-tema_pagina").click(function () {
+            console.log($(".btn-tema_pagina"))
+            if ($("body").hasClass('bg-claro')) {
+                console.log("sim");
+                $("body").removeClass('bg-claro')
+                $("body").addClass("bg-escuro");
+            } else if ($("body").hasClass('bg-escuro')) {
+                console.log("não");
+                $("body").removeClass('bg-escuro')
+                $("body").addClass("bg-claro")
+            }
+        });
+    </script>
+
+    <!-- Handtalk -->
+    <script>
+        var scriptElem = document.createElement("script");
+        scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset = "UTF-8",
+            scriptElem.onload = function () {
+                window.ht = new HT({
+                    token: "bf5b7efb148a829a126a0e0c9fd533bf",
+                    align: "top",
+                    videoEnabled: true,
+                    ytEmbedReplace: true,
+                    mobileConfig: {
+                        align: "right",
+                        actionsAlign: "top",
+                        customButtonStyle: {
+                            borderRadius: "6px",
+                            size: "38px",
+                            horizontalMargin: "13px",
+                            bottomMargin: "140px",
+                            rightMargin: "40px"
+                        }
+                    }
+                });
+                $('.ht-skip').attr("aria-hidden", "true")
+            },
+            document.body.appendChild(scriptElem);
+
+    </script>
+</body>
+
+</html>

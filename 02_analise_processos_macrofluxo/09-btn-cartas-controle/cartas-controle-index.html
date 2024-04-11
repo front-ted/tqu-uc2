@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Inserir o tíutlo do conhecimento na tag title -->
+    <title>Ferramentas da qualidade: conceito, características e aplicação de <i>brainstorming</i>; fluxograma; matriz
+        GUT (gravidade, urgência e tendência); diagrama de causa e efeito ou espinha de peixe; folha de
+        verificação; diagrama de Pareto; histograma; diagrama de dispersão; cartas de controle; 5W2H;
+        técnica dos 5 porquês</title>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../../assets/css/hover-min.css" />
+    <!--Splide - slideshow-->
+    <link rel="stylesheet" href="../../assets/css/splide.min.css">
+    <!-- Print -->
+    <link rel="stylesheet" href="../../assets/css/print.css">
+    <!-- Preloader -->
+    <link rel="stylesheet" href="../../assets/css/preloader.css">
+    <!-- Áudio customizado -->
+    <link rel="stylesheet" href="../../assets/css/player.css">
+    <!-- Estilos do template -->
+    <link rel="stylesheet" href="../../assets/css/cores.css">
+    <link rel="stylesheet" href="../../assets/css/template.css">
+    <link rel="stylesheet" href="./custom.css">
+</head>
+
+<body class="bg-claro" aria-hidden="true">
+    <!-- Preloader OBRIGATÓRIO -->
+    <div class="preloader">
+        <div class="anim"></div>
+        <p>Aguarde enquanto o conteúdo é carregado.</p>
+    </div>
+    <!-- Marca d'água OBRIGATÓRIA -->
+    <img src="../../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+    <header id="topo">
+        <div class="topo-logo">
+            <div class="container">
+                <h1 id="nome-curso" class="only-print">Técnico em Qualidade</h1>
+            </div>
+            <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"></div>
+        </div>
+    </header>
+
+    <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->
+    <section id="booklet">
+        <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+        <div class="layer-preta no-print"></div>
+        <section class="paginas">
+            <div class="pagina no-print">
+                <div class="container">
+                    <h2>Cartas de controle </h2>
+                    <h4> O que é</h4>
+                    <p>
+                        A <strong>carta de controle</strong> é uma ferramenta da qualidade utilizada para auxiliar no
+                        monitoramento
+                        de processos e acompanhar variabilidade de medições, permitindo assim avaliar a
+                        estabilidade
+                        de um processo. Portanto, a carta de controle é uma ferramenta que representa e mostra
+                        tendências de desempenho de processos, possibilitando seu acompanhamento e controle ao
+                        longo
+                        de um determinado tempo.
+                    </p>
+                    <h4>Quando usar</h4>
+                    <p>
+                        As cartas de controle podem ser usadas quando se necessita conhecer, monitorar e
+                        controlar
+                        os resultados de processos, identificando desvios, a partir dos limites de especificação
+                        e
+                        controles definidos, ou seja, podem ser usadas sempre que se deseja identificar se
+                        existem
+                        falhas ou melhorias que podem ser feitas em algum processo. Elas são empregadas para
+                        observar as mudanças dentro de um processo, utilizando métodos estatísticos com base em
+                        dados de amostragem e gráficos para representar tais informações.
+                    </p>
+                    <h4>Como aplicar</h4>
+                    <p>Para elaborar uma carta de controle, é necessário seguir estes passos:</p>
+                    <ul class="custom-bullet">
+                        <li>Defina os processos que serão controlados.</li>
+                        <li>
+                            Indique os responsáveis pela coleta de dados e forneça roteiro com orientações dos
+                            dados
+                            a serem coletados.
+                        </li>
+                        <li>
+                            Defina os equipamentos/instrumentos de medição e insumos que serão utilizados para
+                            avaliar o processo.
+                        </li>
+                        <li>
+                            Construa o gráfico com linha central (medições realizadas ao longo do processo) e
+                            dois
+                            limites, chamados limites de controle superior e inferior. Esses limites refletem a
+                            variação estatística e são definidos com base nos limites de especificação do
+                            produto ou
+                            de processos. A decisão sobre os limites de controle deve ser realizada pela
+                            empresa,
+                            podendo usar como critério a especificação de produtos ou dados históricos.
+                        </li>
+                        <li>Analise os dados obtidos com os responsáveis e as áreas envolvidas.</li>
+                        <li>Defina as ações para corrigir e prevenir problemas identificados no processo.</li>
+                    </ul>
+                    <p>
+                        A tabela a seguir mostra o controle de monitoramento por carta de controle e a figura
+                        após
+                        apresenta o uso da ferramenta carta de controle para monitorar o desempenho de uma
+                        medição
+                        de processos. O peso esperado de um produto é de 60 gramas. Os limites foram definidos
+                        como
+                        superior de 70 g e inferior de 40 g. Para a construção do gráfico foi utilizado o Excel.
+                    </p>
+                    <div class="table-responsive">
+                        <table class="text-center align-middle tabela-controle">
+                            <tr>
+                                <thead>
+                                    <th>Horas</th>
+                                    <th>1</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>4</th>
+                                    <th>Limite inf. </th>
+                                    <th>Limite sup. </th>
+                                </thead>
+                            </tr>
+                            <tr>
+                                <td>08:00 </td>
+                                <td>48</td>
+                                <td>57</td>
+                                <td>51</td>
+                                <td>56</td>
+                                <td>40</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>09:00</td>
+                                <td>40</td>
+                                <td>56</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>40</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>10:00</td>
+                                <td>40</td>
+                                <td>57</td>
+                                <td>55</td>
+                                <td>44</td>
+                                <td>40</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>11:00</td>
+                                <td>50</td>
+                                <td>87</td>
+                                <td>53</td>
+                                <td>50</td>
+                                <td>40</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>12:00</td>
+                                <td>51</td>
+                                <td>47</td>
+                                <td>85</td>
+                                <td>60</td>
+                                <td>40</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>13:00</td>
+                                <td>45</td>
+                                <td>52</td>
+                                <td>51</td>
+                                <td>45</td>
+                                <td>40</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>14:00</td>
+                                <td>51</td>
+                                <td>65</td>
+                                <td>54</td>
+                                <td>48</td>
+                                <td>40</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>15:00</td>
+                                <td>46</td>
+                                <td>52</td>
+                                <td>57</td>
+                                <td>30</td>
+                                <td>40</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>16:00</td>
+                                <td>35</td>
+                                <td>50</td>
+                                <td>62</td>
+                                <td>65</td>
+                                <td>40</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>17:00</td>
+                                <td>54</td>
+                                <td>56</td>
+                                <td>57</td>
+                                <td>58</td>
+                                <td>40</td>
+                                <td>70</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <figcaption class="figure-caption text-center">Controle de monitoramento por carta de
+                        controle <br>
+                        Fonte: Senac EAD (2024)
+                    </figcaption>
+                    <!-- Figura grafico -->
+                    <figure class="my-5">
+                        <figure class="my-5">
+                            <img src="./img/modal9_grafico.png"
+                                class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block"
+                                alt="Imagem" style="max-width: 100%; height: auto;">
+                            <a href="./img/modal9_grafico.png" target="_blank"
+                                class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                                <img src="./img/modal9_grafico.png"
+                                    class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none img-lista1"
+                                    alt="Imagem" style="max-width: 100%; height: auto;">
+                            </a>
+                        </figure>
+                        <figcaption class="figure-caption text-center">Exemplo de carta de controle
+                            <br>
+                            Fonte: Senac EAD (2024)
+                        </figcaption>
+                    </figure>
+                    <p>
+                        Esse gráfico demonstra, nas linhas destacadas, os limites superior e inferior do
+                        processo, e
+                        as demais linhas mostram os pontos de medição efetuados no decorrer da coleta de dados.
+                        Aqueles pontos que ficaram fora dos limites (que excederam os limites da linha preta)
+                        são
+                        aqueles que necessitam ser corrigidos por estarem fora dos padrões de peso definidos,
+                        sejam
+                        superiores ou inferiores. Nessas situações, é adequado o uso de diferentes ferramentas,
+                        conforme cada necessidade, para que os problemas identificados sejam resolvidos.
+                    </p>
+                    <h4>Orientações</h4>
+                    <p>
+                        Utilize cartas de controle associadas a outras ferramentas da qualidade, como o diagrama
+                        de
+                        Ishikawa, para realizar o levantamento das possíveis causas, o <i>brainstorming</i> a
+                        partir das
+                        ideias dos envolvidos, a lista de verificação e o histograma, que representa a
+                        distribuição
+                        de frequência de um processo em forma de gráfico. Não se esqueça de estabelecer ações
+                        utilizando a ferramenta 5W2H, que será abordada mais detalhadamente a seguir.
+                    </p>
+                </div>
+                <a href="#" class="voltar-topo no-print" aria-hidden="true"><img
+                        src="../../assets/images/bt_topo.svg"></a>
+            </div>
+        </section>
+
+        <!-- Paginação-->
+        <footer class="text-center no-print d-flex justify-content-center mx-auto">
+            <ul class="pagination">
+
+            </ul>
+        </footer>
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="../../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--Jquery-->
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <!--Áudio customizado-->
+    <script src="../../assets/js/audio-player.js"></script>
+    <!--Splide - slideshow-->
+    <script src="../../assets/js/splide.min.js"></script>
+    <!--Prog'n'roll - barra de progresso conforme rola a página-->
+    <script src="../../assets/js/prognroll.min.js"></script>
+    <!--Scripts gerais-->
+    <script src="./geral.js"></script>
+
+    <script>
+        $(function () {
+            $("body").prognroll();
+        });
+
+        $(".btn-tema_pagina").click(function () {
+            console.log($(".btn-tema_pagina"))
+            if ($("body").hasClass('bg-claro')) {
+                console.log("sim");
+                $("body").removeClass('bg-claro')
+                $("body").addClass("bg-escuro");
+            } else if ($("body").hasClass('bg-escuro')) {
+                console.log("não");
+                $("body").removeClass('bg-escuro')
+                $("body").addClass("bg-claro")
+            }
+        });
+    </script>
+
+    <!-- Handtalk -->
+    <script>
+        var scriptElem = document.createElement("script");
+        scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset = "UTF-8",
+            scriptElem.onload = function () {
+                window.ht = new HT({
+                    token: "bf5b7efb148a829a126a0e0c9fd533bf",
+                    align: "top",
+                    videoEnabled: true,
+                    ytEmbedReplace: true,
+                    mobileConfig: {
+                        align: "right",
+                        actionsAlign: "top",
+                        customButtonStyle: {
+                            borderRadius: "6px",
+                            size: "38px",
+                            horizontalMargin: "13px",
+                            bottomMargin: "140px",
+                            rightMargin: "40px"
+                        }
+                    }
+                });
+                $('.ht-skip').attr("aria-hidden", "true")
+            },
+            document.body.appendChild(scriptElem);
+
+    </script>
+</body>
+
+</html>

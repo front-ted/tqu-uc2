@@ -1,0 +1,1616 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Inserir o tíutlo do conhecimento na tag title -->
+    <title>Mapeamento de processo: fluxogramas, sipoc (suppliers, inputs, process, outputs e customer) e bpm (business process management)</title>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../assets/css/hover-min.css" />
+    <!--Splide - slideshow-->
+    <link rel="stylesheet" href="../assets/css/splide.min.css">
+    <!-- Print -->
+    <link rel="stylesheet" href="../assets/css/print.css">
+    <!-- Preloader -->
+    <link rel="stylesheet" href="../assets/css/preloader.css">
+    <!-- Áudio customizado -->
+    <link rel="stylesheet" href="../assets/css/player.css">
+    <!-- Estilos do template -->
+    <link rel="stylesheet" href="../assets/css/cores.css">
+    <link rel="stylesheet" href="../assets/css/template.css">
+    <link rel="stylesheet" href="./custom.css">
+</head>
+
+<body class="bg-claro">
+    <!-- Preloader OBRIGATÓRIO -->
+    <div class="preloader">
+        <div class="anim"></div>
+        <p>Aguarde enquanto o conteúdo é carregado.</p>
+    </div>
+    <!-- Marca d'água OBRIGATÓRIA -->
+    <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+    <header id="topo">
+        <div class="topo-logo">
+            <div class="container">
+                <h1 id="nome-curso" class="only-print">Técnico em Qualidade</h1>
+            </div>
+            <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"></div>
+
+        </div>
+    </header>
+
+    <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->
+    <section id="booklet">
+        <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+        <div class="layer-preta no-print"></div>
+        <section class="paginas">
+            <div class="pagina">
+                <div class="container">
+                    <h2>Metodologias de gestão: PDCA (<i>plan</i>, <i>do</i>, <i>check</i> e <i>act</i>) e MASP
+                        (método de
+                        análise e solução de problemas)</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus nemo nam error itaque, explicabo numquam ea optio atque tempora! Aspernatur nostrum necessitatibus mollitia. Quam obcaecati hic quo eius ea voluptates.</p>
+                </div>
+
+                <div class="bloco-2">
+                    <div class="container">
+                        <figure class="my-5">
+                            <div class="figure-img mx-auto mb-4">
+                                <img class="img-fluid d-block mx-auto" src="./img/grafico1.png">
+                            </div>
+                            <figcaption class="figure-caption text-center">Ciclo PDCA
+                                <br>
+                                Fonte: Senac EAD (2024)
+                            </figcaption>
+                        </figure>
+                        <p class="acessivel no-print">
+                            Círculo dividido em quatro partes, com as etapas plan (planejar), do
+                            (executar), check (verificar) e action (agir) em sequência, representando um ciclo que é
+                            contínuo e
+                            repetitivo.
+                        </p>
+                        <p class="no-print">
+                            Clique ou toque para visualizar o conteúdo.
+                        </p>
+                        <div class="painel-pdca-gestao no-print" aria-hidden="true">
+                            <div class="row flex-column text-center no-print">
+                                <div class="col-12 col-md-12">
+                                    <button type="button" class="botao check hvr-sweep-to-right d-block mx-auto mb-3"
+                                        data-bs-toggle="modal" data-bs-target="#modal1">
+                                        Gestão estratégica
+                                    </button>
+                                </div>
+                                <div class="col-12 col-md-12">
+                                    <button type="button" class="botao check hvr-sweep-to-right d-block mx-auto mb-3"
+                                        data-bs-toggle="modal" data-bs-target="#modal2">
+                                        Gestão das operações
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Inicio modais painel -->
+                        <div class="no-print" aria-hidden="true">
+                            <div class="modal fade no-print" id="modal1" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-80">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Gestão estratégica</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p> Quando utilizadas em nível estratégico, as técnicas, em geral, auxiliam
+                                                a:
+                                            </p>
+                                            <ul class="custom-bullet">
+                                                <li>Identificar prioridades de melhoria, ou seja, avaliar e selecionar
+                                                    áreas
+                                                    ou
+                                                    aspectos que mais necessitam de aprimoramento em um determinado
+                                                    contexto, seja
+                                                    em um projeto, seja em uma organização, processo ou em qualquer
+                                                    outra
+                                                    situação.
+                                                </li>
+                                                <li>Identificar e analisar causas fundamentais, isto é, referem-se ao
+                                                    processo de
+                                                    investigar a raiz ou origem de um problema ou desafio específico. Em
+                                                    muitos
+                                                    casos, os problemas que aparecem de forma superficial têm causas
+                                                    mais
+                                                    profundas
+                                                    que precisam ser compreendidas e tratadas para evitar recorrências,
+                                                    ou
+                                                    seja,
+                                                    evitar que ocorram novamente. Esse processo é comumente conhecido
+                                                    como
+                                                    análise
+                                                    das causas raízes, análise das causas primárias ou, ainda, análise
+                                                    das
+                                                    causas
+                                                    fundamentais.
+                                                </li>
+                                                <li>Planejar ações de melhoria e avaliar progresso. É o processo
+                                                    sistemático
+                                                    em que
+                                                    uma pessoa, equipe ou organização desenvolve estratégias para
+                                                    implementar
+                                                    melhorias e, em seguida, avalia regularmente o progresso alcançado.
+                                                </li>
+                                            </ul>
+                                            <div class="espera-video">
+                                                espera audio
+                                            </div>
+                                            <!-- <div class="acessivel only-print">
+                                    <p>Que tal pensar em alguns exemplos?</p>
+                                    <p>
+                                        Imagine um restaurante que está enfrentando reclamações constantes dos clientes
+                                        sobre a
+                                        qualidade dos pratos servidos. À primeira vista, o problema pode parecer
+                                        relacionado
+                                        apenas à cozinha ou aos <i>chefs</i> de culinária. No entanto, ao realizar uma análise
+                                        da causa
+                                        raiz, pode-se descobrir que o problema real está na cadeia de fornecimento de
+                                        ingredientes.
+                                    </p>
+                                    <p>
+                                        Ao investigar mais a fundo, pode-se identificar que um dos fornecedores de
+                                        alimentos do
+                                        restaurante está entregando ingredientes de baixa qualidade ou vencidos. Isso,
+                                        por sua
+                                        vez, afeta diretamente a qualidade dos pratos preparados na cozinha. Portanto, a
+                                        causa
+                                        fundamental do problema não está na equipe de culinária, mas sim na cadeia de
+                                        fornecimento.
+                                    </p>
+                                    <p>
+                                        Ao abordar a causa raiz, o restaurante pode tomar medidas para melhorar a
+                                        seleção de
+                                        fornecedores, implementar controles de qualidade mais rigorosos na recepção de
+                                        ingredientes e garantir que todos os produtos atendam aos padrões necessários.
+                                        Isso não
+                                        apenas resolverá as reclamações dos clientes, mas também prevenirá futuros
+                                        problemas
+                                        relacionados à qualidade dos pratos.
+                                    </p>
+                                    <p>
+                                        É possível considerar ainda outra situação cotidiana como exemplo. Suponha que
+                                        você
+                                        esteja enfrentando uma dor de cabeça e decida tomar um analgésico para aliviar o
+                                        sintoma. Nesse caso, você está lidando com o efeito imediato da dor sem abordar
+                                        a causa
+                                        raiz, que pode estar relacionada à falta de sono, ao estresse, à desidratação ou
+                                        a
+                                        outros fatores. O analgésico proporciona um alívio temporário, porém, para
+                                        resolver a
+                                        questão de maneira mais efetiva, seria crucial você identificar e tratar a causa
+                                        raiz.
+                                        Isso poderia envolver aprimorar seus hábitos de sono, adotar estratégias para
+                                        gerenciar
+                                        o estresse ou garantir uma adequada hidratação.
+                                    </p>
+                                    <p>
+                                        Da mesma forma, nas organizações, muitas vezes se atua nos sintomas superficiais
+                                        (efeitos) ao invés de atuar nas causas raízes.
+                                    </p>
+                                </div> -->
+                                            <div class="grafismo">
+                                                <div class="destaque borda-colorida icone importante">
+                                                    <p>
+                                                        É importante sempre buscar eliminar as causas raízes e não
+                                                        apenas os
+                                                        efeitos
+                                                        ou
+                                                        sintomas, pois isso permite uma solução de problemas mais
+                                                        duradoura
+                                                        e
+                                                        eficaz.
+                                                        Identificar e eliminar as causas fundamentais de um problema é
+                                                        abordar a
+                                                        origem
+                                                        dele. Essa abordagem promove uma melhoria sustentável,
+                                                        prevenindo a
+                                                        recorrência
+                                                        do
+                                                        problema, ou seja, que ele ressurja.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Além disso, ao focar nas causas raízes, é possível promover uma mudança
+                                                positiva
+                                                mais
+                                                abrangente e sistêmica. Trabalhar apenas nos efeitos muitas vezes leva a
+                                                soluções
+                                                paliativas, que podem resolver temporariamente a situação, mas não
+                                                proporcionam uma
+                                                transformação profunda.
+                                            </p>
+                                            <p>
+                                                Ao buscar eliminar as causas raízes, as organizações e os indivíduos
+                                                podem
+                                                desenvolver
+                                                abordagens mais estratégicas e preventivas. Isso não apenas resolve
+                                                problemas
+                                                imediatos,
+                                                mas também cria uma base mais sólida para a prevenção de futuros
+                                                desafios.
+                                                Em última
+                                                análise, a abordagem das causas raízes é um investimento no longo prazo
+                                                para
+                                                alcançar
+                                                resultados mais consistentes e significativos.
+                                            </p>
+                                            <div class="modal-footer">
+                                                <button type="button" class="botao hvr-sweep-to-right"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade no-print" id="modal2" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-80">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Gestão das operações </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Quando utilizadas em nível operacional, as técnicas, em geral, auxiliam
+                                                a:
+                                            </p>
+                                            <ul class="custom-bullet">
+                                                <li>Controlar a conformidade da produção (atendimento de requisitos),
+                                                    processo que
+                                                    visa garantir que a produção de bens ou serviços atenda aos
+                                                    requisitos
+                                                    estabelecidos. Isso envolve a implementação de medidas e práticas
+                                                    para
+                                                    garantir
+                                                    que os produtos ou serviços estejam em conformidade com os padrões,
+                                                    as
+                                                    especificações e as expectativas estabelecidas. </li>
+                                                <li>Reduzir ou evitar custos da não qualidade, ou seja, são estratégias
+                                                    e
+                                                    práticas
+                                                    implementadas por uma organização para minimizar os custos
+                                                    associados a
+                                                    produtos
+                                                    ou serviços que não atendem aos requisitos de qualidade. A “não
+                                                    qualidade” pode
+                                                    resultar em retrabalho, devoluções, reclamações de clientes e outros
+                                                    custos
+                                                    adicionais que podem ser evitados ou reduzidos por meio de
+                                                    abordagens
+                                                    proativas.
+                                                    Essas abordagens proativas são estratégias e ações adotadas
+                                                    antecipadamente para
+                                                    prevenir problemas, otimizar processos ou melhorar resultados, em
+                                                    vez de
+                                                    simplesmente reagir a eventos após sua ocorrência. Por exemplo,
+                                                    imagine
+                                                    uma loja
+                                                    de varejo que está antecipando as tendências sazonais de compra de
+                                                    seus
+                                                    clientes. Em vez de simplesmente reagir ao aumento nas vendas
+                                                    durante as
+                                                    festas
+                                                    de final de ano, a loja adotou uma abordagem proativa. </li>
+                                            </ul>
+                                            <p>
+                                                Clique ou toque para visualizar o conteúdo.
+                                            </p>
+                                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                                        data-bs-target="#home" type="button" role="tab"
+                                                        aria-controls="home" aria-selected="true">Ação proativa</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                                        data-bs-target="#profile" type="button" role="tab"
+                                                        aria-controls="profile" aria-selected="false">Resultado esperado
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="myTabContent">
+                                                <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                                    aria-labelledby="home-tab">
+                                                    A loja investe em análises de dados e identifica que os clientes
+                                                    tendem
+                                                    a
+                                                    comprar produtos específicos durante as festas. Antes do início da
+                                                    temporada, a
+                                                    loja antecipa essa demanda e aumenta seu estoque desses produtos.
+                                                    Além
+                                                    disso,
+                                                    ela cria promoções e pacotes especiais para atrair clientes durante
+                                                    esse
+                                                    período. </div>
+                                                <div class="tab-pane fade" id="profile" role="tabpanel"
+                                                    aria-labelledby="profile-tab">
+                                                    Ao agir antecipadamente, a loja está preparada para atender à
+                                                    demanda
+                                                    sazonal,
+                                                    evitando situações de falta de estoque. Isso resulta em maior
+                                                    satisfação
+                                                    do
+                                                    cliente, aumento nas vendas e uma reputação positiva para a loja,
+                                                    que se
+                                                    destaca
+                                                    pela capacidade de prever e atender às necessidades dos clientes.
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="botao hvr-sweep-to-right"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fim modais painel -->
+                        <div class="acessivel only-print">
+                            <h5>Gestão estratégica</h5>
+                            <p>Quando utilizadas em nível estratégico, as técnicas, em geral, auxiliam a:</p>
+                            <ul class="custom-bullet">
+                                <li>Identificar prioridades de melhoria, ou seja, avaliar e selecionar áreas ou
+                                    aspectos que mais necessitam de aprimoramento em um determinado contexto, seja
+                                    em um projeto, seja em uma organização, processo ou em qualquer outra situação.
+                                </li>
+                                <li>Identificar e analisar causas fundamentais, isto é, referem-se ao processo de
+                                    investigar a raiz ou origem de um problema ou desafio específico. Em muitos
+                                    casos, os problemas que aparecem de forma superficial têm causas mais profundas
+                                    que precisam ser compreendidas e tratadas para evitar recorrências, ou seja,
+                                    evitar que ocorram novamente. Esse processo é comumente conhecido como análise
+                                    das causas raízes, análise das causas primárias ou, ainda, análise das causas
+                                    fundamentais.
+                                </li>
+                                <li>Planejar ações de melhoria e avaliar progresso. É o processo sistemático em que
+                                    uma pessoa, equipe ou organização desenvolve estratégias para implementar
+                                    melhorias e, em seguida, avalia regularmente o progresso alcançado.
+                                </li>
+                            </ul>
+                            <p>Que tal pensar em alguns exemplos?</p>
+                            <p>
+                                Imagine um restaurante que está enfrentando reclamações constantes dos clientes sobre a
+                                qualidade
+                                dos pratos servidos. À primeira vista, o problema pode parecer relacionado apenas à
+                                cozinha ou
+                                aos
+                                chefs de culinária. No entanto, ao realizar uma análise da causa raiz, pode-se descobrir
+                                que o
+                                problema real está na cadeia de fornecimento de ingredientes.
+                            </p>
+                            <p>
+                                Ao investigar mais a fundo, pode-se identificar que um dos fornecedores de alimentos do
+                                restaurante
+                                está entregando ingredientes de baixa qualidade ou vencidos. Isso, por sua vez, afeta
+                                diretamente a
+                                qualidade dos pratos preparados na cozinha. Portanto, a causa fundamental do problema
+                                não está
+                                na
+                                equipe de culinária, mas sim na cadeia de fornecimento.
+                            </p>
+                            <p>
+                                Ao abordar a causa raiz, o restaurante pode tomar medidas para melhorar a seleção de
+                                fornecedores,
+                                implementar controles de qualidade mais rigorosos na recepção de ingredientes e garantir
+                                que
+                                todos
+                                os produtos atendam aos padrões necessários. Isso não apenas resolverá as reclamações
+                                dos
+                                clientes,
+                                mas também prevenirá futuros problemas relacionados à qualidade dos pratos.
+                            </p>
+                            <p>
+                                É possível considerar ainda outra situação cotidiana como exemplo. Suponha que você
+                                esteja
+                                enfrentando uma dor de cabeça e decida tomar um analgésico para aliviar o sintoma. Nesse
+                                caso,
+                                você
+                                está lidando com o efeito imediato da dor sem abordar a causa raiz, que pode estar
+                                relacionada à
+                                falta de sono, ao estresse, à desidratação ou a outros fatores. O analgésico proporciona
+                                um
+                                alívio
+                                temporário, porém, para resolver a questão de maneira mais efetiva, seria crucial você
+                                identificar e
+                                tratar a causa raiz. Isso poderia envolver aprimorar seus hábitos de sono, adotar
+                                estratégias
+                                para
+                                gerenciar o estresse ou garantir uma adequada hidratação.
+                            </p>
+                            <p>
+                                Da mesma forma, nas organizações, muitas vezes se atua nos sintomas superficiais
+                                (efeitos) ao
+                                invés
+                                de atuar nas causas raízes.
+                            </p>
+                            <div class="destaque borda-colorida icone importante">
+                                <p>
+                                    É importante sempre buscar eliminar as causas raízes e não apenas os efeitos ou
+                                    sintomas, pois isso permite uma solução de problemas mais duradoura e eficaz.
+                                    Identificar e eliminar as causas fundamentais de um problema é abordar a origem
+                                    dele. Essa abordagem promove uma melhoria sustentável, prevenindo a recorrência
+                                    do
+                                    problema, ou seja, que ele ressurja.
+                                </p>
+                            </div>
+                            <p>
+                                Além disso, ao focar nas causas raízes, é possível promover uma mudança positiva
+                                mais
+                                abrangente e sistêmica. Trabalhar apenas nos efeitos muitas vezes leva a soluções
+                                paliativas, que podem resolver temporariamente a situação, mas não proporcionam uma
+                                transformação profunda.
+                            </p>
+                            <p>
+                                Ao buscar eliminar as causas raízes, as organizações e os indivíduos podem
+                                desenvolver
+                                abordagens mais estratégicas e preventivas. Isso não apenas resolve problemas
+                                imediatos,
+                                mas também cria uma base mais sólida para a prevenção de futuros desafios. Em última
+                                análise, a abordagem das causas raízes é um investimento no longo prazo para
+                                alcançar
+                                resultados mais consistentes e significativos.
+                            </p>
+                            <h5>Gestão das operações</h5>
+                            <p>Quando utilizadas em nível operacional, as técnicas, em geral, auxiliam a:</p>
+                            <ul class="custom-bullet">
+                                <li>Controlar a conformidade da produção (atendimento de requisitos), processo que
+                                    visa garantir que a produção de bens ou serviços atenda aos requisitos
+                                    estabelecidos. Isso envolve a implementação de medidas e práticas para garantir
+                                    que os produtos ou serviços estejam em conformidade com os padrões, as
+                                    especificações e as expectativas estabelecidas. </li>
+                                <li>Reduzir ou evitar custos da não qualidade, ou seja, são estratégias e práticas
+                                    implementadas por uma organização para minimizar os custos associados a produtos
+                                    ou serviços que não atendem aos requisitos de qualidade. A “não qualidade” pode
+                                    resultar em retrabalho, devoluções, reclamações de clientes e outros custos
+                                    adicionais que podem ser evitados ou reduzidos por meio de abordagens proativas.
+                                    Essas abordagens proativas são estratégias e ações adotadas antecipadamente para
+                                    prevenir problemas, otimizar processos ou melhorar resultados, em vez de
+                                    simplesmente reagir a eventos após sua ocorrência. Por exemplo, imagine uma loja
+                                    de varejo que está antecipando as tendências sazonais de compra de seus
+                                    clientes. Em vez de simplesmente reagir ao aumento nas vendas durante as festas
+                                    de final de ano, a loja adotou uma abordagem proativa. </li>
+                            </ul>
+                            <h5>Ação proativa</h5>
+                            <p>
+                                A loja investe em análises de dados e identifica que os clientes tendem a comprar
+                                produtos
+                                específicos durante as festas. Antes do início da temporada, a loja antecipa essa
+                                demanda e
+                                aumenta
+                                seu estoque desses produtos. Além disso, ela cria promoções e pacotes especiais para
+                                atrair
+                                clientes
+                                durante esse período.
+                            </p>
+                            <h5>Resultado esperado</h5>
+                            <p>
+                                Ao agir antecipadamente, a loja está preparada para atender à demanda sazonal, evitando
+                                situações de
+                                falta de estoque. Isso resulta em maior satisfação do cliente, aumento nas vendas e uma
+                                reputação
+                                positiva para a loja, que se destaca pela capacidade de prever e atender às necessidades
+                                dos
+                                clientes.
+                            </p>
+                        </div>
+                        <p class="mt-3">
+                            É importante destacar que o PDCA pode ser utilizado associado a diferentes ferramentas da
+                            qualidade.
+                            Essas ferramentas servem para auxiliar na implementação e no monitoramento das etapas do
+                            ciclo PDCA.
+                        </p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus nemo nam error itaque, explicabo numquam ea optio atque tempora! Aspernatur nostrum necessitatibus mollitia. Quam obcaecati hic quo eius ea voluptates.</p>
+                        <p>As fases do PDCA, conforme apresentadas por Carpinetti (2016) e já mencionadas, compreendem o
+                            seguinte:</p>
+                        <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
+                        <div class="painel-pdca1 no-print" aria-hidden="true">
+                            <button type="button" class="botao check hvr-sweep-to-right d-block mx-auto mb-3 btn-planejamento" data-bs-toggle="modal"
+                                data-bs-target="#modal3"> (P) Planejamento
+                            </button>
+                            <button type="button" class="botao check hvr-sweep-to-right d-block mx-auto mb-3 btn-execucao" data-bs-toggle="modal"
+                                data-bs-target="#modal4"> (D) Execução
+                            </button>
+                            <button type="button" class="botao check hvr-sweep-to-right d-block mx-auto mb-3 btn-verificacao" data-bs-toggle="modal"
+                                data-bs-target="#modal5"> (C) Verificação
+                            </button>
+                            <button type="button" class="botao check hvr-sweep-to-right d-block mx-auto mb-3 btn-acao" data-bs-toggle="modal"
+                                data-bs-target="#modal6"> (A) Ação
+                            </button>
+                        </div>
+
+
+                        <!-- Inicio modais painel pdca -->
+                        <div class="no-print" aria-hidden="true">
+                            <div class="modal fade no-print" id="modal3" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">(P) Planejamento </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Nessa etapa há a identificação do problema, a investigação de causas
+                                                raízes,
+                                                a
+                                                proposição e o planejamento de soluções e a definição de metas. Nesse
+                                                momento também
+                                                podem ser utilizadas diversas ferramentas da qualidade, como, por
+                                                exemplo:
+                                            </p>
+                                            <ul class="custom-bullet">
+                                                <li> <i>Brainstorming</i> – Incentiva a geração de ideias criativas para
+                                                    a
+                                                    análise
+                                                    ou resolução de problemas. </li>
+                                                <li> Matriz GUT – Ajuda a priorizar as soluções com base em critérios
+                                                    como
+                                                    gravidade, urgência e tendência. </li>
+                                                <li>Definição de metas SMART – Auxilia a definir metas específicas,
+                                                    mensuráveis,
+                                                    alcançáveis, relevantes e com prazo definido (SMART) para a melhoria
+                                                    do
+                                                    processo
+                                                </li>
+                                                <li>Diagrama de causa e efeito – Ajuda a identificar e visualizar as
+                                                    possíveis
+                                                    causas de um problema, categorizando-as em diferentes grupos. </li>
+                                                <li>Diagrama de Pareto – Auxilia na identificação e priorização dos
+                                                    problemas mais
+                                                    significativos, concentrando-se nos itens que causam a maior parte
+                                                    dos
+                                                    problemas. </li>
+                                                <li>5 porquês – É uma técnica simples de questionar repetidamente "por
+                                                    que"
+                                                    um
+                                                    problema ocorre para chegar à causa raiz. </li>
+                                                <li>Diagrama de dispersão – Permite identificar se há uma relação entre
+                                                    duas
+                                                    variáveis, ajudando a entender melhor a causa do problema. </li>
+                                                <li>Histograma – Representa graficamente a distribuição dos dados,
+                                                    ajudando
+                                                    na
+                                                    compreensão da natureza do problema. </li>
+                                                <li>Fluxograma – Mapeia visualmente os passos de um processo, destacando
+                                                    oportunidades de melhoria e áreas problemáticas. </li>
+                                                <li>Gráficos de controle – Monitoram a variação do processo ao longo do
+                                                    tempo,
+                                                    facilitando a identificação de padrões e causas especiais. </li>
+                                                <li>Matriz 5W2H – Define claramente quais ações serão realizadas (o que,
+                                                    quando,
+                                                    onde, quem, por que, como e quanto). </li>
+                                            </ul>
+                                            <div class="modal-footer">
+                                                <button type="button" class="botao hvr-sweep-to-right"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade no-print" id="modal4" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">(D) Execução</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Fase da preparação (incluindo treinamento) e execução das tarefas de
+                                                acordo
+                                                com o
+                                                planejado. Nessa etapa é possível realizar reuniões participativas e
+                                                utilizar
+                                                ferramentas da qualidade, como 5W2H e <i>checklist</i>, que é uma lista
+                                                de
+                                                tarefas
+                                                ou itens
+                                                que precisam ser verificados, marcados ou concluídos. Essa ferramenta é
+                                                utilizada
+                                                para garantir que todas as etapas necessárias sejam seguidas e que
+                                                nenhum
+                                                detalhe
+                                                importante seja esquecido durante a execução de uma atividade ou de um
+                                                processo.
+                                            </p>
+                                            <div class="modal-footer">
+                                                <button type="button" class="botao hvr-sweep-to-right"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade no-print" id="modal5" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">(C) Verificação</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                É a coleta de dados e a comparação do resultado alcançado com a meta
+                                                planejada.
+                                                Nessa etapa podem ser utilizados alguns instrumentos para garantir uma
+                                                verificação
+                                                abrangente e eficaz. Entre esses instrumentos estão os seguintes:
+                                            </p>
+                                            <ul class="custom-bullet">
+                                                <li>Folha de verificação – É uma ferramenta visual simples e eficaz
+                                                    utilizada para
+                                                    coletar dados sistematicamente. Ela é projetada para ajudar na
+                                                    organização e na
+                                                    coleta de informações sobre a ocorrência de eventos ou a execução de
+                                                    tarefas.
+                                                </li>
+                                                <li>Gráficos de controle – Monitora visualmente a estabilidade do
+                                                    processo
+                                                    ao longo
+                                                    do tempo, identificando padrões e variações que possam impactar os
+                                                    resultados.
+                                                </li>
+                                                <li>Histograma – Representa a distribuição dos dados de maneira gráfica,
+                                                    facilitando
+                                                    a identificação de tendências e a avaliação da conformidade com os
+                                                    padrões
+                                                    esperados. </li>
+                                                <li>Comparação de desempenho – Compara o desempenho atual com dados
+                                                    históricos para
+                                                    determinar melhorias ou retrocessos ao longo do tempo. </li>
+                                                <li>Entrevistas estruturadas – Conduz entrevistas estruturadas com
+                                                    membros
+                                                    da equipe
+                                                    envolvidos no processo para obter retornos sobre a eficácia das
+                                                    mudanças
+                                                    implementadas. </li>
+                                                <li>Indicadores – Monitora indicadores relacionados ao processo para
+                                                    avaliar
+                                                    continuamente o desempenho em relação aos objetivos. </li>
+                                            </ul>
+                                            <div class="modal-footer">
+                                                <button type="button" class="botao hvr-sweep-to-right"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade no-print" id="modal6" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">(A) Ação</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                É a atuação junto aos desvios observados a fim de corrigi-los. Caso
+                                                necessário,
+                                                deve-se replanejar as ações de melhoria e reiniciar o PDCA.
+                                            </p>
+                                            <div class="modal-footer">
+                                                <button type="button" class="botao hvr-sweep-to-right"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fim modais painel pdca -->
+                        <!-- Inicio acessivel painel pdca -->
+                        <div class="acessivel only-print"></div>
+                        <!-- Fim acessivel painel pdca -->
+
+                        <figure class="my-5">
+                            <div class="figure-img mx-auto mb-4">
+                                <img class="img-fluid d-block mx-auto" src="./img/grafico3.png">
+                            </div>
+                            <figcaption class="figure-caption text-center">Ciclo PDCA com detalhamento
+                                <br>
+                                Fonte: Adaptado de Carpinetti (2016, p. 40)
+                            </figcaption>
+                        </figure>
+                        <p class="acessivel no-print">
+                            Círculo dividido em quatro partes, com as etapas P, D, C e A. A etapa P está dividida em
+                            duas
+                            partes, que são “definir as metas” e “métodos para atingir as metas”. A etapa D também está
+                            dividida
+                            em duas partes, que são “educar e treinar” e “executar a tarefa”. A etapa C contém o texto
+                            “verificar os resultados da tarefa executada” e a etapa A contém “agir corretivamente”.
+                        </p>
+                        <p>Confira a seguir exemplos de aplicação prática do PDCA:</p>
+                        <p class="no-print" aria-hidden="true">
+                            Clique ou toque em cada elemento para visualizar o conteúdo.
+                        </p>
+                        <div class="painel-praticas-pdca no-print" aria-hidden="true">
+                            <div class="row justify-content-md-center no-print">
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                    <button type="button" class="btn-viagem check d-block mx-auto"
+                                        data-bs-toggle="modal" data-bs-target="#modal7">
+                                    </button>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                    <button type="button" class="btn-consultorio check d-block mx-auto"
+                                        data-bs-toggle="modal" data-bs-target="#modal8">
+                                    </button>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                    <button type="button" class="btn-loja check d-block mx-auto" data-bs-toggle="modal"
+                                        data-bs-target="#modal9">
+                                    </button>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                    <button type="button" class="btn-fabrica check d-block mx-auto"
+                                        data-bs-toggle="modal" data-bs-target="#modal10">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Inicio modais painel-praticas-pdca -->
+                        <div class="no-print" aria-hidden="true">
+                            <div class="modal fade no-print" id="modal7" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-80">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Viagem</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Imagine uma situação cotidiana, como realizar uma viagem. Se você
+                                                simplesmente
+                                                sair
+                                                em direção ao destino sem um planejamento adequado, haverá uma chance
+                                                significativa
+                                                de enfrentar contratempos, esquecimentos ou até mesmo não aproveitar
+                                                plenamente
+                                                as
+                                                oportunidades que o destino oferece. É como viajar sem um mapa ou
+                                                itinerário
+                                                claro.
+                                            </p>
+                                            <p>
+                                                Então, você pode utilizar o ciclo PDCA para garantir uma viagem mais
+                                                organizada
+                                                e
+                                                eficiente. Que tal desmembrar cada etapa do ciclo no contexto de uma
+                                                viagem?
+                                            </p>
+                                            <p class="no-print">Clique ou toque para visualizar o conteúdo.</p>
+                                            <div class="print" aria-hidden="true">
+                                                <div class="accordion" id="accordionExample">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingOne">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                                aria-expanded="false" aria-controls="collapseOne">
+                                                                Planejar (P)
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                                            aria-labelledby="headingOne"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <p>Antes de iniciar a viagem, é crucial planejar cada
+                                                                    detalhe.
+                                                                    Definir o destino, as datas de partida e retorno, os
+                                                                    meios
+                                                                    de transporte, as acomodações, as atividades
+                                                                    planejadas
+                                                                    e um
+                                                                    orçamento é um passo essencial. Além disso, pode-se
+                                                                    estabelecer metas claras para a viagem, como
+                                                                    explorar
+                                                                    determinados pontos turísticos, experimentar a
+                                                                    culinária
+                                                                    local ou simplesmente relaxar.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingTwo">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                                Executar (D)
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                                            aria-labelledby="headingTwo"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <p>Durante a viagem, coloque o plano em prática. Siga as
+                                                                    reservas feitas, visite os locais planejados e
+                                                                    participe
+                                                                    das
+                                                                    atividades programadas. Este é o momento de executar
+                                                                    o
+                                                                    que
+                                                                    foi cuidadosamente planejado. Durante esta fase,
+                                                                    mantenha-se
+                                                                    aberto para novas experiências e oportunidades que
+                                                                    possam
+                                                                    surgir, mas sempre seguindo o plano inicial.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingThree">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapseThree" aria-expanded="false"
+                                                                aria-controls="collapseThree">
+                                                                Verificar (C)
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                                            aria-labelledby="headingThree"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <p>Ao longo da viagem, avalie constantemente o progresso
+                                                                    do
+                                                                    plano. Verifique se as metas estão sendo alcançadas,
+                                                                    se
+                                                                    as
+                                                                    despesas estão dentro do orçamento e se você está
+                                                                    aproveitando as experiências conforme o esperado.
+                                                                    Essa
+                                                                    etapa
+                                                                    envolve uma avaliação constante do desempenho em
+                                                                    relação
+                                                                    aos
+                                                                    objetivos definidos no planejamento.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="heading4">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapse4"
+                                                                aria-expanded="false" aria-controls="collapse4">
+                                                                Ação (A)
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapse4" class="accordion-collapse collapse"
+                                                            aria-labelledby="heading4"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <p>Com base na avaliação, tome ações corretivas e de
+                                                                    melhoria.
+                                                                    Se perceber que está gastando mais do que o
+                                                                    previsto,
+                                                                    pode
+                                                                    ajustar o orçamento. Se descobrir atividades
+                                                                    interessantes
+                                                                    não planejadas, você pode incorporá-las ao
+                                                                    itinerário.
+                                                                    Esta
+                                                                    etapa é crucial para adaptar-se a circunstâncias
+                                                                    imprevistas
+                                                                    e melhorar continuamente sua experiência da viagem.
+                                                                </p>
+                                                                <p>
+                                                                    Esse ciclo PDCA repete-se ao longo da viagem,
+                                                                    permitindo
+                                                                    que
+                                                                    você se adapte continuamente às circunstâncias e
+                                                                    melhore
+                                                                    sua
+                                                                    experiência com base no aprendizado contínuo durante
+                                                                    a
+                                                                    jornada.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="botao hvr-sweep-to-right"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade print" id="modal8" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-80">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Consultório (serviços) </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Imagine agora um consultório que enfrenta dificuldades no processo de
+                                                agendamento,
+                                                que atualmente é realizado exclusivamente pelo telefone. A atendente
+                                                está
+                                                frequentemente sobrecarregada e há muitas reclamações de clientes, que
+                                                acabam
+                                                enfrentando uma longa fila de espera. A ausência de um método eficiente
+                                                de
+                                                marcação
+                                                de consultas e o tempo prolongado de espera impactam negativamente a
+                                                experiência
+                                                dos
+                                                pacientes e a eficiência operacional do consultório.
+                                            </p>
+                                            <p>
+                                                Assim, é possível utilizar o ciclo PDCA para resolver esse problema.
+                                                Confira
+                                                o
+                                                desmembramento de cada etapa do ciclo no contexto dessa problemática:
+                                            </p>
+                                            <p class="no-print">Clique ou toque para visualizar o conteúdo.</p>
+                                            <div class="print" aria-hidden="true">
+                                                <div class="accordion" id="accordionExample2">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="heading5">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapse5"
+                                                                aria-expanded="false" aria-controls="collapse5">
+                                                                Planejar (P)
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapse5" class="accordion-collapse collapse"
+                                                            aria-labelledby="heading5"
+                                                            data-bs-parent="#accordionExample2">
+                                                            <div class="accordion-body">
+                                                                <p>Antes de introduzir o sistema de agendamento
+                                                                    <i>on-line</i>,
+                                                                    o
+                                                                    consultório médico realiza um planejamento
+                                                                    detalhado,
+                                                                    definindo metas, como redução nas filas de espera,
+                                                                    facilidade de agendamento e aumento na satisfação
+                                                                    dos
+                                                                    pacientes. Além disso, o consultório também
+                                                                    estabelece
+                                                                    métricas de avaliação, como tempo médio de espera e
+                                                                    avaliação dos pacientes.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="heading6">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapse6"
+                                                                aria-expanded="false" aria-controls="collapse6">
+                                                                Executar (D)
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapse6" class="accordion-collapse collapse"
+                                                            aria-labelledby="heading6"
+                                                            data-bs-parent="#accordionExample2">
+                                                            <div class="accordion-body">
+                                                                <p>O consultório implementa o sistema de agendamento
+                                                                    <i>on-line</i>
+                                                                    conforme o planejado. Os funcionários são treinados
+                                                                    para
+                                                                    operar o novo sistema e os pacientes são informados
+                                                                    das
+                                                                    mudanças. Durante essa fase, o consultório coleta
+                                                                    dados
+                                                                    sobre o desempenho do sistema, como tempo de espera
+                                                                    real
+                                                                    e
+                                                                    <i>feedback</i>
+                                                                    dos pacientes.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="heading7">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapse7"
+                                                                aria-expanded="false" aria-controls="collapse7">
+                                                                Verificar (C)
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapse7" class="accordion-collapse collapse"
+                                                            aria-labelledby="heading7"
+                                                            data-bs-parent="#accordionExample2">
+                                                            <div class="accordion-body">
+                                                                <p>Após a implementação, o consultório verifica se as
+                                                                    metas
+                                                                    estabelecidas foram atingidas. Ele analisa os dados
+                                                                    coletados para avaliar a eficácia do sistema, por
+                                                                    exemplo,
+                                                                    verifica se houve redução nas filas de espera, se os
+                                                                    pacientes estão usando o sistema de agendamento
+                                                                    <i>on-line</i> de
+                                                                    maneira eficaz e se houve melhoria na satisfação
+                                                                    geral
+                                                                    dos
+                                                                    pacientes.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="heading8">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapse8"
+                                                                aria-expanded="false" aria-controls="collapse8">
+                                                                Ação (A)
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapse8" class="accordion-collapse collapse"
+                                                            aria-labelledby="heading8"
+                                                            data-bs-parent="#accordionExample2">
+                                                            <div class="accordion-body">
+                                                                <p>
+                                                                    Com base na verificação, o consultório toma medidas
+                                                                    corretivas e
+                                                                    de melhoria. Se perceber que alguns pacientes
+                                                                    preferem
+                                                                    lembretes
+                                                                    automáticos por mensagem de texto enquanto outros
+                                                                    preferem
+                                                                    <i>e-mails</i>, o consultório ajusta o sistema para
+                                                                    oferecer
+                                                                    opções
+                                                                    personalizadas. Ele identifica a necessidade de mais
+                                                                    treinamento
+                                                                    para a equipe em relação às consultas <i>on-line</i>
+                                                                    e
+                                                                    implementa as
+                                                                    melhorias necessárias.
+                                                                </p>
+                                                                <p>
+                                                                    Esse ciclo PDCA continua de forma iterativa,
+                                                                    permitindo
+                                                                    ao
+                                                                    consultório médico ajustar constantemente suas
+                                                                    práticas
+                                                                    e
+                                                                    procedimentos para atender melhor às necessidades
+                                                                    dos
+                                                                    pacientes
+                                                                    e otimizar a eficiência do sistema de agendamento
+                                                                    <i>on-line</i>.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="botao hvr-sweep-to-right"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade print" id="modal9" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-80">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Loja de roupas (comércio)
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Agora imagine uma loja de roupas que enfrenta desafios relacionados ao
+                                                gerenciamento
+                                                de estoque. Muitas vezes, a loja está com problemas de excesso de
+                                                estoque de
+                                                determinados itens, enquanto outros produtos essenciais frequentemente
+                                                acabam
+                                                faltando. Isso resulta em perdas financeiras e na insatisfação dos
+                                                clientes.
+                                                Para
+                                                resolver esse problema, a loja decide aplicar o ciclo PDCA da seguinte
+                                                maneira:
+                                            </p>
+                                            <p class="no-print">
+                                                Clique ou toque para visualizar o conteúdo.
+                                            </p>
+                                            <div class="print" aria-hidden="true">
+                                                <div class="accordion" id="accordionExample3">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="heading9">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapse9"
+                                                                aria-expanded="false" aria-controls="collapse9">
+                                                                Planejar (P)
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapse9" class="accordion-collapse collapse"
+                                                            aria-labelledby="heading9"
+                                                            data-bs-parent="#accordionExample3">
+                                                            <div class="accordion-body">
+                                                                <p>Antes de realizar qualquer mudança, a loja realiza
+                                                                    uma
+                                                                    análise detalhada do histórico de vendas,
+                                                                    identificando
+                                                                    padrões e sazonalidades. Ela estabelece metas para
+                                                                    otimizar
+                                                                    o estoque, reduzindo excessos e evitando escassez de
+                                                                    produtos populares. Também define métricas, como
+                                                                    giro de
+                                                                    estoque e taxa de satisfação do cliente.
+                                                                </p>
+                                                                <div class="grafismo">
+                                                                    <div
+                                                                        class="destaque borda-colorida icone saibamais">
+                                                                        <p>
+                                                                            A sazonalidade refere-se a padrões que se
+                                                                            repetem ou
+                                                                            variações
+                                                                            que ocorrem regularmente em um determinado
+                                                                            período de
+                                                                            tempo,
+                                                                            geralmente associados às estações do ano,
+                                                                            feriados ou
+                                                                            outros
+                                                                            eventos cíclicos. Esses padrões podem afetar
+                                                                            vários
+                                                                            aspectos,
+                                                                            como o comportamento do consumidor, a
+                                                                            demanda
+                                                                            por
+                                                                            produtos ou
+                                                                            serviços, as condições climáticas, entre
+                                                                            outros.
+                                                                        </p>
+                                                                        <p>
+                                                                            Por exemplo, muitos produtos têm demanda
+                                                                            sazonal, como
+                                                                            roupas de
+                                                                            inverno, que são mais procuradas durante os
+                                                                            meses mais
+                                                                            frios, ou
+                                                                            protetores solares, que são mais demandados
+                                                                            durante o
+                                                                            verão.
+                                                                            Além disso, alguns setores, como o varejo,
+                                                                            experimentam
+                                                                            picos de
+                                                                            vendas durante feriados específicos, como o
+                                                                            Natal.
+                                                                        </p>
+                                                                        <p>
+                                                                            A sazonalidade é uma consideração importante
+                                                                            para as
+                                                                            empresas,
+                                                                            pois influencia as estratégias de
+                                                                            <i>marketing</i>,
+                                                                            produção,
+                                                                            distribuição e estoque. As empresas precisam
+                                                                            antecipar-se e
+                                                                            adaptar-se a essas variações sazonais para
+                                                                            otimizar suas
+                                                                            operações e atender eficientemente à demanda
+                                                                            flutuante.
+                                                                        </p>
+                                                                        <p>
+                                                                            Analisar e compreender os padrões de
+                                                                            sazonalidade é
+                                                                            essencial
+                                                                            para o planejamento estratégico, ajudando as
+                                                                            organizações a
+                                                                            ajustarem suas estratégias sazonalmente para
+                                                                            aproveitar
+                                                                            oportunidades e minimizar desafios
+                                                                            associados a
+                                                                            variações
+                                                                            previsíveis ao longo do tempo.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="heading10">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapse10"
+                                                                aria-expanded="false" aria-controls="collapse10">
+                                                                Executar (D)
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapse10" class="accordion-collapse collapse"
+                                                            aria-labelledby="heading10"
+                                                            data-bs-parent="#accordionExample3">
+                                                            <div class="accordion-body">
+                                                                <p>Com base no planejamento, a loja ajusta seu processo
+                                                                    de
+                                                                    reabastecimento e implementa um sistema de
+                                                                    monitoramento
+                                                                    em
+                                                                    tempo real do estoque. Os funcionários são treinados
+                                                                    para
+                                                                    utilizar eficientemente o novo sistema. Durante essa
+                                                                    fase, a
+                                                                    loja coleta dados sobre o giro de estoque, a
+                                                                    precisão
+                                                                    das
+                                                                    previsões de vendas e a disponibilidade de
+                                                                    produtos-chave.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="heading11">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapse11"
+                                                                aria-expanded="false" aria-controls="collapse11">
+                                                                Verificar (C)
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapse11" class="accordion-collapse collapse"
+                                                            aria-labelledby="heading11"
+                                                            data-bs-parent="#accordionExample3">
+                                                            <div class="accordion-body">
+                                                                <p>Após a implementação, a loja verifica se as metas de
+                                                                    otimização de estoque foram alcançadas; analisa os
+                                                                    dados
+                                                                    coletados para avaliar se houve uma redução nos
+                                                                    casos de
+                                                                    excesso e escassez de estoque e examina a satisfação
+                                                                    do
+                                                                    cliente em relação à disponibilidade de produtos.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="heading12">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapse12"
+                                                                aria-expanded="false" aria-controls="collapse12">
+                                                                Ação (A)
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapse12" class="accordion-collapse collapse"
+                                                            aria-labelledby="heading12"
+                                                            data-bs-parent="#accordionExample3">
+                                                            <div class="accordion-body">
+                                                                <p>
+                                                                    Com base na verificação, a loja toma ações
+                                                                    corretivas e
+                                                                    de
+                                                                    melhoria. Se identificar que determinados produtos
+                                                                    têm
+                                                                    uma
+                                                                    demanda sazonal mais forte do que o previsto, ajusta
+                                                                    as
+                                                                    previsões de estoque. Se perceber que o sistema de
+                                                                    monitoramento
+                                                                    precisa de aprimoramentos, implementa as melhorias
+                                                                    necessárias.
+                                                                    Esse ciclo PDCA continua permitindo à loja ajustar
+                                                                    constantemente suas práticas para manter um estoque
+                                                                    eficiente e
+                                                                    atender melhor às necessidades dos clientes.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="botao hvr-sweep-to-right"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade print" id="modal10" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-80">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Fábrica automotiva
+                                                (indústria)
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Considere uma fábrica que lida com a produção de peças para a indústria
+                                                automotiva e
+                                                enfrenta problemas de qualidade em algumas de suas linhas de produção.
+                                                Algumas
+                                                peças
+                                                não atendem aos padrões de qualidade, resultando em retrabalho e
+                                                desperdício
+                                                de
+                                                recursos. Para resolver esse problema, a fábrica decide aplicar o ciclo
+                                                PDCA
+                                                da
+                                                seguinte forma:
+                                            </p>
+                                            <p class="no-print">Clique ou toque para visualizar o conteúdo.</p>
+                                            <div class="print" aria-hidden="true">
+                                                <div class="accordion" id="accordionExample4">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="heading13">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapse13"
+                                                                aria-expanded="false" aria-controls="collapse13">
+                                                                Planejar (P)
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapse13" class="accordion-collapse collapse"
+                                                            aria-labelledby="heading13"
+                                                            data-bs-parent="#accordionExample4">
+                                                            <div class="accordion-body">
+                                                                <p>
+                                                                    Antes de implementar mudanças, a fábrica realiza uma
+                                                                    análise
+                                                                    das
+                                                                    etapas de produção identificando os pontos críticos
+                                                                    que
+                                                                    impactam
+                                                                    a qualidade das peças. A fábrica também estabelece
+                                                                    metas
+                                                                    para
+                                                                    reduzir o índice de defeitos, melhorar a eficiência
+                                                                    da
+                                                                    produção
+                                                                    e minimizar o retrabalho. Além disso, define
+                                                                    métricas,
+                                                                    como
+                                                                    taxa
+                                                                    de retrabalho e tempo médio de produção.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="heading14">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapse14"
+                                                                aria-expanded="false" aria-controls="collapse14">
+                                                                Executar (D)
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapse14" class="accordion-collapse collapse"
+                                                            aria-labelledby="heading14"
+                                                            data-bs-parent="#accordionExample4">
+                                                            <div class="accordion-body">
+                                                                <p>Com base no planejamento, a fábrica introduz novos
+                                                                    procedimentos de controle de qualidade nas linhas de
+                                                                    produção identificadas. Os operadores são treinados
+                                                                    nas
+                                                                    novas práticas e sistemas de monitoramento são
+                                                                    implementados
+                                                                    para avaliar a qualidade das peças em tempo real.
+                                                                    Durante
+                                                                    essa fase, a fábrica coleta dados sobre o número de
+                                                                    peças
+                                                                    defeituosas, o tempo de produção e a eficácia das
+                                                                    novas
+                                                                    práticas.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="heading15">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapse15"
+                                                                aria-expanded="false" aria-controls="collapse11">
+                                                                Verificar (C)
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapse15" class="accordion-collapse collapse"
+                                                            aria-labelledby="heading15"
+                                                            data-bs-parent="#accordionExample4">
+                                                            <div class="accordion-body">
+                                                                <p>Após a implementação, a fábrica verifica se as metas
+                                                                    de
+                                                                    melhoria da qualidade foram atingidas e analisa os
+                                                                    dados
+                                                                    coletados para avaliar se houve redução nos
+                                                                    defeitos, se
+                                                                    o
+                                                                    retrabalho diminuiu e se a eficiência da produção
+                                                                    aumentou.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="heading16">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapse16"
+                                                                aria-expanded="false" aria-controls="collapse16">
+                                                                Ação (A)
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapse16" class="accordion-collapse collapse"
+                                                            aria-labelledby="heading16"
+                                                            data-bs-parent="#accordionExample4">
+                                                            <div class="accordion-body">
+                                                                <p>
+                                                                    Com base na verificação, a fábrica toma ações
+                                                                    corretivas
+                                                                    e
+                                                                    de melhoria. Se identificar que determinadas
+                                                                    máquinas
+                                                                    estão
+                                                                    consistentemente produzindo peças defeituosas,
+                                                                    realiza
+                                                                    manutenção preventiva. Se perceber que certos
+                                                                    operadores
+                                                                    precisam de treinamento adicional, implementa as
+                                                                    melhorias
+                                                                    necessárias. O ciclo PDCA continua, permitindo à
+                                                                    fábrica
+                                                                    adaptar continuamente seus processos para garantir a
+                                                                    qualidade das peças e a eficiência da produção.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="botao hvr-sweep-to-right"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fim modais painel-praticas-pdca -->
+                        <!-- Inicio acessivel painel-praticas-pdca -->
+                        <div class="acessivel only-print"></div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus nemo nam error itaque, explicabo numquam ea optio atque tempora! Aspernatur nostrum necessitatibus mollitia. Quam obcaecati hic quo eius ea voluptates.</p>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/sD-DQaoAodg?si=mbyvgUo7f-kXH9cV"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <p class="mt-4 paragrafo-padding">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio, fuga deleniti eveniet perspiciatis quos perferendis, quod modi odio natus eos nisi non enim id amet ducimus aspernatur sequi corporis.
+                        </p>
+                    </div>
+                </div>
+                <div class="img-div">
+                    <img src="./img/div.png" class="img-fluid no-print">
+                </div>
+                <div class="bloco-3">
+                    <div class="container">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt, eveniet nisi facilis molestias aliquam sint consequatur iusto illo minima numquam magni dolore, officia quod voluptatum amet possimus. Officiis!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt, eveniet nisi facilis molestias aliquam sint consequatur iusto illo minima numquam magni dolore, officia quod voluptatum amet possimus. Officiis!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt, eveniet nisi facilis molestias aliquam sint consequatur iusto illo minima numquam magni dolore, officia quod voluptatum amet possimus. Officiis!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt, eveniet nisi facilis molestias aliquam sint consequatur iusto illo minima numquam magni dolore, officia quod voluptatum amet possimus. Officiis!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt, eveniet nisi facilis molestias aliquam sint consequatur iusto illo minima numquam magni dolore, officia quod voluptatum amet possimus. Officiis!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt, eveniet nisi facilis molestias aliquam sint consequatur iusto illo minima numquam magni dolore, officia quod voluptatum amet possimus. Officiis!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt, eveniet nisi facilis molestias aliquam sint consequatur iusto illo minima numquam magni dolore, officia quod voluptatum amet possimus. Officiis!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt, eveniet nisi facilis molestias aliquam sint consequatur iusto illo minima numquam magni dolore, officia quod voluptatum amet possimus. Officiis!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt, eveniet nisi facilis molestias aliquam sint consequatur iusto illo minima numquam magni dolore, officia quod voluptatum amet possimus. Officiis!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt, eveniet nisi facilis molestias aliquam sint consequatur iusto illo minima numquam magni dolore, officia quod voluptatum amet possimus. Officiis!</p>
+                        <p class="paragrafo-padding2">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus nemo nam error itaque, explicabo numquam ea optio atque tempora! Aspernatur nostrum necessitatibus mollitia. Quam obcaecati hic quo eius ea voluptates.</p>
+                        </p>
+                        <a href=" #" class="voltar-topo no-print" aria-hidden="true"><img
+                                src="../assets/images/bt_topo.svg"></a>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Paginação-->
+        <!--         <footer class="text-center no-print d-flex justify-content-center mx-auto">
+            <ul class="pagination">
+
+            </ul>
+        </footer> -->
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--Jquery-->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <!--Áudio customizado-->
+    <script src="../assets/js/audio-player.js"></script>
+    <!--Splide - slideshow-->
+    <script src="../assets/js/splide.min.js"></script>
+    <!--Prog'n'roll - barra de progresso conforme rola a página-->
+    <script src="../assets/js/prognroll.min.js"></script>
+    <!--Scripts gerais-->
+    <script src="../assets/js/geral.js"></script>
+
+    <script>
+        $(function () {
+            $("body").prognroll();
+        });
+
+        $(".btn-tema_pagina").click(function () {
+            console.log($(".btn-tema_pagina"))
+            if ($("body").hasClass('bg-claro')) {
+                console.log("sim");
+                $("body").removeClass('bg-claro')
+                $("body").addClass("bg-escuro");
+            } else if ($("body").hasClass('bg-escuro')) {
+                console.log("não");
+                $("body").removeClass('bg-escuro')
+                $("body").addClass("bg-claro")
+            }
+        });
+    </script>
+
+    <!-- Handtalk -->
+    <script>
+        var scriptElem = document.createElement("script");
+        scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset = "UTF-8",
+            scriptElem.onload = function () {
+                window.ht = new HT({
+                    token: "bf5b7efb148a829a126a0e0c9fd533bf",
+                    align: "top",
+                    videoEnabled: true,
+                    ytEmbedReplace: true,
+                    mobileConfig: {
+                        align: "right",
+                        actionsAlign: "top",
+                        customButtonStyle: {
+                            borderRadius: "6px",
+                            size: "38px",
+                            horizontalMargin: "13px",
+                            bottomMargin: "140px",
+                            rightMargin: "40px"
+                        }
+                    }
+                });
+                $('.ht-skip').attr("aria-hidden", "true")
+            },
+            document.body.appendChild(scriptElem);
+
+    </script>
+</body>
+
+</html>

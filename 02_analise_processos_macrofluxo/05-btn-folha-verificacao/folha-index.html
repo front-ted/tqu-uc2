@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Inserir o tíutlo do conhecimento na tag title -->
+    <title>Ferramentas da qualidade: conceito, características e aplicação de <i>brainstorming</i>; fluxograma; matriz
+        GUT (gravidade, urgência e tendência); diagrama de causa e efeito ou espinha de peixe; folha de
+        verificação; diagrama de Pareto; histograma; diagrama de dispersão; cartas de controle; 5W2H;
+        técnica dos 5 porquês</title>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../../assets/css/hover-min.css" />
+    <!--Splide - slideshow-->
+    <link rel="stylesheet" href="../../assets/css/splide.min.css">
+    <!-- Print -->
+    <link rel="stylesheet" href="../../assets/css/print.css">
+    <!-- Preloader -->
+    <link rel="stylesheet" href="../../assets/css/preloader.css">
+    <!-- Áudio customizado -->
+    <link rel="stylesheet" href="../../assets/css/player.css">
+    <!-- Estilos do template -->
+    <link rel="stylesheet" href="../../assets/css/cores.css">
+    <link rel="stylesheet" href="../../assets/css/template.css">
+    <link rel="stylesheet" href="./custom.css">
+</head>
+
+<body class="bg-claro" aria-hidden="true">
+    <!-- Preloader OBRIGATÓRIO -->
+    <div class="preloader">
+        <div class="anim"></div>
+        <p>Aguarde enquanto o conteúdo é carregado.</p>
+    </div>
+    <!-- Marca d'água OBRIGATÓRIA -->
+    <img src="../../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+    <header id="topo">
+        <div class="topo-logo">
+            <div class="container">
+                <h1 id="nome-curso" class="only-print">Técnico em Qualidade</h1>
+            </div>
+            <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"></div>
+
+        </div>
+    </header>
+
+    <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->
+    <section id="booklet">
+        <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+        <div class="layer-preta no-print"></div>
+        <section class="paginas">
+            <div class="pagina no-print">
+                <div class="container">
+                    <h2>Folha de verificação</h2>
+                    <h4>O que é</h4>
+                    <p>
+                        A <strong>folha de verificação</strong> é uma ferramenta usada para tabular dados de uma
+                        observação e
+                        identiﬁcar a frequência das ocorrências selecionadas em um período (tempo) determinado.
+                        É
+                        uma ferramenta bastante utilizada na gestão da qualidade, de uso simples e de fácil
+                        aplicação e entendimento.
+                    </p>
+                    <h4> Quando usar</h4>
+                    <p>
+                        O uso da folha de verificação é bem amplo. Ela pode ser aplicada para analisar o
+                        andamento
+                        de atividades – como a coleta de dados para acompanhamento de processos –, comparar se
+                        processos estão seguindo parâmetros definidos previamente e coletar dados que comprovem
+                        as
+                        causas do defeito de peças, por exemplo. Utiliza-se essa ferramenta quando se deseja
+                        obter
+                        informações para auxiliar as melhores decisões gerenciais, pois a base dela é realizada
+                        pela
+                        coleta de dados, que são processados e analisados, fornecendo assim informações
+                        consistentes
+                        e reais para a gestão da organização.
+                    </p>
+                    <h4>Como aplicar</h4>
+                    <p>
+                        A elaboração da folha de verificação é possível com a criação de um formulário, no qual,
+                        por
+                        meio de coletas de dados, as informações são compiladas. Essa compilação gera um
+                        histórico
+                        de informações, que permite a verificação de comportamentos e tendências, possibilitando
+                        a
+                        implementação de ações corretivas para a melhoria dos processos. Não existe um modelo
+                        padrão
+                        para a elaboração do formulário.
+                    </p>
+                    <p>Você pode elaborar a folha de verificação com os seguintes passos: </p>
+                    <figure class="my-5">
+                        <img src="./img/modal5_lista.png"
+                            class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block"
+                            alt="Imagem" style="max-width: 100%; height: auto;">
+                        <a href="./img/modal5_lista.png" target="_blank"
+                            class="img-zoom2 d-sm-block d-md-none d-lg-none no-print">
+                            <img src="./img/modal5_lista3_mobile.png"
+                                class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none img-lista1"
+                                alt="Imagem" style="max-width: 100%; height: auto;">
+                        </a>
+                    </figure>
+                    <p>
+                        A tabela a seguir apresenta um exemplo de folha de verificação, no qual se tem um
+                        acompanhamento realizado para levantar dados a respeito da quantidade de reclamações
+                        feitas
+                        por clientes de um restaurante ao longo de uma semana.
+                    </p>
+                    <div class="table-responsive">
+                        <table class="text-left align-middle tabela-parametro">
+                            <thead>
+                                <tr>
+                                    <th colspan="9" class="table-header"> Restaurante Vida e Sabor </th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th colspan="9" class="table-header">Objetivo: coletar reclamações de clientes
+                                        no término das refeições</th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th colspan="9" class="table-header">Motivo: aumentar a satisfação </th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th colspan="9" class="table-header">Responsável pela coleta de dados: João da
+                                        Silva </th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th colspan="9" class="table-header">Datas da coleta: semana 3 de 2023 </th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th colspan="9" class="table-header">Total de reclamações: 50 </th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <th class="text-center table-header borda-esquerda" rowspan="3">Tipos de
+                                    reclamações</th>
+                            </tr>
+                            <tr>
+                                <th colspan="9" class="text-center table-header">Ocorrências </th>
+                            </tr>
+                            <tr>
+                                <td class="table-header">Dia 1</td>
+                                <td class="table-header">Dia 2</td>
+                                <td class="table-header">Dia 3</td>
+                                <td class="table-header">Dia 4</td>
+                                <td class="table-header">Dia 5</td>
+                                <td class="table-header">Dia 6</td>
+                                <td class="table-header">Dia 7</td>
+                                <td class="table-header">Total</td>
+                            </tr>
+                            <tr>
+                                <td class="table-border">Demora no atendimento </td>
+                                <td class="table-border">4</td>
+                                <td class="table-border">3</td>
+                                <td class="table-border">4</td>
+                                <td class="table-border">2</td>
+                                <td class="table-border">4</td>
+                                <td class="table-border">2</td>
+                                <td class="table-border">1</td>
+                                <td class="table-border">20</td>
+                            </tr>
+                            <tr>
+                                <td class="table-border">Pedidos errados</td>
+                                <td class="table-border">3</td>
+                                <td class="table-border">2</td>
+                                <td class="table-border">1</td>
+                                <td class="table-border">2</td>
+                                <td class="table-border">1</td>
+                                <td class="table-border">1</td>
+                                <td class="table-border">2</td>
+                                <td class="table-border">12</td>
+                            </tr>
+                            <tr>
+                                <td class="table-border">Falta de cordialidade no atendimento </td>
+                                <td class="table-border">1</td>
+                                <td class="table-border">2</td>
+                                <td class="table-border">0</td>
+                                <td class="table-border">1</td>
+                                <td class="table-border">3</td>
+                                <td class="table-border">0</td>
+                                <td class="table-border">1</td>
+                                <td class="table-border">8</td>
+                            </tr>
+                            <tr>
+                                <td class="table-border">Utensílios sujos </td>
+                                <td class="table-border">0</td>
+                                <td class="table-border">1</td>
+                                <td class="table-border">1</td>
+                                <td class="table-border">2</td>
+                                <td class="table-border">2</td>
+                                <td class="table-border">1</td>
+                                <td class="table-border">0</td>
+                                <td class="table-border">7</td>
+                            </tr>
+                            <tr>
+                                <td class="table-border">Cobrança indevida</td>
+                                <td class="table-border">0</td>
+                                <td class="table-border">1</td>
+                                <td class="table-border">1</td>
+                                <td class="table-border">1</td>
+                                <td class="table-border">0</td>
+                                <td class="table-border">0</td>
+                                <td class="table-border">0</td>
+                                <td class="table-border">3</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <figcaption class="figure-caption text-center">Folha de verificação do restaurante Vida e
+                        Sabor <br>
+                        Fonte: Senac EAD (2024)
+                    </figcaption>
+
+                    <figure class="my-5">
+                        <img src="./img/modal5_grafico.png"
+                            class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block"
+                            alt="Imagem" style="max-width: 100%; height: auto;">
+                        <a href="./img/modal5_grafico.png" target="_blank"
+                            class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                            <img src="./img/modal5_grafico.png"
+                                class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none img-lista1"
+                                alt="Imagem" style="max-width: 100%; height: auto;">
+                        </a>
+                        <figcaption class="figure-caption text-center">Gráfico demonstrando a coleta de dados
+                            realizada após o registro de dados feito na folha de verificação do restaurante Vida
+                            e Sabor
+                            <br>
+                            Fonte: Senac EAD (2024)
+                        </figcaption>
+                    </figure>
+                    <h4>Orientações</h4>
+                    <p>
+                        É adequado um momento de planejamento para construção do formulário, a fim de que este
+                        contemple todos os dados necessários no estudo.
+                    </p>
+                    <div class="grafismo">
+                        <div class="destaque borda-colorida icone importante">
+                            <p>
+                                O resultado das informações coletadas deve ser interpretado por pessoas responsáveis
+                                e capacitadas. O responsável pela coleta de dados precisa ter consciência da
+                                relevância que as suas informações gerarão no processo e, por isso, todo o cuidado
+                                na coleta é importante.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="voltar-topo no-print" aria-hidden="true"><img
+                        src="../../assets/images/bt_topo.svg"></a>
+            </div>
+        </section>
+
+        <!-- Paginação-->
+        <footer class="text-center no-print d-flex justify-content-center mx-auto">
+            <ul class="pagination">
+
+            </ul>
+        </footer>
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="../../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--Jquery-->
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <!--Áudio customizado-->
+    <script src="../../assets/js/audio-player.js"></script>
+    <!--Splide - slideshow-->
+    <script src="../../assets/js/splide.min.js"></script>
+    <!--Prog'n'roll - barra de progresso conforme rola a página-->
+    <script src="../../assets/js/prognroll.min.js"></script>
+    <!--Scripts gerais-->
+    <script src="./geral.js"></script>
+
+    <script>
+        $(function () {
+            $("body").prognroll();
+        });
+
+        $(".btn-tema_pagina").click(function () {
+            console.log($(".btn-tema_pagina"))
+            if ($("body").hasClass('bg-claro')) {
+                console.log("sim");
+                $("body").removeClass('bg-claro')
+                $("body").addClass("bg-escuro");
+            } else if ($("body").hasClass('bg-escuro')) {
+                console.log("não");
+                $("body").removeClass('bg-escuro')
+                $("body").addClass("bg-claro")
+            }
+        });
+    </script>
+
+    <!-- Handtalk -->
+    <script>
+        var scriptElem = document.createElement("script");
+        scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset = "UTF-8",
+            scriptElem.onload = function () {
+                window.ht = new HT({
+                    token: "bf5b7efb148a829a126a0e0c9fd533bf",
+                    align: "top",
+                    videoEnabled: true,
+                    ytEmbedReplace: true,
+                    mobileConfig: {
+                        align: "right",
+                        actionsAlign: "top",
+                        customButtonStyle: {
+                            borderRadius: "6px",
+                            size: "38px",
+                            horizontalMargin: "13px",
+                            bottomMargin: "140px",
+                            rightMargin: "40px"
+                        }
+                    }
+                });
+                $('.ht-skip').attr("aria-hidden", "true")
+            },
+            document.body.appendChild(scriptElem);
+
+    </script>
+</body>
+
+</html>

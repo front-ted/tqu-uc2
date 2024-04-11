@@ -1,0 +1,62 @@
+
+.espera-video {
+    width: 300px;
+    height: 300px;
+    background-color: #C489BB;
+}
+
+.elemento-esquerda{
+    position: absolute;
+    margin-left: -52%;
+    margin-top: 48%;
+}
+.elemento-direita{
+    position: absolute;
+    margin-left: 121%;
+    width: 25%;
+    margin-top: -10%;
+}
+
+body {
+    background-image: url('../../01_experimentacao/img/textura.png');
+    background-image:radial-gradient(farthest-corner at 90% 0%, #92ACCE 0%, transparent 45%);
+    position: relative;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center !important;
+	/* background-attachment: fixed !important; */
+	height: auto;
+	overflow-x: hidden;
+}
+
+.borda-esquerda{
+    border-left-width: 6px;
+}
+.img-zoom {
+    display: table;
+    position: relative;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+.img-zoom::after {
+    content: url('./img/bt_visualizar.png');
+    display: block;
+    width: 88px;
+    height: 88px;
+    right: 0%;
+    bottom: 7%;
+    position: absolute;
+    filter: drop-shadow(#333 3px 3px 4px);
+}
+
+
+
+
+
+@media screen and (max-width:1440px) {
+    .borda-esquerda{
+        border-left-width: 5px;
+    }
+}
+

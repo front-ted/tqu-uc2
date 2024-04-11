@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Inserir o tíutlo do conhecimento na tag title -->
+    <title>Ferramentas da qualidade: conceito, características e aplicação de <i>brainstorming</i>; fluxograma; matriz
+        GUT (gravidade, urgência e tendência); diagrama de causa e efeito ou espinha de peixe; folha de
+        verificação; diagrama de Pareto; histograma; diagrama de dispersão; cartas de controle; 5W2H;
+        técnica dos 5 porquês</title>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../../assets/css/hover-min.css" />
+    <!--Splide - slideshow-->
+    <link rel="stylesheet" href="../../assets/css/splide.min.css">
+    <!-- Print -->
+    <link rel="stylesheet" href="../../assets/css/print.css">
+    <!-- Preloader -->
+    <link rel="stylesheet" href="../../assets/css/preloader.css">
+    <!-- Áudio customizado -->
+    <link rel="stylesheet" href="../../assets/css/player.css">
+    <!-- Estilos do template -->
+    <link rel="stylesheet" href="../../assets/css/cores.css">
+    <link rel="stylesheet" href="../../assets/css/template.css">
+    <link rel="stylesheet" href="./custom.css">
+</head>
+
+<body class="bg-claro" aria-hidden="true">
+    <!-- Preloader OBRIGATÓRIO -->
+    <div class="preloader">
+        <div class="anim"></div>
+        <p>Aguarde enquanto o conteúdo é carregado.</p>
+    </div>
+    <!-- Marca d'água OBRIGATÓRIA -->
+    <img src="../../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+    <header id="topo">
+        <div class="topo-logo">
+            <div class="container">
+                <h1 id="nome-curso" class="only-print">Técnico em Qualidade</h1>
+            </div>
+            <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"></div>
+
+        </div>
+    </header>
+
+    <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->
+    <section id="booklet">
+        <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+        <div class="layer-preta no-print"></div>
+        <section class="paginas">
+            <div class="pagina no-print">
+                <div class="container">
+                    <h2>5W2H </h2>
+                    <h4>O que é</h4>
+                    <p>
+                        O <strong>5W2H</strong> é uma ferramenta administrativa e da qualidade muito utilizada pelas
+                        empresas,
+                        pois
+                        pode ser aplicada em várias áreas de negócio e em diferentes contextos dentro de uma
+                        organização. Sua facilidade de aplicação e praticidade trazem inúmeras vantagens, pois
+                        ela
+                        não é uma ferramenta complexa e não exige nenhum tipo de conhecimento específico. Seu
+                        objetivo é atuar como um apoio para auxiliar no planejamento de ações de forma
+                        organizada,
+                        estruturada e sistematizada, proporcionando diversos benefícios para as empresas. A
+                        partir
+                        do 5W2H, é mais simples visualizar as ações propostas, os processos, os prazos, as
+                        responsabilidades, os custos, garantindo um plano de ação que possa ser aplicado com
+                        mais
+                        efetividade.
+                    </p>
+                    <p>
+                        Essa ferramenta funciona como uma espécie de <i>checklist</i>, em que sua explicação está nas
+                        próprias palavras, cujas iniciais são em inglês (5W2H). As perguntas de cada W e H
+                        precisam
+                        ser respondidas de forma que seja possível construir a ferramenta e alimentá-la com as
+                        informações necessárias. Confira a representação do 5W2H no painel a seguir:
+                    </p>
+                    <p class="no-print mb-5 pb-5">Clique ou toque para visualizar o conteúdo. </p>
+                    <div class="painel-5w2h d-none d-sm-block no-print" aria-hidden="true">
+                        <button type="button" class="botao btn-oque check hvr-sweep-to-right d-block mx-auto"
+                            data-bs-toggle="modal" data-bs-target="#modal1">
+                            O quê? <br> (<i>What</i>?)
+                        </button>
+                        <button type="button" class="botao btn-porque check hvr-sweep-to-right d-block mx-auto"
+                            data-bs-toggle="modal" data-bs-target="#modal2">
+                            Por quê? <br> (<i>Why</i>?)
+                        </button>
+                        <button type="button" class="botao btn-onde check hvr-sweep-to-right d-block mx-auto"
+                            data-bs-toggle="modal" data-bs-target="#modal3">
+                            Onde? <br> (<i>Where</i>?)
+                        </button>
+                        <button type="button" class="botao btn-quando check hvr-sweep-to-right mt-3 d-block mx-auto"
+                            data-bs-toggle="modal" data-bs-target="#modal4">
+                            Quando? <br> (<i>When</i>?)
+                        </button>
+                        <button type="button" class="botao btn-quem check hvr-sweep-to-right mt-3 d-block mx-auto"
+                            data-bs-toggle="modal" data-bs-target="#modal5">
+                            Quem? <br> (<i>Who</i>?)
+                        </button>
+                        <button type="button" class="botao btn-como check hvr-sweep-to-right mt-3 d-block mx-auto"
+                            data-bs-toggle="modal" data-bs-target="#modal6">
+                            Como? <br> (<i>How</i>?)
+                        </button>
+                        <button type="button"
+                            class="botao btn-quanto-custa check hvr-sweep-to-right mt-3 mb-3 d-block mx-auto"
+                            data-bs-toggle="modal" data-bs-target="#modal7">
+                            Quanto custa? <br> (<i>How much</i>?)
+                        </button>
+                    </div>
+
+                    <div class="painel-5w2h-mobile d-block d-sm-none no-print" aria-hidden="true">
+                        <div class="row justify-content-md-center no-print">
+                            <div class="col-12 col-xs-12 mb-3">
+                                <button type="button" class="botao check hvr-sweep-to-right d-block mx-auto"
+                                    data-bs-toggle="modal" data-bs-target="#modal1">
+                                    O quê? <br> (<i>What</i>?)
+                                </button>
+                            </div>
+                            <div class="col-12 col-xs-12 mb-3">
+                                <button type="button" class="botao check hvr-sweep-to-right d-block mx-auto"
+                                    data-bs-toggle="modal" data-bs-target="#modal2">
+                                    Por quê? <br> (<i>Why</i>?)
+                                </button>
+                            </div>
+                            <div class="col-12 col-xs-12 mb-3">
+                                <button type="button" class="botao check hvr-sweep-to-right d-block mx-auto"
+                                    data-bs-toggle="modal" data-bs-target="#modal3">
+                                    Onde? <br> (<i>Where</i>?)
+                                </button>
+                            </div>
+                            <div class="col-12 col-xs-12 mb-3">
+                                <button type="button" class="botao check hvr-sweep-to-right mt-3 d-block mx-auto"
+                                    data-bs-toggle="modal" data-bs-target="#modal4">
+                                    Quando? <br> (<i>When</i>?)
+                                </button>
+                            </div>
+                            <div class="col-12 col-xs-12 mb-3">
+                                <button type="button" class="botao check hvr-sweep-to-right mt-3 d-block mx-auto"
+                                    data-bs-toggle="modal" data-bs-target="#modal5">
+                                    Quem? <br> (<i>Who</i>?)
+                                </button>
+                            </div>
+                            <div class="col-12 col-xs-12 mb-3">
+                                <button type="button" class="botao check hvr-sweep-to-right mt-3 d-block mx-auto"
+                                    data-bs-toggle="modal" data-bs-target="#modal6">
+                                    Como? <br> (<i>How</i>?)
+                                </button>
+                            </div>
+                            <div class="col-12 col-xs-12 mb-3">
+                                <button type="button" class="botao check hvr-sweep-to-right mt-3 mb-3 d-block mx-auto"
+                                    data-bs-toggle="modal" data-bs-target="#modal7">
+                                    Quanto custa? <br> (<i>How much</i>?)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Inicio modais painel -->
+                    <div class="modal fade no-print" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><i>What</i>? (O quê?)</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Informe o que deve ser feito de fato, o que você pretende realizar. Você
+                                        precisa pensar em ações que deseja propor de forma simples e direta para
+                                        que
+                                        qualquer profissional envolvido na ação saiba do que se trata, por
+                                        exemplo,
+                                        “implantar sistema de controle de atendimentos via <i>software</i>”.
+                                        Lembre-se de
+                                        que, como devem ser inseridas ações, você precisa começar sempre com um
+                                        verbo no infinitivo, por exemplo, “treinar”, “criar”, “orçar”, “fazer”
+                                        etc.
+                                    </p>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-sweep-to-right"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade no-print" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><i>Why</i>? (Por quê?)</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Justifique a realização da ação proposta. Informe por que a ação precisa
+                                        ser
+                                        feita. Nesta etapa, é importante entender qual é o propósito da ação, ou
+                                        seja, por que a empresa precisa investir tempo e recursos no
+                                        desenvolvimento
+                                        dessa ideia. Apresente os motivos e as justificativas para isso.
+                                        Explique os
+                                        benefícios e impactos esperados. Um exemplo de preenchimento dessa
+                                        pergunta
+                                        é “para manter a satisfação de clientes e reduzir atrasos de entrega”.
+                                    </p>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-sweep-to-right"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade no-print" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><i>Where</i>? (Onde?)</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Defina um local onde será realizada a ação. Esse local pode ser físico
+                                        ou
+                                        até mesmo um departamento ou setor de uma empresa, por exemplo, “na sala
+                                        2
+                                        de reuniões, disponível no segundo andar da empresa”.
+                                    </p>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-sweep-to-right"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade no-print" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><i>When</i>? (Quando?)</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Para que uma ação funcione e realmente aconteça, planejar o prazo de
+                                        execução é fundamental, por isso, nesta etapa, determine o prazo para
+                                        realização da ação. Defina prazos e limites coerentes com as demandas.
+                                        Lembre-se de seguir um padrão definindo dia, mês e ano para cada ação,
+                                        assim
+                                        será mais fácil e dinâmico controlar o vencimento das ações propostas.
+                                        Utilize, por exemplo, “11/02/2024”.
+                                    </p>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-sweep-to-right"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade no-print" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><i>Who</i>? (Quem?) </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Defina quem será o responsável pela execução da ação. Certifique-se de
+                                        identificar claramente os responsáveis. Por mais que uma área seja a
+                                        responsável, uma boa prática é definir o nome de um responsável, ou
+                                        seja,
+                                        alguém para executar o que foi proposto para que ele saiba exatamente
+                                        quais
+                                        são as suas funções e as entregas que precisa realizar. Utiliza, por
+                                        exemplo, “João dos Santos – Logística”.
+                                    </p>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-sweep-to-right"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade no-print" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><i>How</i>? (Como?) </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Os métodos ou as estratégias utilizadas para a condução da ação proposta
+                                        devem ser definidos para que o que foi idealizado seja executado da
+                                        melhor
+                                        forma. Para alcançar o objetivo, podem existir vários caminhos e, para
+                                        não
+                                        gerar nenhum tipo de dúvida, a forma como a ação será executada precisa
+                                        ser
+                                        detalhada. Por isso, nesta etapa, você precisa informar como será feita
+                                        a
+                                        ação, quais etapas realizará, os detalhes sobre quais passos serão
+                                        seguidos,
+                                        proporcionando clareza na execução. Por exemplo, “convocar os gestores
+                                        para
+                                        uma reunião, para que juntos definam o novo procedimento”. Após a
+                                        inclusão
+                                        do documento no sistema, é necessário treinar os envolvidos.
+                                    </p>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-sweep-to-right"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade no-print" id="modal7" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><i>How much</i>? (Quanto
+                                        custa?)
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Defina os custos associados à realização da ação. Determine qual é o
+                                        investimento necessário para realizar o que foi proposto. Em alguns
+                                        casos,
+                                        não precisam ser, necessariamente, valores financeiros. Pode ser, por
+                                        exemplo, a demanda de horas que a ação exigirá dos profissionais daquela
+                                        equipe.
+                                    </p>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-sweep-to-right"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fim modais painel -->
+                    <h4 class="mt-5">Quando usar</h4>
+                    <p>
+                        Devido à sua simplicidade e praticidade, a ferramenta 5W2H é aplicável em diversos
+                        contextos,
+                        indo além do ambiente corporativo. Seu propósito principal é otimizar a tomada de
+                        decisões e
+                        a
+                        execução de tarefas. Pode ser utilizada na definição de projetos e processos, na
+                        elaboração
+                        de
+                        planos estratégicos, e é comumente empregada na criação de planos de ação para resolver
+                        problemas diversos e implementar melhorias.
+                    </p>
+                    <div class="grafismo">
+                        <div class="destaque borda-colorida icone importante">
+                            <p>
+                                O 5W2H auxilia na estruturação e solução de problemas para alcançar objetivos ou
+                                metas e
+                                é aplicado para organizar ações, responsáveis e prazos em um plano que facilita
+                                a
+                                condução e resolução de problemas.
+                            </p>
+                        </div>
+                    </div>
+                    <p>A seguir é possível verificar um exemplo das informações do plano de ação: </p>
+                    <div class="table-responsive">
+                        <table class="text-center align-middle tabela-plano">
+                            <thead>
+                                <tr>
+                                    <th colspan="7" class="text-center">Plano de ação – 5W2H </th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th><i>What?</i> (O quê?)</th>
+                                    <th><i>Why?</i> (Por quê?) </th>
+                                    <th><i>Where?</i> (Onde?)</th>
+                                    <th><i>When?</i> (Quando?)</th>
+                                    <th> <i>Who?</i> (Quem?) </th>
+                                    <th><i>How?</i> (Como?)</th>
+                                    <th><i>How much?</i> (Quanto?)</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>Comprar etiquetas para repor estoque</td>
+                                <td>Agilizar colocação de preços nos produtos e nas prateleiras</td>
+                                <td>Setor de compras</td>
+                                <td>01/02/24</td>
+                                <td>João dos Santos – Compras</td>
+                                <td>Avaliar quantidades de compras; acessar sistema e emitir a ordem de compras
+                                </td>
+                                <td>R$ 1.500,00</td>
+                            </tr>
+                            <tr>
+                                <td>Criar planilha de estoque mínimo para etiquetas</td>
+                                <td>Para evitar novas faltas de etiquetas</td>
+                                <td>Setor de compras</td>
+                                <td>08/02/24</td>
+                                <td>João dos Santos – Compras</td>
+                                <td>Fazer levantamento histórico de movimentação de itens e projetar
+                                    crescimento; criar planilha mensal e projetar datas de compras</td>
+                                <td>R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Treinar compradores</td>
+                                <td>Alinhar informações, falar da importância e conscientizar quanto ao impacto
+                                    do problema na satisfação de clientes</td>
+                                <td>Sala de treinamento</td>
+                                <td>09/02/24</td>
+                                <td>James Machado – RH</td>
+                                <td>Elaborar apresentação com conteúdo necessário; verificar melhor data e
+                                    convocar compradores para treinamento</td>
+                                <td>R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Acompanhar primeiros pedidos de entrega</td>
+                                <td>Garantir abastecimento</td>
+                                <td>Setor de recebimento</td>
+                                <td>15/02/24</td>
+                                <td>Andrea Silva – Estoque</td>
+                                <td>Acompanhar trocas de preços e movimentação do estoque</td>
+                                <td>R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Conferir atividade de atualização de preços</td>
+                                <td>Para validar método </td>
+                                <td>Processo de abastecimento</td>
+                                <td>30/02/24</td>
+                                <td>Andrea Silva – Estoque</td>
+                                <td>Fazer verificação de consumo; avaliar o preenchimento da planilha de estoque
+                                    mínimo <i>versus</i> emissão de ordens de compras de etiquetas </td>
+                                <td>R$ 0,00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <figcaption class="figure-caption text-center">Plano de ação 5W2H <br>
+                        Fonte: Senac EAD (2024)
+                    </figcaption>
+                    <h4>Como aplicar</h4>
+                    <p>Para elaborar um plano de ação 5W2H, é necessário seguir estes passos: </p>
+                    <figure>
+                        <img src="./img/modal10_lista.png"
+                            class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block"
+                            alt="Imagem" style="max-width: 100%; height: auto;">
+                        <a href="./img/modal10_lista.png" target="_blank"
+                            class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                            <img src="./img/modal10_lista_mobile.png"
+                                class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none img-lista1"
+                                alt="Imagem" style="max-width: 100%; height: auto;">
+                        </a>
+                    </figure>
+                    <h4> Orientações</h4>
+                    <p>
+                        O uso das ferramentas da qualidade auxilia na execução das rotinas diárias da área,
+                        porém,
+                        sozinha, nenhuma ferramenta é tão eficaz quanto se associada a outras. Confira a seguir
+                        algumas
+                        sugestões de outras ferramentas que podem auxiliar a fazer os planos de ação do 5W2H
+                        mais
+                        completos:
+                    </p>
+                    <div class="no-print" aria-hidden="true">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Diagrama de Ishikawa e 5 porquês
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Em muitos casos, você usará o 5W2H para endereçar planos de ação de
+                                            não
+                                            conformidades ou ocorrências. Contar com ferramentas de descoberta
+                                            de
+                                            causa raiz, como o diagrama de Ishikawa e os 5 porquês, ajudarão
+                                            você
+                                            nesse processo, tornando mais fácil encontrar soluções viáveis e
+                                            realistas para um determinado problema. Para definir essas ações, o
+                                            5W2H
+                                            é muito útil.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        PDCA
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>O PDCA é uma ferramenta que tem como objetivo a melhoria de processos
+                                            de
+                                            forma contínua, sendo uma opção para mapear processos e definir um
+                                            plano
+                                            estratégico de atuação. Para realizar essa aplicação, o 5W2H é a
+                                            melhor
+                                            opção, facilitando a definição das ações e a obtenção de melhores
+                                            resultados.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Matriz GUT
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>A matriz GUT é uma ferramenta voltada para a priorização de demandas
+                                            de
+                                            acordo com a gravidade, a urgência e a tendência de cada iniciativa.
+                                            O
+                                            5W2H complementa o uso dessa ferramenta quando contribui para
+                                            auxiliar
+                                            na organização das ações priorizadas que necessitam ser executadas e
+                                            identificadas na matriz GUT.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        <i>Brainstorming </i>
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>“Tempestade de ideias”, o <i>brainstorming</i> pode ser usado quando
+                                            for
+                                            realizado o preenchimento da etapa “Como?”, do 5W2H. Fazer um
+                                            <i>brainstorming</i> pode ser fundamental para se chegar ao melhor
+                                            método de
+                                            execução da ação proposta.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="voltar-topo no-print" aria-hidden="true"><img
+                        src="../../assets/images/bt_topo.svg"></a>
+            </div>
+        </section>
+
+        <!-- Paginação-->
+        <footer class="text-center no-print d-flex justify-content-center mx-auto">
+            <ul class="pagination">
+
+            </ul>
+        </footer>
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="../../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--Jquery-->
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <!--Áudio customizado-->
+    <script src="../../assets/js/audio-player.js"></script>
+    <!--Splide - slideshow-->
+    <script src="../../assets/js/splide.min.js"></script>
+    <!--Prog'n'roll - barra de progresso conforme rola a página-->
+    <script src="../../assets/js/prognroll.min.js"></script>
+    <!--Scripts gerais-->
+    <script src="./geral.js"></script>
+
+    <script>
+        $(function () {
+            $("body").prognroll();
+        });
+
+        $(".btn-tema_pagina").click(function () {
+            console.log($(".btn-tema_pagina"))
+            if ($("body").hasClass('bg-claro')) {
+                console.log("sim");
+                $("body").removeClass('bg-claro')
+                $("body").addClass("bg-escuro");
+            } else if ($("body").hasClass('bg-escuro')) {
+                console.log("não");
+                $("body").removeClass('bg-escuro')
+                $("body").addClass("bg-claro")
+            }
+        });
+    </script>
+
+    <!-- Handtalk -->
+    <script>
+        var scriptElem = document.createElement("script");
+        scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset = "UTF-8",
+            scriptElem.onload = function () {
+                window.ht = new HT({
+                    token: "bf5b7efb148a829a126a0e0c9fd533bf",
+                    align: "top",
+                    videoEnabled: true,
+                    ytEmbedReplace: true,
+                    mobileConfig: {
+                        align: "right",
+                        actionsAlign: "top",
+                        customButtonStyle: {
+                            borderRadius: "6px",
+                            size: "38px",
+                            horizontalMargin: "13px",
+                            bottomMargin: "140px",
+                            rightMargin: "40px"
+                        }
+                    }
+                });
+                $('.ht-skip').attr("aria-hidden", "true")
+            },
+            document.body.appendChild(scriptElem);
+
+    </script>
+</body>
+
+</html>

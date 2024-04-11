@@ -1,0 +1,89 @@
+
+.espera-video {
+    width: 300px;
+    height: 300px;
+    background-color: #C489BB;
+}
+
+.elemento-esquerda{
+    position: absolute;
+    margin-left: -52%;
+    margin-top: 48%;
+}
+.elemento-direita{
+    position: absolute;
+    margin-left: 121%;
+    width: 25%;
+    margin-top: -10%;
+}
+
+body {
+    background-image: url('./img/bg_modal4_inf.png');
+}
+
+.imagem-borda{
+    padding:5%;
+    border: red solid;
+    border-radius: 10%;
+    max-width: 250px;
+}
+.borda-esquerda{
+    border-left-width: 6px;
+}
+.tabela-parametro td,
+tr {
+    border-color: var(--cor-primaria);
+    border-width: 1px;
+}
+
+.tabela-parametro th {
+    border-color: #fff;
+    border-width: 1px;
+}
+
+.tabela-parametro thead {
+    background: linear-gradient(to right, #80ACD3, #004788);
+}
+.img-zoom {
+    display: table;
+    position: relative;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+.img-zoom::after {
+    content: url('./img/bt_visualizar.png');
+    display: block;
+    width: 88px;
+    height: 88px;
+    right: 2%;
+    bottom: 7%;
+    position: absolute;
+    filter: drop-shadow(#333 3px 3px 4px);
+}
+.img-zoom2 {
+    display: table;
+    position: relative;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+.img-zoom2::after {
+    content: url('./img/bt_visualizar.png');
+    display: block;
+    width: 88px;
+    height: 88px;
+    right: 2%;
+    bottom: 5%;
+    position: absolute;
+    filter: drop-shadow(#333 3px 3px 4px);
+}
+
+
+
+@media screen and (max-width:1440px) {
+    .borda-esquerda{
+        border-left-width: 5px;
+    }
+}
+
