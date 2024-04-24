@@ -9,20 +9,27 @@ body {
 }
 
 .bloco1 {
-    background: url('./img/bg_elemento.png') no-repeat;
+    background: url('img/bg1.jpg') no-repeat;
 }
 
 .bloco2 {
-    background: url('./img/bg_bloco2.jpg');
+    background: url('img/bg2.jpg');
     background-size: cover;
 }
 
 .bloco3 {
-    background: url('./img/bg__bloco3_elemento.png') no-repeat right;
+    background: url('img/bg3.jpg') no-repeat right;
 }
 
 .bloco4 {
-    background: url('./img/bg_bloco4.jpg');
+    background: url('img/bg4.jpg');
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.bloco5 {
+    background: url('img/bg5.jpg');
     background-size: cover;
     padding-top: 5%;
     padding-bottom: 5%;
