@@ -18,8 +18,9 @@
 }
 
 body {
-    background-image: url('../../01_experimentacao/img/textura.png');
-    background-image: radial-gradient(farthest-corner at -2% 25%, #92ACCE 0%, transparent 25%), radial-gradient(farthest-corner at 50% 100%, #CF9993 0%, transparent 15%);
+    background-image: url('../01_processos_organizacionais/img/old/textura.png');
+    /* background-image: radial-gradient(farthest-corner at -2% 25%, #92ACCE 0%, transparent 25%), radial-gradient(farthest-corner at 50% 100%, #CF9993 0%, transparent 15%); */
+    background-image: radial-gradient(farthest-corner at -2% 25%, #92ACCE 0%, transparent 25%), radial-gradient(farthest-corner at 106% 114%, #1A447F 5%, transparent 25%), radial-gradient(farthest-corner at -2% 75%, #CF9993 0%, transparent 25%);
     position: relative;
 	background-repeat: no-repeat !important;
 	background-size: cover !important;
@@ -28,9 +29,255 @@ body {
 	height: auto;
 	overflow-x: hidden;
 }
+/* painel */
+.painel-mapeamento {
+    background: url('img/painel01_bg.jpg');
+    width: 901px;
+    height: 501px;
+    background-size: cover;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+}
+/* bts */
+.bt-painel-mapeamento {
+    width: 267px;
+    height: 72px;
+    border: unset;
+    margin-top: 25px;
+    margin-left: 30px;
+    transition: all 0.3 ease-in;
+}
+.btnVisão {
+    background: url('img/painel01_bt1_.png') no-repeat;
+}
+.btnIdentificação {
+    background: url('img/painel01_bt2_.png') no-repeat;
+}
+.btnPadronização {
+    background: url('img/painel01_bt3_.png') no-repeat;
+}
+.btnDelimitação {
+    background: url('img/painel01_bt4_.png') no-repeat;
+}
+.btnPrevisão {
+    background: url('img/painel01_bt5_.png') no-repeat;
+}
+.btnMelhor {
+    background: url('img/painel01_bt6_.png') no-repeat;
+}
+.btnEntendimento {
+    background: url('img/painel01_bt7_.png') no-repeat;
+}
+.btnEstimativa {
+    background: url('img/painel01_bt8_.png') no-repeat;
+}
+.btnTomada {
+    background: url('img/painel01_bt9_.png') no-repeat;
+}
+.btnConformidade {
+    background: url('img/painel01_bt10_.png') no-repeat;
+}
+.btnTreinamento {
+    background: url('img/painel01_bt11_.png') no-repeat;
+}
 
+    .btnVisão:hover {
+        background: url('img/painel01_bt1.png') no-repeat;
+    }
+    .btnIdentificação:hover {
+        background: url('img/painel01_bt2.png') no-repeat;}
+    .btnPadronização:hover {
+        background: url('img/painel01_bt3.png') no-repeat;}
+    .btnDelimitação:hover {
+        background: url('img/painel01_bt4.png') no-repeat;}
+    .btnPrevisão:hover {
+        background: url('img/painel01_bt5.png') no-repeat;}
+    .btnMelhor:hover {
+        background: url('img/painel01_bt6.png') no-repeat;}
+    .btnEntendimento:hover {
+        background: url('img/painel01_bt7.png') no-repeat;}
+    .btnEstimativa:hover {
+        background: url('img/painel01_bt8.png') no-repeat;}
+    .btnTomada:hover {
+        background: url('img/painel01_bt9.png') no-repeat;}
+    .btnConformidade:hover {
+        background: url('img/painel01_bt10.png') no-repeat;}
+    .btnTreinamento:hover {
+        background: url('img/painel01_bt11.png') no-repeat;}
 
+.btn-estrutura {
+    background: url('./img/painel1_bt1.png') no-repeat;
+    width: 184px;
+    height: 184px;
+    border: unset;
+    position: absolute;
+    margin-left: 4%;
+    margin-top: 5%;
+}
 
+.btn-estrutura:hover {
+    background: url('./img/painel1_bt1_hover.png') no-repeat;
+    width: 184px;
+    height: 184px;
+    border: unset;
+}
+/* fim painel 1 */
+/* inicio painel 2 */
+.painel-piramede {
+    background: url('img/painel02_layout.jpg');
+    width: 601px;
+    height: 331px;
+    margin: 0 auto;
+    background-size: cover;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+}
+/* bts */
+.bt-painel-piramede {
+    background-color: transparent;
+    width: 267px;
+    height: 72px;
+    border: unset;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3 ease-in;
+}
+.btnMacroprocesso {
+    color: #84b1d1;
+    margin-top: 5px;
+    margin-left: 250px;
+}
+.btnSubprocessos {
+    color: #9fc3d7;
+    margin-top: -2px;
+    margin-left: 295px;
+}
+.btnAtividades {
+    color: #1e88bb;
+    margin-top: 5px;
+    margin-left: 351px;
+}
+.btnTarefas {
+    color: #024a8a;
+    margin-top: 5px;
+    margin-left: 399px;
+}
+    
+    .btnMacroprocesso:hover {
+        /* background: url('img/painel01_bt1.png') no-repeat; */
+    }
+    .btnSubprocessos:hover {
+        /* background: url('img/painel01_bt2.png') no-repeat; */
+    }
+    .btnAtividades:hover {
+        /* background: url('img/painel01_bt3.png') no-repeat; */
+    }
+    .btnTarefas:hover {
+        /* background: url('img/painel01_bt4.png') no-repeat; */
+    }
+    
+/* fim painel 2 */
+/* inicio painel 3 */
+.painel-metodologias {
+    background: url('img/painel03_layout.png');
+    width: 930px;
+    height: 300px;
+    background-size: cover;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+}
+/* bts */
+.bt-painel-metodologias {
+    width: 167px;
+    height: 72px;
+    border: unset;
+    margin-top: 25px;
+    margin-left: 30px;
+    transition: all 0.3 ease-in;
+}
+.btnBPM {
+    /* background: url('img/painel01_bt1_.png') no-repeat; */
+}
+.btnSixSigma {
+    /* background: url('img/painel01_bt2_.png') no-repeat; */
+}
+.btnLEAN {
+    /* background: url('img/painel01_bt3_.png') no-repeat; */
+}
+.btnISO9000 {
+    /* background: url('img/painel01_bt4_.png') no-repeat; */
+}
+.btnTQM {
+    /* background: url('img/painel01_bt5_.png') no-repeat; */
+}
+.btnScrum {
+    /* background: url('img/painel01_bt6_.png') no-repeat; */
+}
+.btnKaizen {
+    /* background: url('img/painel01_bt10_.png') no-repeat; */
+}
+.btnPDD {
+    /* background: url('img/painel01_bt7_.png') no-repeat; */
+}
+.btnTOC {
+    /* background: url('img/painel01_bt8_.png') no-repeat; */
+}
+.btnDesignThinking {
+    /* background: url('img/painel01_bt9_.png') no-repeat; */
+}
+
+    .btnBPM:hover {
+        background: url('img/painel01_bt1_.png') no-repeat;
+    }
+    .btnSixSigma:hover {
+        background: url('img/painel01_bt2_.png') no-repeat;}
+    .btnLEAN:hover {
+        background: url('img/painel01_bt3_.png') no-repeat;}
+    .btnISO9000:hover {
+        background: url('img/painel01_bt4_.png') no-repeat;}
+    .btnTQM:hover {
+        background: url('img/painel01_bt5_.png') no-repeat;}
+    .btnScrum:hover {
+        background: url('img/painel01_bt6_.png') no-repeat;}
+    .btnKaizen:hover {
+        background: url('img/painel01_bt10_.png') no-repeat;}
+    .btnPDD:hover {
+        background: url('img/painel01_bt7_.png') no-repeat;}
+    .btnTOC:hover {
+        background: url('img/painel01_bt8_.png') no-repeat;}
+    .btnDesignThinking:hover {
+        background: url('img/painel01_bt9_.png') no-repeat;}
+    
+
+/* fim painel 2 */
+/*inicio  arrasta e solta */
+#slots .row{
+    margin-top: 0;
+}
+.arrastaesolta1 .game-body .slot{
+    min-height: 90px;
+    border-top: 3px solid var(--cor-primaria);
+    border-radius: 10px;
+    font-size: 13px !important;
+    padding: 0px 0;
+}
+.card{
+    font-size: 13px !important;
+}
+.arrastaesolta1 .card{
+    font-size: 13px !important;
+}
+.arrastaesolta1 .slot .card{
+    width: 100%;
+    height: 85px;
+    margin: 0;
+    padding: 0;
+}
+.arrastaesolta1 .game-titulo{ background: transparent;}
+/* fim arrasta e solta */
 @media only screen and (max-width:1440px){
 .elemento-direita {
     position: absolute;

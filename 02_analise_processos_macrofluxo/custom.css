@@ -8,31 +8,43 @@ body {
     background: unset;
 }
 
-.bloco1 {
-    background: url('img/bg1.jpg') no-repeat;
+.bloco1, .bloco6 {
+    background: url('img/bg1.jpg') ;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.bloco2 {
+.bloco2, .bloco7 {
     background: url('img/bg2.jpg');
     background-size: cover;
+    
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.bloco3 {
-    background: url('img/bg3.jpg') no-repeat right;
+.bloco3, .bloco8 {
+    background-size: cover;
+    background: url('img/bg3.jpg') ;
+    
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.bloco4 {
+.bloco4, .bloco9 {
     background: url('img/bg4.jpg');
     background-size: cover;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.bloco5 {
+.bloco5, .bloco10 {
     background: url('img/bg5.jpg');
     background-size: cover;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .imagem-borda {

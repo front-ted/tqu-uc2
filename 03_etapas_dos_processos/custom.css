@@ -1,6 +1,15 @@
 body{
     background: url('./img/bg.jpg');
-    background-attachment: fixed;
+    
+    /* background-image: radial-gradient(farthest-corner at -2% 25%, #92ACCE 0%, transparent 25%), radial-gradient(farthest-corner at 50% 100%, #CF9993 0%, transparent 15%); */
+    background-image: radial-gradient(farthest-corner at -2% 25%, #92ACCE 0%, transparent 25%), radial-gradient(farthest-corner at 106% 114%, #1A447F 5%, transparent 25%), radial-gradient(farthest-corner at -2% 75%, #CF9993 0%, transparent 25%);
+    position: relative;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center !important;
+	/* background-attachment: fixed !important; */
+	height: auto;
+	overflow-x: hidden;
 }
 
 .espacamento {
@@ -30,119 +39,113 @@ body{
 }
 
 .painel-organizacoes {
-    background: url('./img/painel1_bg.png');
-    width: 880px;
-    height: 384px;
+    background: url('img/fig01.png');
+    width: 511px;
+    height: 511px;
+    margin: 0 auto;
     background-size: cover;
     position: relative;
 }
 
 .btn-estrutura {
     background: url('./img/painel1_bt1.png') no-repeat;
-    width: 184px;
-    height: 184px;
+    background-color: red;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     border: unset;
     position: absolute;
-    margin-left: 4%;
-    margin-top: 5%;
+    margin-left: 60%;
+    margin-top: 1%;
 }
 
 .btn-estrutura:hover {
     background: url('./img/painel1_bt1_hover.png') no-repeat;
-    width: 184px;
-    height: 184px;
     border: unset;
 }
 
 .btn-divisao-trabalho {
     background: url('./img/painel1_bt2.png');
     background-size: 100%;
-    ;
-    width: 184px;
-    height: 184px;
+    background-color: red;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     border: unset;
     position: absolute;
-    margin-left: 23%;
-    margin-top: 5%;
+    margin-left: 76%;
+    margin-top: 8%;
 }
 
 .btn-divisao-trabalho:hover {
     background: url('./img/painel1_bt2_hover.png');
-    width: 184px;
-    height: 184px;
-    border: unset;
 }
 
 .btn-coordenacao {
     background: url('./img/painel1_bt3.png');
-    background-size: 100%;
-    width: 184px;
-    height: 184px;
+    background-size: 100%;    
+    background-color: red;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     border: unset;
     position: absolute;
-    margin-left: 42%;
-    margin-top: 5%;
+    margin-left: 87%;
+    margin-top: 20%;
 }
 
 .btn-coordenacao:hover {
     background: url('./img/painel1_bt3_hover.png');
-    width: 184px;
-    height: 184px;
-    border: unset;
 }
 
 .btn-ambiente {
     background: url('./img/painel1_bt4.png');
     background-size: 100%;
-    width: 184px;
-    height: 184px;
+    background-color: red;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     border: unset;
     position: absolute;
-    margin-left: 61%;
-    margin-top: 5%;
+    margin-left: 93%;
+    margin-top: 34%;
 }
 
 .btn-ambiente:hover {
     background: url('./img/painel1_bt4_hover.png');
-    width: 184px;
-    height: 184px;
-    border: unset;
 }
 
 .btn-cultura {
     background: url('./img/painel1_bt5.png');
     background-size: 100%;
-    width: 157px;
-    height: 184px;
+    background-color: red;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     border: unset;
     position: absolute;
-    margin-left: 80%;
-    margin-top: 5%;
+    margin-left: 82%;
+  margin-top: 80%;
 }
 
 .btn-cultura:hover {
     background: url('./img/painel1_bt5_hover.png');
-    width: 157px;
-    height: 184px;
-    border: unset;
 }
 
 .btn-adaptacao {
     background: url('./img/painel1_bt6.png');
     position: absolute;
-    background-size: 100%;
-    width: 157px;
-    height: 158px;
+    background-color: red;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     border: unset;
-    margin-left: 4%;
-    top: 51%;
+    margin-left: 13%;
+    top: 76%;
 }
 
 .btn-adaptacao:hover {
     background: url('./img/painel1_bt6_hover.png');
-    width: 157px;
-    height: 158px;
-    border: unset;
 }
 
 .btn-missao {
@@ -158,9 +161,6 @@ body{
 
 .btn-missao:hover {
     background: url('./img/painel1_bt7_hover.png');
-    width: 184px;
-    height: 158px;
-    border: unset;
 }
 
 .btn-visao {
@@ -176,9 +176,6 @@ body{
 
 .btn-visao:hover {
     background: url('./img/painel1_bt8_hover.png');
-    width: 184px;
-    height: 157px;
-    border: unset;
 }
 
 .btn-valores {
@@ -194,9 +191,6 @@ body{
 
 .btn-valores:hover {
     background: url('./img/painel1_bt9_hover.png');
-    width: 184px;
-    height: 157px;
-    border: unset;
 }
 
 .btn-objetivos {

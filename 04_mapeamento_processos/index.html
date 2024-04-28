@@ -47,6 +47,26 @@
 
         </div>
     </header>
+    <!--Menu lateral-->
+    <button class="bt-hamburguer" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+        aria-controls="offcanvasWithBackdrop"></button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+        aria-labelledby="offcanvasWithBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Técnico em Qualidade</h5>
+            <button type="button" class="bt-fecharmenu text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <nav id="nav-offcanvas" class="offcanvas-body">
+            <ul>
+                <li><a href="#titulo1">Mapeamento de processos</a></li>
+                <li><a href="#titulo2">Fluxogramas</a></li>
+                <li class="espacamento"><a href="#titulo3">SIPOC</a></li>
+                <li class="espacamento"><a href="#titulo4">BPM</a></li>
+                <li class="espacamento"><a href="#titulo5">Encerramento </a></li>
+            </ul>
+        </nav>
+    </div>
 
     <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->
     <section id="booklet">
@@ -54,1492 +74,623 @@
         <div class="layer-preta no-print"></div>
         <section class="paginas">
             <div class="pagina">
-                <div class="container">
-                    <h2>Metodologias de gestão: PDCA (<i>plan</i>, <i>do</i>, <i>check</i> e <i>act</i>) e MASP
-                        (método de
-                        análise e solução de problemas)</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus nemo nam error itaque, explicabo numquam ea optio atque tempora! Aspernatur nostrum necessitatibus mollitia. Quam obcaecati hic quo eius ea voluptates.</p>
+                
+                <div class="bloco-1">
+                    <div class="container">
+                        <h2>Mapeamento de processo: fluxogramas, SIPOC (suppliers, inputs, process, outputs e customer) e BPM (business process management) </h2>
+                        <p>
+                            O mapeamento de processos surge da necessidade de documentar e compreender as atividades sequenciais ou inter-relacionadas de um processo existente. Mapear é fundamental para verificar a realidade do comportamento dos processos e realizar a análise sistêmica das organizações. 
+                        </p>
+                        <p>
+                            Como técnico em qualidade, você será responsável por coletar as informações de processos e confeccionar diagramas que os representem, propor melhorias de processo e redesenhar fluxos. Para isso, é importante conhecer detalhadamente a construção de fluxogramas, SIPOC e compreender o funcionamento da abordagem de gestão BPM e os diagramas BPMN. 
+                        </p>
+                        <figure class="my-5">
+                            <div class="figure-img mx-auto mb-4">
+                                <img class="img-fluid d-block mx-auto" src="img/img01.jpg" alt="">
+                            </div>
+                            <figcaption class="figure-caption text-center">
+                                
+                            </figcaption>
+                        </figure>
+                        <p>
+                            Verifique o funcionamento dessas ferramentas e metodologias
+                        </p>
+
+
+                    </div>
                 </div>
 
                 <div class="bloco-2">
                     <div class="container">
-                        <figure class="my-5">
-                            <div class="figure-img mx-auto mb-4">
-                                <img class="img-fluid d-block mx-auto" src="./img/grafico1.png">
-                            </div>
-                            <figcaption class="figure-caption text-center">Ciclo PDCA
-                                <br>
-                                Fonte: Senac EAD (2024)
-                            </figcaption>
-                        </figure>
-                        <p class="acessivel no-print">
-                            Círculo dividido em quatro partes, com as etapas plan (planejar), do
-                            (executar), check (verificar) e action (agir) em sequência, representando um ciclo que é
-                            contínuo e
-                            repetitivo.
+                        <h3 id="titulo1">Mapeamento de processos </h3>
+                        <p>
+                            Toda organização que almeja uma estruturação eficaz e/ou a implementação de um sistema de gestão da qualidade deve realizar a identificação e o mapeamento de seus processos. A norma ABNT NBR ISO 9001:2015 apresenta o conceito de gestão por processo, ou seja, a implantação do sistema de gestão da qualidade deve abordar e considerar todos os processos da organização e a interação entre eles e estabelecer formas de monitoramento de resultados, controles e melhorias, entre outros requisitos essenciais. 
                         </p>
-                        <p class="no-print">
-                            Clique ou toque para visualizar o conteúdo.
+                        <p>
+                            Por meio do mapeamento, é possível indicar as partes do processo que estão adequadamente estruturadas, além de fluxos mal organizados, ou seja, as etapas que não contribuem de forma significativa, os pontos de estrangulamento e a falta ou o excesso de etapas ou procedimentos. Detectar esses problemas representa uma oportunidade de aprimoramento essencial para otimizar o funcionamento global do processo.  
                         </p>
-                        <div class="painel-pdca-gestao no-print" aria-hidden="true">
-                            <div class="row flex-column text-center no-print">
-                                <div class="col-12 col-md-12">
-                                    <button type="button" class="botao check hvr-sweep-to-right d-block mx-auto mb-3"
-                                        data-bs-toggle="modal" data-bs-target="#modal1">
-                                        Gestão estratégica
-                                    </button>
-                                </div>
-                                <div class="col-12 col-md-12">
-                                    <button type="button" class="botao check hvr-sweep-to-right d-block mx-auto mb-3"
-                                        data-bs-toggle="modal" data-bs-target="#modal2">
-                                        Gestão das operações
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Inicio modais painel -->
-                        <div class="no-print" aria-hidden="true">
-                            <div class="modal fade no-print" id="modal1" tabindex="-1"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-80">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Gestão estratégica</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p> Quando utilizadas em nível estratégico, as técnicas, em geral, auxiliam
-                                                a:
-                                            </p>
-                                            <ul class="custom-bullet">
-                                                <li>Identificar prioridades de melhoria, ou seja, avaliar e selecionar
-                                                    áreas
-                                                    ou
-                                                    aspectos que mais necessitam de aprimoramento em um determinado
-                                                    contexto, seja
-                                                    em um projeto, seja em uma organização, processo ou em qualquer
-                                                    outra
-                                                    situação.
-                                                </li>
-                                                <li>Identificar e analisar causas fundamentais, isto é, referem-se ao
-                                                    processo de
-                                                    investigar a raiz ou origem de um problema ou desafio específico. Em
-                                                    muitos
-                                                    casos, os problemas que aparecem de forma superficial têm causas
-                                                    mais
-                                                    profundas
-                                                    que precisam ser compreendidas e tratadas para evitar recorrências,
-                                                    ou
-                                                    seja,
-                                                    evitar que ocorram novamente. Esse processo é comumente conhecido
-                                                    como
-                                                    análise
-                                                    das causas raízes, análise das causas primárias ou, ainda, análise
-                                                    das
-                                                    causas
-                                                    fundamentais.
-                                                </li>
-                                                <li>Planejar ações de melhoria e avaliar progresso. É o processo
-                                                    sistemático
-                                                    em que
-                                                    uma pessoa, equipe ou organização desenvolve estratégias para
-                                                    implementar
-                                                    melhorias e, em seguida, avalia regularmente o progresso alcançado.
-                                                </li>
-                                            </ul>
-                                            <div class="espera-video">
-                                                espera audio
-                                            </div>
-                                            <!-- <div class="acessivel only-print">
-                                    <p>Que tal pensar em alguns exemplos?</p>
-                                    <p>
-                                        Imagine um restaurante que está enfrentando reclamações constantes dos clientes
-                                        sobre a
-                                        qualidade dos pratos servidos. À primeira vista, o problema pode parecer
-                                        relacionado
-                                        apenas à cozinha ou aos <i>chefs</i> de culinária. No entanto, ao realizar uma análise
-                                        da causa
-                                        raiz, pode-se descobrir que o problema real está na cadeia de fornecimento de
-                                        ingredientes.
-                                    </p>
-                                    <p>
-                                        Ao investigar mais a fundo, pode-se identificar que um dos fornecedores de
-                                        alimentos do
-                                        restaurante está entregando ingredientes de baixa qualidade ou vencidos. Isso,
-                                        por sua
-                                        vez, afeta diretamente a qualidade dos pratos preparados na cozinha. Portanto, a
-                                        causa
-                                        fundamental do problema não está na equipe de culinária, mas sim na cadeia de
-                                        fornecimento.
-                                    </p>
-                                    <p>
-                                        Ao abordar a causa raiz, o restaurante pode tomar medidas para melhorar a
-                                        seleção de
-                                        fornecedores, implementar controles de qualidade mais rigorosos na recepção de
-                                        ingredientes e garantir que todos os produtos atendam aos padrões necessários.
-                                        Isso não
-                                        apenas resolverá as reclamações dos clientes, mas também prevenirá futuros
-                                        problemas
-                                        relacionados à qualidade dos pratos.
-                                    </p>
-                                    <p>
-                                        É possível considerar ainda outra situação cotidiana como exemplo. Suponha que
-                                        você
-                                        esteja enfrentando uma dor de cabeça e decida tomar um analgésico para aliviar o
-                                        sintoma. Nesse caso, você está lidando com o efeito imediato da dor sem abordar
-                                        a causa
-                                        raiz, que pode estar relacionada à falta de sono, ao estresse, à desidratação ou
-                                        a
-                                        outros fatores. O analgésico proporciona um alívio temporário, porém, para
-                                        resolver a
-                                        questão de maneira mais efetiva, seria crucial você identificar e tratar a causa
-                                        raiz.
-                                        Isso poderia envolver aprimorar seus hábitos de sono, adotar estratégias para
-                                        gerenciar
-                                        o estresse ou garantir uma adequada hidratação.
-                                    </p>
-                                    <p>
-                                        Da mesma forma, nas organizações, muitas vezes se atua nos sintomas superficiais
-                                        (efeitos) ao invés de atuar nas causas raízes.
-                                    </p>
-                                </div> -->
-                                            <div class="grafismo">
-                                                <div class="destaque borda-colorida icone importante">
-                                                    <p>
-                                                        É importante sempre buscar eliminar as causas raízes e não
-                                                        apenas os
-                                                        efeitos
-                                                        ou
-                                                        sintomas, pois isso permite uma solução de problemas mais
-                                                        duradoura
-                                                        e
-                                                        eficaz.
-                                                        Identificar e eliminar as causas fundamentais de um problema é
-                                                        abordar a
-                                                        origem
-                                                        dele. Essa abordagem promove uma melhoria sustentável,
-                                                        prevenindo a
-                                                        recorrência
-                                                        do
-                                                        problema, ou seja, que ele ressurja.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <p>
-                                                Além disso, ao focar nas causas raízes, é possível promover uma mudança
-                                                positiva
-                                                mais
-                                                abrangente e sistêmica. Trabalhar apenas nos efeitos muitas vezes leva a
-                                                soluções
-                                                paliativas, que podem resolver temporariamente a situação, mas não
-                                                proporcionam uma
-                                                transformação profunda.
-                                            </p>
-                                            <p>
-                                                Ao buscar eliminar as causas raízes, as organizações e os indivíduos
-                                                podem
-                                                desenvolver
-                                                abordagens mais estratégicas e preventivas. Isso não apenas resolve
-                                                problemas
-                                                imediatos,
-                                                mas também cria uma base mais sólida para a prevenção de futuros
-                                                desafios.
-                                                Em última
-                                                análise, a abordagem das causas raízes é um investimento no longo prazo
-                                                para
-                                                alcançar
-                                                resultados mais consistentes e significativos.
-                                            </p>
-                                            <div class="modal-footer">
-                                                <button type="button" class="botao hvr-sweep-to-right"
-                                                    data-bs-dismiss="modal">Fechar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade no-print" id="modal2" tabindex="-1"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-80">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Gestão das operações </h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>
-                                                Quando utilizadas em nível operacional, as técnicas, em geral, auxiliam
-                                                a:
-                                            </p>
-                                            <ul class="custom-bullet">
-                                                <li>Controlar a conformidade da produção (atendimento de requisitos),
-                                                    processo que
-                                                    visa garantir que a produção de bens ou serviços atenda aos
-                                                    requisitos
-                                                    estabelecidos. Isso envolve a implementação de medidas e práticas
-                                                    para
-                                                    garantir
-                                                    que os produtos ou serviços estejam em conformidade com os padrões,
-                                                    as
-                                                    especificações e as expectativas estabelecidas. </li>
-                                                <li>Reduzir ou evitar custos da não qualidade, ou seja, são estratégias
-                                                    e
-                                                    práticas
-                                                    implementadas por uma organização para minimizar os custos
-                                                    associados a
-                                                    produtos
-                                                    ou serviços que não atendem aos requisitos de qualidade. A “não
-                                                    qualidade” pode
-                                                    resultar em retrabalho, devoluções, reclamações de clientes e outros
-                                                    custos
-                                                    adicionais que podem ser evitados ou reduzidos por meio de
-                                                    abordagens
-                                                    proativas.
-                                                    Essas abordagens proativas são estratégias e ações adotadas
-                                                    antecipadamente para
-                                                    prevenir problemas, otimizar processos ou melhorar resultados, em
-                                                    vez de
-                                                    simplesmente reagir a eventos após sua ocorrência. Por exemplo,
-                                                    imagine
-                                                    uma loja
-                                                    de varejo que está antecipando as tendências sazonais de compra de
-                                                    seus
-                                                    clientes. Em vez de simplesmente reagir ao aumento nas vendas
-                                                    durante as
-                                                    festas
-                                                    de final de ano, a loja adotou uma abordagem proativa. </li>
-                                            </ul>
-                                            <p>
-                                                Clique ou toque para visualizar o conteúdo.
-                                            </p>
-                                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-                                                        data-bs-target="#home" type="button" role="tab"
-                                                        aria-controls="home" aria-selected="true">Ação proativa</button>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
-                                                        data-bs-target="#profile" type="button" role="tab"
-                                                        aria-controls="profile" aria-selected="false">Resultado esperado
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                            <div class="tab-content" id="myTabContent">
-                                                <div class="tab-pane fade show active" id="home" role="tabpanel"
-                                                    aria-labelledby="home-tab">
-                                                    A loja investe em análises de dados e identifica que os clientes
-                                                    tendem
-                                                    a
-                                                    comprar produtos específicos durante as festas. Antes do início da
-                                                    temporada, a
-                                                    loja antecipa essa demanda e aumenta seu estoque desses produtos.
-                                                    Além
-                                                    disso,
-                                                    ela cria promoções e pacotes especiais para atrair clientes durante
-                                                    esse
-                                                    período. </div>
-                                                <div class="tab-pane fade" id="profile" role="tabpanel"
-                                                    aria-labelledby="profile-tab">
-                                                    Ao agir antecipadamente, a loja está preparada para atender à
-                                                    demanda
-                                                    sazonal,
-                                                    evitando situações de falta de estoque. Isso resulta em maior
-                                                    satisfação
-                                                    do
-                                                    cliente, aumento nas vendas e uma reputação positiva para a loja,
-                                                    que se
-                                                    destaca
-                                                    pela capacidade de prever e atender às necessidades dos clientes.
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="botao hvr-sweep-to-right"
-                                                    data-bs-dismiss="modal">Fechar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Fim modais painel -->
-                        <div class="acessivel only-print">
-                            <h5>Gestão estratégica</h5>
-                            <p>Quando utilizadas em nível estratégico, as técnicas, em geral, auxiliam a:</p>
-                            <ul class="custom-bullet">
-                                <li>Identificar prioridades de melhoria, ou seja, avaliar e selecionar áreas ou
-                                    aspectos que mais necessitam de aprimoramento em um determinado contexto, seja
-                                    em um projeto, seja em uma organização, processo ou em qualquer outra situação.
-                                </li>
-                                <li>Identificar e analisar causas fundamentais, isto é, referem-se ao processo de
-                                    investigar a raiz ou origem de um problema ou desafio específico. Em muitos
-                                    casos, os problemas que aparecem de forma superficial têm causas mais profundas
-                                    que precisam ser compreendidas e tratadas para evitar recorrências, ou seja,
-                                    evitar que ocorram novamente. Esse processo é comumente conhecido como análise
-                                    das causas raízes, análise das causas primárias ou, ainda, análise das causas
-                                    fundamentais.
-                                </li>
-                                <li>Planejar ações de melhoria e avaliar progresso. É o processo sistemático em que
-                                    uma pessoa, equipe ou organização desenvolve estratégias para implementar
-                                    melhorias e, em seguida, avalia regularmente o progresso alcançado.
-                                </li>
-                            </ul>
-                            <p>Que tal pensar em alguns exemplos?</p>
-                            <p>
-                                Imagine um restaurante que está enfrentando reclamações constantes dos clientes sobre a
-                                qualidade
-                                dos pratos servidos. À primeira vista, o problema pode parecer relacionado apenas à
-                                cozinha ou
-                                aos
-                                chefs de culinária. No entanto, ao realizar uma análise da causa raiz, pode-se descobrir
-                                que o
-                                problema real está na cadeia de fornecimento de ingredientes.
-                            </p>
-                            <p>
-                                Ao investigar mais a fundo, pode-se identificar que um dos fornecedores de alimentos do
-                                restaurante
-                                está entregando ingredientes de baixa qualidade ou vencidos. Isso, por sua vez, afeta
-                                diretamente a
-                                qualidade dos pratos preparados na cozinha. Portanto, a causa fundamental do problema
-                                não está
-                                na
-                                equipe de culinária, mas sim na cadeia de fornecimento.
-                            </p>
-                            <p>
-                                Ao abordar a causa raiz, o restaurante pode tomar medidas para melhorar a seleção de
-                                fornecedores,
-                                implementar controles de qualidade mais rigorosos na recepção de ingredientes e garantir
-                                que
-                                todos
-                                os produtos atendam aos padrões necessários. Isso não apenas resolverá as reclamações
-                                dos
-                                clientes,
-                                mas também prevenirá futuros problemas relacionados à qualidade dos pratos.
-                            </p>
-                            <p>
-                                É possível considerar ainda outra situação cotidiana como exemplo. Suponha que você
-                                esteja
-                                enfrentando uma dor de cabeça e decida tomar um analgésico para aliviar o sintoma. Nesse
-                                caso,
-                                você
-                                está lidando com o efeito imediato da dor sem abordar a causa raiz, que pode estar
-                                relacionada à
-                                falta de sono, ao estresse, à desidratação ou a outros fatores. O analgésico proporciona
-                                um
-                                alívio
-                                temporário, porém, para resolver a questão de maneira mais efetiva, seria crucial você
-                                identificar e
-                                tratar a causa raiz. Isso poderia envolver aprimorar seus hábitos de sono, adotar
-                                estratégias
-                                para
-                                gerenciar o estresse ou garantir uma adequada hidratação.
-                            </p>
-                            <p>
-                                Da mesma forma, nas organizações, muitas vezes se atua nos sintomas superficiais
-                                (efeitos) ao
-                                invés
-                                de atuar nas causas raízes.
-                            </p>
+                        <p>
+                            Ponto de estrangulamento (ou gargalo) é a etapa em que a capacidade é limitada, causando uma diminuição no desempenho geral do processo. Identificar e resolver gargalos é crucial para otimizar processos e melhorar sua eficiência.  
+                        </p>
+                        <div class="grafismo">
                             <div class="destaque borda-colorida icone importante">
                                 <p>
-                                    É importante sempre buscar eliminar as causas raízes e não apenas os efeitos ou
-                                    sintomas, pois isso permite uma solução de problemas mais duradoura e eficaz.
-                                    Identificar e eliminar as causas fundamentais de um problema é abordar a origem
-                                    dele. Essa abordagem promove uma melhoria sustentável, prevenindo a recorrência
-                                    do
-                                    problema, ou seja, que ele ressurja.
+                                    O mapeamento dos processos nas organizações inicia com a compreensão da situação atual, ou seja, qual o ponto de partida da realidade da empresa neste momento. 
                                 </p>
                             </div>
-                            <p>
-                                Além disso, ao focar nas causas raízes, é possível promover uma mudança positiva
-                                mais
-                                abrangente e sistêmica. Trabalhar apenas nos efeitos muitas vezes leva a soluções
-                                paliativas, que podem resolver temporariamente a situação, mas não proporcionam uma
-                                transformação profunda.
-                            </p>
-                            <p>
-                                Ao buscar eliminar as causas raízes, as organizações e os indivíduos podem
-                                desenvolver
-                                abordagens mais estratégicas e preventivas. Isso não apenas resolve problemas
-                                imediatos,
-                                mas também cria uma base mais sólida para a prevenção de futuros desafios. Em última
-                                análise, a abordagem das causas raízes é um investimento no longo prazo para
-                                alcançar
-                                resultados mais consistentes e significativos.
-                            </p>
-                            <h5>Gestão das operações</h5>
-                            <p>Quando utilizadas em nível operacional, as técnicas, em geral, auxiliam a:</p>
-                            <ul class="custom-bullet">
-                                <li>Controlar a conformidade da produção (atendimento de requisitos), processo que
-                                    visa garantir que a produção de bens ou serviços atenda aos requisitos
-                                    estabelecidos. Isso envolve a implementação de medidas e práticas para garantir
-                                    que os produtos ou serviços estejam em conformidade com os padrões, as
-                                    especificações e as expectativas estabelecidas. </li>
-                                <li>Reduzir ou evitar custos da não qualidade, ou seja, são estratégias e práticas
-                                    implementadas por uma organização para minimizar os custos associados a produtos
-                                    ou serviços que não atendem aos requisitos de qualidade. A “não qualidade” pode
-                                    resultar em retrabalho, devoluções, reclamações de clientes e outros custos
-                                    adicionais que podem ser evitados ou reduzidos por meio de abordagens proativas.
-                                    Essas abordagens proativas são estratégias e ações adotadas antecipadamente para
-                                    prevenir problemas, otimizar processos ou melhorar resultados, em vez de
-                                    simplesmente reagir a eventos após sua ocorrência. Por exemplo, imagine uma loja
-                                    de varejo que está antecipando as tendências sazonais de compra de seus
-                                    clientes. Em vez de simplesmente reagir ao aumento nas vendas durante as festas
-                                    de final de ano, a loja adotou uma abordagem proativa. </li>
-                            </ul>
-                            <h5>Ação proativa</h5>
-                            <p>
-                                A loja investe em análises de dados e identifica que os clientes tendem a comprar
-                                produtos
-                                específicos durante as festas. Antes do início da temporada, a loja antecipa essa
-                                demanda e
-                                aumenta
-                                seu estoque desses produtos. Além disso, ela cria promoções e pacotes especiais para
-                                atrair
-                                clientes
-                                durante esse período.
-                            </p>
-                            <h5>Resultado esperado</h5>
-                            <p>
-                                Ao agir antecipadamente, a loja está preparada para atender à demanda sazonal, evitando
-                                situações de
-                                falta de estoque. Isso resulta em maior satisfação do cliente, aumento nas vendas e uma
-                                reputação
-                                positiva para a loja, que se destaca pela capacidade de prever e atender às necessidades
-                                dos
-                                clientes.
-                            </p>
                         </div>
-                        <p class="mt-3">
-                            É importante destacar que o PDCA pode ser utilizado associado a diferentes ferramentas da
-                            qualidade.
-                            Essas ferramentas servem para auxiliar na implementação e no monitoramento das etapas do
-                            ciclo PDCA.
+                        <p>
+                            Dessa forma, torna-se viável monitorar os resultados obtidos ao longo do processo. 
                         </p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus nemo nam error itaque, explicabo numquam ea optio atque tempora! Aspernatur nostrum necessitatibus mollitia. Quam obcaecati hic quo eius ea voluptates.</p>
-                        <p>As fases do PDCA, conforme apresentadas por Carpinetti (2016) e já mencionadas, compreendem o
-                            seguinte:</p>
-                        <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
-                        <div class="painel-pdca1 no-print" aria-hidden="true">
-                            <button type="button" class="botao check hvr-sweep-to-right d-block mx-auto mb-3 btn-planejamento" data-bs-toggle="modal"
-                                data-bs-target="#modal3"> (P) Planejamento
-                            </button>
-                            <button type="button" class="botao check hvr-sweep-to-right d-block mx-auto mb-3 btn-execucao" data-bs-toggle="modal"
-                                data-bs-target="#modal4"> (D) Execução
-                            </button>
-                            <button type="button" class="botao check hvr-sweep-to-right d-block mx-auto mb-3 btn-verificacao" data-bs-toggle="modal"
-                                data-bs-target="#modal5"> (C) Verificação
-                            </button>
-                            <button type="button" class="botao check hvr-sweep-to-right d-block mx-auto mb-3 btn-acao" data-bs-toggle="modal"
-                                data-bs-target="#modal6"> (A) Ação
-                            </button>
-                        </div>
-
-
-                        <!-- Inicio modais painel pdca -->
-                        <div class="no-print" aria-hidden="true">
-                            <div class="modal fade no-print" id="modal3" tabindex="-1"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">(P) Planejamento </h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>
-                                                Nessa etapa há a identificação do problema, a investigação de causas
-                                                raízes,
-                                                a
-                                                proposição e o planejamento de soluções e a definição de metas. Nesse
-                                                momento também
-                                                podem ser utilizadas diversas ferramentas da qualidade, como, por
-                                                exemplo:
-                                            </p>
-                                            <ul class="custom-bullet">
-                                                <li> <i>Brainstorming</i> – Incentiva a geração de ideias criativas para
-                                                    a
-                                                    análise
-                                                    ou resolução de problemas. </li>
-                                                <li> Matriz GUT – Ajuda a priorizar as soluções com base em critérios
-                                                    como
-                                                    gravidade, urgência e tendência. </li>
-                                                <li>Definição de metas SMART – Auxilia a definir metas específicas,
-                                                    mensuráveis,
-                                                    alcançáveis, relevantes e com prazo definido (SMART) para a melhoria
-                                                    do
-                                                    processo
-                                                </li>
-                                                <li>Diagrama de causa e efeito – Ajuda a identificar e visualizar as
-                                                    possíveis
-                                                    causas de um problema, categorizando-as em diferentes grupos. </li>
-                                                <li>Diagrama de Pareto – Auxilia na identificação e priorização dos
-                                                    problemas mais
-                                                    significativos, concentrando-se nos itens que causam a maior parte
-                                                    dos
-                                                    problemas. </li>
-                                                <li>5 porquês – É uma técnica simples de questionar repetidamente "por
-                                                    que"
-                                                    um
-                                                    problema ocorre para chegar à causa raiz. </li>
-                                                <li>Diagrama de dispersão – Permite identificar se há uma relação entre
-                                                    duas
-                                                    variáveis, ajudando a entender melhor a causa do problema. </li>
-                                                <li>Histograma – Representa graficamente a distribuição dos dados,
-                                                    ajudando
-                                                    na
-                                                    compreensão da natureza do problema. </li>
-                                                <li>Fluxograma – Mapeia visualmente os passos de um processo, destacando
-                                                    oportunidades de melhoria e áreas problemáticas. </li>
-                                                <li>Gráficos de controle – Monitoram a variação do processo ao longo do
-                                                    tempo,
-                                                    facilitando a identificação de padrões e causas especiais. </li>
-                                                <li>Matriz 5W2H – Define claramente quais ações serão realizadas (o que,
-                                                    quando,
-                                                    onde, quem, por que, como e quanto). </li>
-                                            </ul>
-                                            <div class="modal-footer">
-                                                <button type="button" class="botao hvr-sweep-to-right"
-                                                    data-bs-dismiss="modal">Fechar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade no-print" id="modal4" tabindex="-1"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">(D) Execução</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>
-                                                Fase da preparação (incluindo treinamento) e execução das tarefas de
-                                                acordo
-                                                com o
-                                                planejado. Nessa etapa é possível realizar reuniões participativas e
-                                                utilizar
-                                                ferramentas da qualidade, como 5W2H e <i>checklist</i>, que é uma lista
-                                                de
-                                                tarefas
-                                                ou itens
-                                                que precisam ser verificados, marcados ou concluídos. Essa ferramenta é
-                                                utilizada
-                                                para garantir que todas as etapas necessárias sejam seguidas e que
-                                                nenhum
-                                                detalhe
-                                                importante seja esquecido durante a execução de uma atividade ou de um
-                                                processo.
-                                            </p>
-                                            <div class="modal-footer">
-                                                <button type="button" class="botao hvr-sweep-to-right"
-                                                    data-bs-dismiss="modal">Fechar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade no-print" id="modal5" tabindex="-1"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">(C) Verificação</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>
-                                                É a coleta de dados e a comparação do resultado alcançado com a meta
-                                                planejada.
-                                                Nessa etapa podem ser utilizados alguns instrumentos para garantir uma
-                                                verificação
-                                                abrangente e eficaz. Entre esses instrumentos estão os seguintes:
-                                            </p>
-                                            <ul class="custom-bullet">
-                                                <li>Folha de verificação – É uma ferramenta visual simples e eficaz
-                                                    utilizada para
-                                                    coletar dados sistematicamente. Ela é projetada para ajudar na
-                                                    organização e na
-                                                    coleta de informações sobre a ocorrência de eventos ou a execução de
-                                                    tarefas.
-                                                </li>
-                                                <li>Gráficos de controle – Monitora visualmente a estabilidade do
-                                                    processo
-                                                    ao longo
-                                                    do tempo, identificando padrões e variações que possam impactar os
-                                                    resultados.
-                                                </li>
-                                                <li>Histograma – Representa a distribuição dos dados de maneira gráfica,
-                                                    facilitando
-                                                    a identificação de tendências e a avaliação da conformidade com os
-                                                    padrões
-                                                    esperados. </li>
-                                                <li>Comparação de desempenho – Compara o desempenho atual com dados
-                                                    históricos para
-                                                    determinar melhorias ou retrocessos ao longo do tempo. </li>
-                                                <li>Entrevistas estruturadas – Conduz entrevistas estruturadas com
-                                                    membros
-                                                    da equipe
-                                                    envolvidos no processo para obter retornos sobre a eficácia das
-                                                    mudanças
-                                                    implementadas. </li>
-                                                <li>Indicadores – Monitora indicadores relacionados ao processo para
-                                                    avaliar
-                                                    continuamente o desempenho em relação aos objetivos. </li>
-                                            </ul>
-                                            <div class="modal-footer">
-                                                <button type="button" class="botao hvr-sweep-to-right"
-                                                    data-bs-dismiss="modal">Fechar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade no-print" id="modal6" tabindex="-1"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">(A) Ação</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>
-                                                É a atuação junto aos desvios observados a fim de corrigi-los. Caso
-                                                necessário,
-                                                deve-se replanejar as ações de melhoria e reiniciar o PDCA.
-                                            </p>
-                                            <div class="modal-footer">
-                                                <button type="button" class="botao hvr-sweep-to-right"
-                                                    data-bs-dismiss="modal">Fechar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Fim modais painel pdca -->
-                        <!-- Inicio acessivel painel pdca -->
-                        <div class="acessivel only-print"></div>
-                        <!-- Fim acessivel painel pdca -->
-
-                        <figure class="my-5">
-                            <div class="figure-img mx-auto mb-4">
-                                <img class="img-fluid d-block mx-auto" src="./img/grafico3.png">
-                            </div>
-                            <figcaption class="figure-caption text-center">Ciclo PDCA com detalhamento
-                                <br>
-                                Fonte: Adaptado de Carpinetti (2016, p. 40)
-                            </figcaption>
-                        </figure>
-                        <p class="acessivel no-print">
-                            Círculo dividido em quatro partes, com as etapas P, D, C e A. A etapa P está dividida em
-                            duas
-                            partes, que são “definir as metas” e “métodos para atingir as metas”. A etapa D também está
-                            dividida
-                            em duas partes, que são “educar e treinar” e “executar a tarefa”. A etapa C contém o texto
-                            “verificar os resultados da tarefa executada” e a etapa A contém “agir corretivamente”.
+                        <p>
+                            No cotidiano de uma organização, ocorrem diversas variações no processo originadas, por exemplo, da matéria-prima, da mão de obra ou da manutenção das máquinas, o que resulta em ajustes contínuos. Ao longo do tempo, essas adaptações resultam na formação de novos procedimentos e caminhos, que alteram o processo original.  
                         </p>
-                        <p>Confira a seguir exemplos de aplicação prática do PDCA:</p>
-                        <p class="no-print" aria-hidden="true">
-                            Clique ou toque em cada elemento para visualizar o conteúdo.
+                        <div class="grafismo">
+                            <div class="destaque borda-colorida icone fundamental">
+                                <p>
+                                    Dessa forma, para obter um mapeamento preciso, é fundamental que as informações do processo sejam colhidas no local de trabalho mediante observação, anotações, fotografia, filmagem e entrevista com os colaboradores envolvidos, preferencialmente no centro de trabalho. Entrevistar o gestor em seu escritório pode levar a erros que comprometerão todo o trabalho. 
+                                </p>
+                            </div>
+                        </div>
+                        <p>
+                            Ao conduzir a entrevista, é essencial coletar dados sobre as atividades, o tempo necessário para sua execução e o fluxo de informações e materiais, abrangendo as entradas e saídas de cada atividade que integra o processo. Com as informações obtidas, existem diversas maneiras de representar os processos mapeados. Contudo, é necessário ter alguns critérios: 
                         </p>
-                        <div class="painel-praticas-pdca no-print" aria-hidden="true">
-                            <div class="row justify-content-md-center no-print">
-                                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-3">
-                                    <button type="button" class="btn-viagem check d-block mx-auto"
-                                        data-bs-toggle="modal" data-bs-target="#modal7">
-                                    </button>
-                                </div>
-                                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-3">
-                                    <button type="button" class="btn-consultorio check d-block mx-auto"
-                                        data-bs-toggle="modal" data-bs-target="#modal8">
-                                    </button>
-                                </div>
-                                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-3">
-                                    <button type="button" class="btn-loja check d-block mx-auto" data-bs-toggle="modal"
-                                        data-bs-target="#modal9">
-                                    </button>
-                                </div>
-                                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-3">
-                                    <button type="button" class="btn-fabrica check d-block mx-auto"
-                                        data-bs-toggle="modal" data-bs-target="#modal10">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Inicio modais painel-praticas-pdca -->
-                        <div class="no-print" aria-hidden="true">
-                            <div class="modal fade no-print" id="modal7" tabindex="-1"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-80">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Viagem</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>
-                                                Imagine uma situação cotidiana, como realizar uma viagem. Se você
-                                                simplesmente
-                                                sair
-                                                em direção ao destino sem um planejamento adequado, haverá uma chance
-                                                significativa
-                                                de enfrentar contratempos, esquecimentos ou até mesmo não aproveitar
-                                                plenamente
-                                                as
-                                                oportunidades que o destino oferece. É como viajar sem um mapa ou
-                                                itinerário
-                                                claro.
-                                            </p>
-                                            <p>
-                                                Então, você pode utilizar o ciclo PDCA para garantir uma viagem mais
-                                                organizada
-                                                e
-                                                eficiente. Que tal desmembrar cada etapa do ciclo no contexto de uma
-                                                viagem?
-                                            </p>
-                                            <p class="no-print">Clique ou toque para visualizar o conteúdo.</p>
-                                            <div class="print" aria-hidden="true">
-                                                <div class="accordion" id="accordionExample">
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header" id="headingOne">
-                                                            <button class="accordion-button collapsed" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                                                aria-expanded="false" aria-controls="collapseOne">
-                                                                Planejar (P)
-                                                            </button>
-                                                        </h2>
-                                                        <div id="collapseOne" class="accordion-collapse collapse"
-                                                            aria-labelledby="headingOne"
-                                                            data-bs-parent="#accordionExample">
-                                                            <div class="accordion-body">
-                                                                <p>Antes de iniciar a viagem, é crucial planejar cada
-                                                                    detalhe.
-                                                                    Definir o destino, as datas de partida e retorno, os
-                                                                    meios
-                                                                    de transporte, as acomodações, as atividades
-                                                                    planejadas
-                                                                    e um
-                                                                    orçamento é um passo essencial. Além disso, pode-se
-                                                                    estabelecer metas claras para a viagem, como
-                                                                    explorar
-                                                                    determinados pontos turísticos, experimentar a
-                                                                    culinária
-                                                                    local ou simplesmente relaxar.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header" id="headingTwo">
-                                                            <button class="accordion-button collapsed" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                                                aria-expanded="false" aria-controls="collapseTwo">
-                                                                Executar (D)
-                                                            </button>
-                                                        </h2>
-                                                        <div id="collapseTwo" class="accordion-collapse collapse"
-                                                            aria-labelledby="headingTwo"
-                                                            data-bs-parent="#accordionExample">
-                                                            <div class="accordion-body">
-                                                                <p>Durante a viagem, coloque o plano em prática. Siga as
-                                                                    reservas feitas, visite os locais planejados e
-                                                                    participe
-                                                                    das
-                                                                    atividades programadas. Este é o momento de executar
-                                                                    o
-                                                                    que
-                                                                    foi cuidadosamente planejado. Durante esta fase,
-                                                                    mantenha-se
-                                                                    aberto para novas experiências e oportunidades que
-                                                                    possam
-                                                                    surgir, mas sempre seguindo o plano inicial.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header" id="headingThree">
-                                                            <button class="accordion-button collapsed" type="button"
-                                                                data-bs-toggle="collapse"
-                                                                data-bs-target="#collapseThree" aria-expanded="false"
-                                                                aria-controls="collapseThree">
-                                                                Verificar (C)
-                                                            </button>
-                                                        </h2>
-                                                        <div id="collapseThree" class="accordion-collapse collapse"
-                                                            aria-labelledby="headingThree"
-                                                            data-bs-parent="#accordionExample">
-                                                            <div class="accordion-body">
-                                                                <p>Ao longo da viagem, avalie constantemente o progresso
-                                                                    do
-                                                                    plano. Verifique se as metas estão sendo alcançadas,
-                                                                    se
-                                                                    as
-                                                                    despesas estão dentro do orçamento e se você está
-                                                                    aproveitando as experiências conforme o esperado.
-                                                                    Essa
-                                                                    etapa
-                                                                    envolve uma avaliação constante do desempenho em
-                                                                    relação
-                                                                    aos
-                                                                    objetivos definidos no planejamento.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header" id="heading4">
-                                                            <button class="accordion-button collapsed" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#collapse4"
-                                                                aria-expanded="false" aria-controls="collapse4">
-                                                                Ação (A)
-                                                            </button>
-                                                        </h2>
-                                                        <div id="collapse4" class="accordion-collapse collapse"
-                                                            aria-labelledby="heading4"
-                                                            data-bs-parent="#accordionExample">
-                                                            <div class="accordion-body">
-                                                                <p>Com base na avaliação, tome ações corretivas e de
-                                                                    melhoria.
-                                                                    Se perceber que está gastando mais do que o
-                                                                    previsto,
-                                                                    pode
-                                                                    ajustar o orçamento. Se descobrir atividades
-                                                                    interessantes
-                                                                    não planejadas, você pode incorporá-las ao
-                                                                    itinerário.
-                                                                    Esta
-                                                                    etapa é crucial para adaptar-se a circunstâncias
-                                                                    imprevistas
-                                                                    e melhorar continuamente sua experiência da viagem.
-                                                                </p>
-                                                                <p>
-                                                                    Esse ciclo PDCA repete-se ao longo da viagem,
-                                                                    permitindo
-                                                                    que
-                                                                    você se adapte continuamente às circunstâncias e
-                                                                    melhore
-                                                                    sua
-                                                                    experiência com base no aprendizado contínuo durante
-                                                                    a
-                                                                    jornada.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="botao hvr-sweep-to-right"
-                                                    data-bs-dismiss="modal">Fechar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade print" id="modal8" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-80">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Consultório (serviços) </h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>
-                                                Imagine agora um consultório que enfrenta dificuldades no processo de
-                                                agendamento,
-                                                que atualmente é realizado exclusivamente pelo telefone. A atendente
-                                                está
-                                                frequentemente sobrecarregada e há muitas reclamações de clientes, que
-                                                acabam
-                                                enfrentando uma longa fila de espera. A ausência de um método eficiente
-                                                de
-                                                marcação
-                                                de consultas e o tempo prolongado de espera impactam negativamente a
-                                                experiência
-                                                dos
-                                                pacientes e a eficiência operacional do consultório.
-                                            </p>
-                                            <p>
-                                                Assim, é possível utilizar o ciclo PDCA para resolver esse problema.
-                                                Confira
-                                                o
-                                                desmembramento de cada etapa do ciclo no contexto dessa problemática:
-                                            </p>
-                                            <p class="no-print">Clique ou toque para visualizar o conteúdo.</p>
-                                            <div class="print" aria-hidden="true">
-                                                <div class="accordion" id="accordionExample2">
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header" id="heading5">
-                                                            <button class="accordion-button collapsed" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#collapse5"
-                                                                aria-expanded="false" aria-controls="collapse5">
-                                                                Planejar (P)
-                                                            </button>
-                                                        </h2>
-                                                        <div id="collapse5" class="accordion-collapse collapse"
-                                                            aria-labelledby="heading5"
-                                                            data-bs-parent="#accordionExample2">
-                                                            <div class="accordion-body">
-                                                                <p>Antes de introduzir o sistema de agendamento
-                                                                    <i>on-line</i>,
-                                                                    o
-                                                                    consultório médico realiza um planejamento
-                                                                    detalhado,
-                                                                    definindo metas, como redução nas filas de espera,
-                                                                    facilidade de agendamento e aumento na satisfação
-                                                                    dos
-                                                                    pacientes. Além disso, o consultório também
-                                                                    estabelece
-                                                                    métricas de avaliação, como tempo médio de espera e
-                                                                    avaliação dos pacientes.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header" id="heading6">
-                                                            <button class="accordion-button collapsed" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#collapse6"
-                                                                aria-expanded="false" aria-controls="collapse6">
-                                                                Executar (D)
-                                                            </button>
-                                                        </h2>
-                                                        <div id="collapse6" class="accordion-collapse collapse"
-                                                            aria-labelledby="heading6"
-                                                            data-bs-parent="#accordionExample2">
-                                                            <div class="accordion-body">
-                                                                <p>O consultório implementa o sistema de agendamento
-                                                                    <i>on-line</i>
-                                                                    conforme o planejado. Os funcionários são treinados
-                                                                    para
-                                                                    operar o novo sistema e os pacientes são informados
-                                                                    das
-                                                                    mudanças. Durante essa fase, o consultório coleta
-                                                                    dados
-                                                                    sobre o desempenho do sistema, como tempo de espera
-                                                                    real
-                                                                    e
-                                                                    <i>feedback</i>
-                                                                    dos pacientes.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header" id="heading7">
-                                                            <button class="accordion-button collapsed" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#collapse7"
-                                                                aria-expanded="false" aria-controls="collapse7">
-                                                                Verificar (C)
-                                                            </button>
-                                                        </h2>
-                                                        <div id="collapse7" class="accordion-collapse collapse"
-                                                            aria-labelledby="heading7"
-                                                            data-bs-parent="#accordionExample2">
-                                                            <div class="accordion-body">
-                                                                <p>Após a implementação, o consultório verifica se as
-                                                                    metas
-                                                                    estabelecidas foram atingidas. Ele analisa os dados
-                                                                    coletados para avaliar a eficácia do sistema, por
-                                                                    exemplo,
-                                                                    verifica se houve redução nas filas de espera, se os
-                                                                    pacientes estão usando o sistema de agendamento
-                                                                    <i>on-line</i> de
-                                                                    maneira eficaz e se houve melhoria na satisfação
-                                                                    geral
-                                                                    dos
-                                                                    pacientes.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header" id="heading8">
-                                                            <button class="accordion-button collapsed" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#collapse8"
-                                                                aria-expanded="false" aria-controls="collapse8">
-                                                                Ação (A)
-                                                            </button>
-                                                        </h2>
-                                                        <div id="collapse8" class="accordion-collapse collapse"
-                                                            aria-labelledby="heading8"
-                                                            data-bs-parent="#accordionExample2">
-                                                            <div class="accordion-body">
-                                                                <p>
-                                                                    Com base na verificação, o consultório toma medidas
-                                                                    corretivas e
-                                                                    de melhoria. Se perceber que alguns pacientes
-                                                                    preferem
-                                                                    lembretes
-                                                                    automáticos por mensagem de texto enquanto outros
-                                                                    preferem
-                                                                    <i>e-mails</i>, o consultório ajusta o sistema para
-                                                                    oferecer
-                                                                    opções
-                                                                    personalizadas. Ele identifica a necessidade de mais
-                                                                    treinamento
-                                                                    para a equipe em relação às consultas <i>on-line</i>
-                                                                    e
-                                                                    implementa as
-                                                                    melhorias necessárias.
-                                                                </p>
-                                                                <p>
-                                                                    Esse ciclo PDCA continua de forma iterativa,
-                                                                    permitindo
-                                                                    ao
-                                                                    consultório médico ajustar constantemente suas
-                                                                    práticas
-                                                                    e
-                                                                    procedimentos para atender melhor às necessidades
-                                                                    dos
-                                                                    pacientes
-                                                                    e otimizar a eficiência do sistema de agendamento
-                                                                    <i>on-line</i>.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="botao hvr-sweep-to-right"
-                                                    data-bs-dismiss="modal">Fechar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade print" id="modal9" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-80">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Loja de roupas (comércio)
-                                            </h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>
-                                                Agora imagine uma loja de roupas que enfrenta desafios relacionados ao
-                                                gerenciamento
-                                                de estoque. Muitas vezes, a loja está com problemas de excesso de
-                                                estoque de
-                                                determinados itens, enquanto outros produtos essenciais frequentemente
-                                                acabam
-                                                faltando. Isso resulta em perdas financeiras e na insatisfação dos
-                                                clientes.
-                                                Para
-                                                resolver esse problema, a loja decide aplicar o ciclo PDCA da seguinte
-                                                maneira:
-                                            </p>
-                                            <p class="no-print">
-                                                Clique ou toque para visualizar o conteúdo.
-                                            </p>
-                                            <div class="print" aria-hidden="true">
-                                                <div class="accordion" id="accordionExample3">
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header" id="heading9">
-                                                            <button class="accordion-button collapsed" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#collapse9"
-                                                                aria-expanded="false" aria-controls="collapse9">
-                                                                Planejar (P)
-                                                            </button>
-                                                        </h2>
-                                                        <div id="collapse9" class="accordion-collapse collapse"
-                                                            aria-labelledby="heading9"
-                                                            data-bs-parent="#accordionExample3">
-                                                            <div class="accordion-body">
-                                                                <p>Antes de realizar qualquer mudança, a loja realiza
-                                                                    uma
-                                                                    análise detalhada do histórico de vendas,
-                                                                    identificando
-                                                                    padrões e sazonalidades. Ela estabelece metas para
-                                                                    otimizar
-                                                                    o estoque, reduzindo excessos e evitando escassez de
-                                                                    produtos populares. Também define métricas, como
-                                                                    giro de
-                                                                    estoque e taxa de satisfação do cliente.
-                                                                </p>
-                                                                <div class="grafismo">
-                                                                    <div
-                                                                        class="destaque borda-colorida icone saibamais">
-                                                                        <p>
-                                                                            A sazonalidade refere-se a padrões que se
-                                                                            repetem ou
-                                                                            variações
-                                                                            que ocorrem regularmente em um determinado
-                                                                            período de
-                                                                            tempo,
-                                                                            geralmente associados às estações do ano,
-                                                                            feriados ou
-                                                                            outros
-                                                                            eventos cíclicos. Esses padrões podem afetar
-                                                                            vários
-                                                                            aspectos,
-                                                                            como o comportamento do consumidor, a
-                                                                            demanda
-                                                                            por
-                                                                            produtos ou
-                                                                            serviços, as condições climáticas, entre
-                                                                            outros.
-                                                                        </p>
-                                                                        <p>
-                                                                            Por exemplo, muitos produtos têm demanda
-                                                                            sazonal, como
-                                                                            roupas de
-                                                                            inverno, que são mais procuradas durante os
-                                                                            meses mais
-                                                                            frios, ou
-                                                                            protetores solares, que são mais demandados
-                                                                            durante o
-                                                                            verão.
-                                                                            Além disso, alguns setores, como o varejo,
-                                                                            experimentam
-                                                                            picos de
-                                                                            vendas durante feriados específicos, como o
-                                                                            Natal.
-                                                                        </p>
-                                                                        <p>
-                                                                            A sazonalidade é uma consideração importante
-                                                                            para as
-                                                                            empresas,
-                                                                            pois influencia as estratégias de
-                                                                            <i>marketing</i>,
-                                                                            produção,
-                                                                            distribuição e estoque. As empresas precisam
-                                                                            antecipar-se e
-                                                                            adaptar-se a essas variações sazonais para
-                                                                            otimizar suas
-                                                                            operações e atender eficientemente à demanda
-                                                                            flutuante.
-                                                                        </p>
-                                                                        <p>
-                                                                            Analisar e compreender os padrões de
-                                                                            sazonalidade é
-                                                                            essencial
-                                                                            para o planejamento estratégico, ajudando as
-                                                                            organizações a
-                                                                            ajustarem suas estratégias sazonalmente para
-                                                                            aproveitar
-                                                                            oportunidades e minimizar desafios
-                                                                            associados a
-                                                                            variações
-                                                                            previsíveis ao longo do tempo.
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header" id="heading10">
-                                                            <button class="accordion-button collapsed" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#collapse10"
-                                                                aria-expanded="false" aria-controls="collapse10">
-                                                                Executar (D)
-                                                            </button>
-                                                        </h2>
-                                                        <div id="collapse10" class="accordion-collapse collapse"
-                                                            aria-labelledby="heading10"
-                                                            data-bs-parent="#accordionExample3">
-                                                            <div class="accordion-body">
-                                                                <p>Com base no planejamento, a loja ajusta seu processo
-                                                                    de
-                                                                    reabastecimento e implementa um sistema de
-                                                                    monitoramento
-                                                                    em
-                                                                    tempo real do estoque. Os funcionários são treinados
-                                                                    para
-                                                                    utilizar eficientemente o novo sistema. Durante essa
-                                                                    fase, a
-                                                                    loja coleta dados sobre o giro de estoque, a
-                                                                    precisão
-                                                                    das
-                                                                    previsões de vendas e a disponibilidade de
-                                                                    produtos-chave.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header" id="heading11">
-                                                            <button class="accordion-button collapsed" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#collapse11"
-                                                                aria-expanded="false" aria-controls="collapse11">
-                                                                Verificar (C)
-                                                            </button>
-                                                        </h2>
-                                                        <div id="collapse11" class="accordion-collapse collapse"
-                                                            aria-labelledby="heading11"
-                                                            data-bs-parent="#accordionExample3">
-                                                            <div class="accordion-body">
-                                                                <p>Após a implementação, a loja verifica se as metas de
-                                                                    otimização de estoque foram alcançadas; analisa os
-                                                                    dados
-                                                                    coletados para avaliar se houve uma redução nos
-                                                                    casos de
-                                                                    excesso e escassez de estoque e examina a satisfação
-                                                                    do
-                                                                    cliente em relação à disponibilidade de produtos.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header" id="heading12">
-                                                            <button class="accordion-button collapsed" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#collapse12"
-                                                                aria-expanded="false" aria-controls="collapse12">
-                                                                Ação (A)
-                                                            </button>
-                                                        </h2>
-                                                        <div id="collapse12" class="accordion-collapse collapse"
-                                                            aria-labelledby="heading12"
-                                                            data-bs-parent="#accordionExample3">
-                                                            <div class="accordion-body">
-                                                                <p>
-                                                                    Com base na verificação, a loja toma ações
-                                                                    corretivas e
-                                                                    de
-                                                                    melhoria. Se identificar que determinados produtos
-                                                                    têm
-                                                                    uma
-                                                                    demanda sazonal mais forte do que o previsto, ajusta
-                                                                    as
-                                                                    previsões de estoque. Se perceber que o sistema de
-                                                                    monitoramento
-                                                                    precisa de aprimoramentos, implementa as melhorias
-                                                                    necessárias.
-                                                                    Esse ciclo PDCA continua permitindo à loja ajustar
-                                                                    constantemente suas práticas para manter um estoque
-                                                                    eficiente e
-                                                                    atender melhor às necessidades dos clientes.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="botao hvr-sweep-to-right"
-                                                    data-bs-dismiss="modal">Fechar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade print" id="modal10" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-80">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Fábrica automotiva
-                                                (indústria)
-                                            </h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>
-                                                Considere uma fábrica que lida com a produção de peças para a indústria
-                                                automotiva e
-                                                enfrenta problemas de qualidade em algumas de suas linhas de produção.
-                                                Algumas
-                                                peças
-                                                não atendem aos padrões de qualidade, resultando em retrabalho e
-                                                desperdício
-                                                de
-                                                recursos. Para resolver esse problema, a fábrica decide aplicar o ciclo
-                                                PDCA
-                                                da
-                                                seguinte forma:
-                                            </p>
-                                            <p class="no-print">Clique ou toque para visualizar o conteúdo.</p>
-                                            <div class="print" aria-hidden="true">
-                                                <div class="accordion" id="accordionExample4">
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header" id="heading13">
-                                                            <button class="accordion-button collapsed" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#collapse13"
-                                                                aria-expanded="false" aria-controls="collapse13">
-                                                                Planejar (P)
-                                                            </button>
-                                                        </h2>
-                                                        <div id="collapse13" class="accordion-collapse collapse"
-                                                            aria-labelledby="heading13"
-                                                            data-bs-parent="#accordionExample4">
-                                                            <div class="accordion-body">
-                                                                <p>
-                                                                    Antes de implementar mudanças, a fábrica realiza uma
-                                                                    análise
-                                                                    das
-                                                                    etapas de produção identificando os pontos críticos
-                                                                    que
-                                                                    impactam
-                                                                    a qualidade das peças. A fábrica também estabelece
-                                                                    metas
-                                                                    para
-                                                                    reduzir o índice de defeitos, melhorar a eficiência
-                                                                    da
-                                                                    produção
-                                                                    e minimizar o retrabalho. Além disso, define
-                                                                    métricas,
-                                                                    como
-                                                                    taxa
-                                                                    de retrabalho e tempo médio de produção.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header" id="heading14">
-                                                            <button class="accordion-button collapsed" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#collapse14"
-                                                                aria-expanded="false" aria-controls="collapse14">
-                                                                Executar (D)
-                                                            </button>
-                                                        </h2>
-                                                        <div id="collapse14" class="accordion-collapse collapse"
-                                                            aria-labelledby="heading14"
-                                                            data-bs-parent="#accordionExample4">
-                                                            <div class="accordion-body">
-                                                                <p>Com base no planejamento, a fábrica introduz novos
-                                                                    procedimentos de controle de qualidade nas linhas de
-                                                                    produção identificadas. Os operadores são treinados
-                                                                    nas
-                                                                    novas práticas e sistemas de monitoramento são
-                                                                    implementados
-                                                                    para avaliar a qualidade das peças em tempo real.
-                                                                    Durante
-                                                                    essa fase, a fábrica coleta dados sobre o número de
-                                                                    peças
-                                                                    defeituosas, o tempo de produção e a eficácia das
-                                                                    novas
-                                                                    práticas.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header" id="heading15">
-                                                            <button class="accordion-button collapsed" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#collapse15"
-                                                                aria-expanded="false" aria-controls="collapse11">
-                                                                Verificar (C)
-                                                            </button>
-                                                        </h2>
-                                                        <div id="collapse15" class="accordion-collapse collapse"
-                                                            aria-labelledby="heading15"
-                                                            data-bs-parent="#accordionExample4">
-                                                            <div class="accordion-body">
-                                                                <p>Após a implementação, a fábrica verifica se as metas
-                                                                    de
-                                                                    melhoria da qualidade foram atingidas e analisa os
-                                                                    dados
-                                                                    coletados para avaliar se houve redução nos
-                                                                    defeitos, se
-                                                                    o
-                                                                    retrabalho diminuiu e se a eficiência da produção
-                                                                    aumentou.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header" id="heading16">
-                                                            <button class="accordion-button collapsed" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#collapse16"
-                                                                aria-expanded="false" aria-controls="collapse16">
-                                                                Ação (A)
-                                                            </button>
-                                                        </h2>
-                                                        <div id="collapse16" class="accordion-collapse collapse"
-                                                            aria-labelledby="heading16"
-                                                            data-bs-parent="#accordionExample4">
-                                                            <div class="accordion-body">
-                                                                <p>
-                                                                    Com base na verificação, a fábrica toma ações
-                                                                    corretivas
-                                                                    e
-                                                                    de melhoria. Se identificar que determinadas
-                                                                    máquinas
-                                                                    estão
-                                                                    consistentemente produzindo peças defeituosas,
-                                                                    realiza
-                                                                    manutenção preventiva. Se perceber que certos
-                                                                    operadores
-                                                                    precisam de treinamento adicional, implementa as
-                                                                    melhorias
-                                                                    necessárias. O ciclo PDCA continua, permitindo à
-                                                                    fábrica
-                                                                    adaptar continuamente seus processos para garantir a
-                                                                    qualidade das peças e a eficiência da produção.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="botao hvr-sweep-to-right"
-                                                    data-bs-dismiss="modal">Fechar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Fim modais painel-praticas-pdca -->
-                        <!-- Inicio acessivel painel-praticas-pdca -->
-                        <div class="acessivel only-print"></div>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus nemo nam error itaque, explicabo numquam ea optio atque tempora! Aspernatur nostrum necessitatibus mollitia. Quam obcaecati hic quo eius ea voluptates.</p>
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/sD-DQaoAodg?si=mbyvgUo7f-kXH9cV"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                        </div>
-                        <p class="mt-4 paragrafo-padding">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio, fuga deleniti eveniet perspiciatis quos perferendis, quod modi odio natus eos nisi non enim id amet ducimus aspernatur sequi corporis.
+                        <ul class="custom-bullet">
+                            <li>
+                                Objetivos e elementos-chave: definição clara do que deve ser documentado e seu nível de detalhamento necessário.
+                            </li>
+                            <li>
+                                Usabilidade: representação acessível e compreensível, simplificando tanto a elaboração quanto o uso da ferramenta.
+                            </li>
+                            <li>
+                                Manutenibilidade: ferramenta de fácil manutenção e adaptação, pois os processos estão sujeitos a sofrer melhorias e deverão ter suas representações atualizadas. 
+                            </li>
+                        </ul>
+                        <p>
+                            No mapeamento de processos, as técnicas mais utilizadas para sua representação são <strong>fluxogramas</strong> e <strong>SIPOC</strong> (<i>Suppliers, Inputs, Process, Outputs e Customers</i>).  
                         </p>
                     </div>
                 </div>
-                <div class="img-div">
+                <!-- <div class="img-div">
                     <img src="./img/div.png" class="img-fluid no-print">
-                </div>
+                </div> -->
                 <div class="bloco-3">
                     <div class="container">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt, eveniet nisi facilis molestias aliquam sint consequatur iusto illo minima numquam magni dolore, officia quod voluptatum amet possimus. Officiis!</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt, eveniet nisi facilis molestias aliquam sint consequatur iusto illo minima numquam magni dolore, officia quod voluptatum amet possimus. Officiis!</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt, eveniet nisi facilis molestias aliquam sint consequatur iusto illo minima numquam magni dolore, officia quod voluptatum amet possimus. Officiis!</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt, eveniet nisi facilis molestias aliquam sint consequatur iusto illo minima numquam magni dolore, officia quod voluptatum amet possimus. Officiis!</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt, eveniet nisi facilis molestias aliquam sint consequatur iusto illo minima numquam magni dolore, officia quod voluptatum amet possimus. Officiis!</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt, eveniet nisi facilis molestias aliquam sint consequatur iusto illo minima numquam magni dolore, officia quod voluptatum amet possimus. Officiis!</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt, eveniet nisi facilis molestias aliquam sint consequatur iusto illo minima numquam magni dolore, officia quod voluptatum amet possimus. Officiis!</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt, eveniet nisi facilis molestias aliquam sint consequatur iusto illo minima numquam magni dolore, officia quod voluptatum amet possimus. Officiis!</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt, eveniet nisi facilis molestias aliquam sint consequatur iusto illo minima numquam magni dolore, officia quod voluptatum amet possimus. Officiis!</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt, eveniet nisi facilis molestias aliquam sint consequatur iusto illo minima numquam magni dolore, officia quod voluptatum amet possimus. Officiis!</p>
-                        <p class="paragrafo-padding2">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus nemo nam error itaque, explicabo numquam ea optio atque tempora! Aspernatur nostrum necessitatibus mollitia. Quam obcaecati hic quo eius ea voluptates.</p>
+                        <h3 id="titulo2">Fluxograma </h3>
+                        <p>O fluxograma é uma representação visual de um processo, sistema ou conjunto de atividades, com o propósito de apresentar, de maneira lógica e interconectada, o percurso necessário para a conclusão do processo. Quando elaborado com precisão, o fluxograma proporciona uma compreensão clara sobre como o processo deve ser conduzido. Sua elaboração deve ser simples, detalhada e direta, com a utilização de símbolos e setas indicando a sequência lógica de cada atividade ou tarefa (ROCHA; NONOHAY, 2016). 
                         </p>
-                        <a href=" #" class="voltar-topo no-print" aria-hidden="true"><img
-                                src="../assets/images/bt_topo.svg"></a>
+                        <p>
+                            Segundo Barreto e Saraiva (2019), além da visualização clara de um processo, os fluxogramas também têm os seguintes objetivos. 
+                        </p>
+                        <ul class="custom-bullet">
+                            <li>Uniformizar a representação de métodos e procedimentos administrativos </li>
+                            <li>Agilizar a descrição dos métodos administrativos </li>
+                            <li>Tornar a leitura e o entendimento mais acessíveis </li>
+                            <li>Simplificar a localização e a identificação dos aspectos mais importantes </li>
+                            <li>Proporcionar maior flexibilidade </li>
+                            <li>Elevar o nível de análise </li>
+                        </ul>
+                        <p>
+                            Os fluxogramas podem ser classificados em três tipos: 
+                        </p>
+                        <ul class="custom-bullet">
+                            <li>Fluxograma de blocos</li>
+                            <li>Fluxograma-padrão</li>
+                            <li>Fluxogramas verticais </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bloco-4">
+                    <div class="container">
+                        <h3>Fluxograma de blocos  </h3>
+                        <p>
+                            O diagrama de blocos é uma abordagem simples para a visualização de processos, proporcionando sua rápida compreensão. É considerado o método mais básico e comum, frequentemente sendo a primeira ferramenta utilizada. Sua simbologia utiliza retângulos para representar atividades, conectados por linhas com setas, que indicam o fluxo de informação e/ou atividade. A sequência é iniciada e finalizada por círculos. 
+                        </p>
+                        <p>Ao empregar esse tipo de diagrama, destacam-se apenas as partes essenciais do processo, geralmente referindo-se a um pequeno subsistema dentro de um sistema mais amplo e complexo. Em resumo, o diagrama de blocos é empregado quando é necessário representar o processo de forma macroscópica (LOPES, 2021). 
+                        </p>
+                        <figure class="my-5">
+                            <div class="figure-img mx-auto mb-4">
+                                <img class="img-fluid d-block mx-auto" src="img/fig01.jpg" alt="Diagrama de bloco contendo no topo início, em um círculo, seguido de retângulos ligados por setas, com a direção do fluxo de dados/informações. Os retângulos representam o sistema ou o subsistema descrito por um verbo. Após, o caminho se divide em duas caixas, gerando um ponto de derivação. Após as duas caixas, as setas se unem formando um ponto de junção, abaixo, círculo de fim.  ">
+                            </div>
+                            <figcaption class="figure-caption text-center">
+                                Simbologia do diagrama de blocos fluxogramas <br>
+                                Fonte: Adaptado de Wildauer e Wildauer (2015) 
+                            </figcaption>
+                        </figure>
+                        <p>
+                            A produção de suco de uva pode ser apresentada de forma global com o uso de um diagrama de bloco, conforme a figura a seguir. 
+                        </p>
+                        <figure class="my-5">
+                            <div class="figure-img mx-auto mb-4">
+                                <img class="img-fluid d-block mx-auto" src="img/fig02.jpg" alt="Diagrama de blocos da produção de suco de uva. O início é representado por um círculo, após as atividades sequenciais são representadas em retângulos ligados por setas, seguindo o fluxo das seguintes etapas: receber as uvas, separar das ráquis e esmagar as uvas, adicionar as enzimas, extrair o suco das uvas, clarificar, pasteurizar, engarrafar, armazenar, fim. ">
+                            </div>
+                            <figcaption class="figure-caption text-center">Diagrama de blocos da produção de suco de uva <br>
+                                Fonte: Adaptado de Rizon e Meneguzzo (2007) 
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="bloco-5">
+                    <div class="container">
+                        <h3>Fluxograma-padrão  </h3>
+                        <p>
+                            O fluxograma-padrão apresenta atividades inter-relacionadas de forma detalhada, desempenha um papel essencial no mapeamento de processos e permite uma exploração minuciosa das atividades em cada bloco. Outra característica evidente no fluxograma-padrão são os pontos de tomada de decisão do processo. Para que seja alcançada essa compreensão mais aprofundada do processo, é utilizada uma simbologia básica, apresentada na figura a seguir. 
+
+                        </p>
+                        <p>Para ver mais detalhes sobre fluxogramas-padrão, acesse o conteúdo “Ferramentas da Qualidade”, disponível na unidade curricular “Utilizar metodologias e ferramentas da qualidade nas organizações”.  
+                        </p>
+                        <figure class="my-5">
+                            <div class="figure-img mx-auto mb-4">
+                                <img class="img-fluid d-block mx-auto" src="img/fig03.jpg" alt="Símbolos apresentando os estágios de um fluxograma, com as seguintes representações: círculo ou elipse é início ou fim, retângulo é atividade, losango é decisão, seta é linha de fluxo, retângulo com borda inferior ondulada é documento, retângulos empilhados com borda inferior ondulada são documentos, pentágono com a ponta para baixo é conector de página, trapézio retângulo (com dois ângulos de 90º) é entrada manual de dados, trapézio isósceles (lados não paralelos iguais) é operação manual e meia elipse ou formato da letra D é atraso ou espera. ">
+                            </div>
+                            <figcaption class="figure-caption text-center">Simbologia básica de fluxogramas <br>
+
+                                Fonte: Senac EAD (2024) 
+                                
+                            </figcaption>
+                        </figure>
+                        <p>
+                            No fluxograma-padrão do processo de recebimento de matéria-prima, representado na figura a seguir, se observa o mapeamento dos caminhos distintos criados a partir dos pontos de decisão.  
+                        </p>
+                        <figure class="my-5">
+                            <div class="figure-img mx-auto mb-4">
+                                <img class="img-fluid d-block mx-auto" src="img/fig04.jpg" alt=" Fluxograma-padrão de recebimento de matéria-prima. O início é representado por um círculo, após as atividades sequenciais são representadas em retângulos e pontos de decisão representados por losangos ligados por setas, com o seguinte fluxo de atividades: identificar o fornecedor, conferir o romaneio e a nota fiscal, realizar a inspeção e conferir a quantidade, matéria-prima correta? (losango), para não, contatar fornecedor, divergência resolvida? (losango), para não, devolver matéria-prima ao fornecedor, fim. Matéria-prima correta? (losango), para sim, verificar endereço de armazenamento da matéria-prima, há espaço? (losango), para sim, armazenar matéria-prima, fim. Há espaço? (losango), para não, localizar endereço alternativo, inserir em planilha eletrônica novo endereço, armazenar matéria-prima, fim. ">
+                            </div>
+                            <figcaption class="figure-caption text-center">Fluxograma de recebimento de matéria-prima <br>
+
+                                Fonte: Adaptado de Assis; Sagawa (2018) 
+                                
+                            </figcaption>
+                        </figure>
+                        <div class="grafismo">
+                            <div class="destaque borda-colorida icone desafio">
+                                <p>Que tal um desafio? Acesse o recurso abaixo e pratique a montagem de fluxogramas. </p>
+                                
+                            </div>
+                        </div>
+                        <div>
+                            Espera para oda
+                        </div>
+                        <h4>Fluxograma vertical</h4>
+                        <p>
+                            O fluxograma vertical é caracterizado por ser um formulário composto de cabeçalho e registro de atividades, em que as características das etapas ou atividades são detalhadas. No cabeçalho, são dispostas informações como: código do fluxograma, materiais envolvidos, tipo de processo, local, responsáveis e datas. Ainda, há a possibilidade de sinalizar se o processo é descrito na situação atual ou é o desenho após propostas de melhoria. 
+                        </p>
+                        <p>Em relação ao registro de atividades, no quadro, são descritas as etapas do processo em ordem cronológica e verticalmente, de cima para baixo. Além disso, existe um campo para anotar a distância e o tempo entre as atividades. Então, o tipo de atividade é indicado com a utilização de símbolos, conforme a figura a seguir. 
+                        </p>
+                        
+                        <figure class="my-5">
+                            <div class="figure-img mx-auto mb-4">
+                                <img class="img-fluid d-block mx-auto" src="img/fig05.jpg" alt="Fluxograma vertical com os seguintes símbolos que representam estágios: seta é Transporte: movimento de trabalhadores, materiais ou equipamentos; meia elipse ou formato da letra D é Demora/Espera: indica um atraso ou espera na sequência de eventos; triângulo invertido é Armazenagem: indica a armazenagem permanente de materiais e produtos; círculo é Operação: indica os principais passos em um processo, em que materiais ou produtos são modificados; quadrado é Inspeção: indica a realização de uma inspeção da qualidade ou verificação de quantidade. ">
+                            </div>
+                            <figcaption class="figure-caption text-center">Simbologia dos tipos de atividades em fluxograma vertical <br>
+
+                                Fonte: Blog Aprendendo Gestão (2016) 
+                                
+                            </figcaption>
+                        </figure>
+                        <p>
+                            Em comparação a outros tipos de fluxograma, o vertical preocupa-se com o detalhamento das atividades, o que pode contribuir significativamente na proposição de melhorias nos processos. Esse modelo também se torna interessante, pois o formato de formulário permite que, com um mesmo tipo de documento, sejam mapeados processos variados. Na figura a seguir, é representado o fluxograma vertical do processo de recebimento e armazenagem de <i>pallets</i>.  
+                        </p>
+                        <figure class="my-5">
+                            <div class="figure-img mx-auto mb-4">
+                                <img class="img-fluid d-block mx-auto" src="img/fig06.jpg" alt="Fluxograma vertical do formulário de processo de recebimento e armazenagem de pallet. Cabeçalho dividido em linhas. Na primeira linha, está “Fluxograma Vertical do Processo”, abaixo, “Código do fluxograma: 00025” e “Página: 01 de 01”. Seguindo abaixo, no lado direito, “Objeto de estudo/material/produto: pallets”; “Processo: recebimento e armazenagem de pallets”; “Local: Armazém W-42”; “Método presente”; “Formulado por: Rafael Lima, Data: 19/03/2016”; “Formulado por: João Silva, Data: 23/03/2016”. No lado esquerdo, há uma tabela com quatro colunas: “atividade, presente, proposto e economia”. A coluna atividade contém os seguintes os itens: “operação (círculo), transporte (seta), espera (letra d), inspeção (quadrado) e armazenagem (triângulo invertido)”. Na coluna presente, estão relacionadas as quantidades de cada atividade, conforme seguem: 3 - operação, 2 - transporte, 1 - espera, 1 - inspeção, 1 - armazenagem. A colunas “proposto” e “economia” estão em branco. Abaixo, “Distância total 420 m” e “tempo 105 min”, quadro de registro de atividades: 1 - Caminhão estaciona na doca de descarregamento, distância zero, tempo de 5 minutos, atividade de espera; 2 - descarregamento dos pallets para a área “Transit”, distância de 100 metros, tempo de 12 minutos, atividade de transporte, observação: caminhão médio com 10 pallets; 3 - Conferência do material recebido com NF e packing list, distância zero, tempo de 10 minutos, atividade de inspeção; 4 -Impressão do relatório de recebimento, distância 20 metros, tempo de 22 minutos, atividade de operação; 5 - Levar relatório ao motorista e liberar o caminhão, distância 10 metros, tempo de 1 minuto, atividade de transporte; 6 - Cadastro dos pallets no sistema e colocação de tag RFID, distância de 10 metros, tempo de 22 minutos, atividade de operação; 7 - Empilhadeira armazena pallets nos porta-pallets, distância 250 metros, tempo de 30 minutos, atividade de armazenagem, observação: distância média de 25 metros por pallet. 8 - Registro do endereço onde os pallets foram colocados, distância 30 metros, tempo de 3 minutos, atividade de operação. ">
+                            </div>
+                            <figcaption class="figure-caption text-center">Fluxograma vertical do processo de recebimento e armazenagem de pallets <br>
+                                Fonte: Blog Aprendendo Gestão (2016) 
+                                
+                            </figcaption>
+                        </figure>
+                        
+                        <h3 id="titulo3">SIPOC <i>(suppliers, inputs, process, outputs e customer)</i>   </h3>
+                        <p>
+                            O acrônimo SIPOC, traduzido como “fornecedores” (<i>suppliers</i>), “entradas” (<i>inputs</i>), “processos” (<i>process</i>), “saídas” (<i>outputs</i>) e “clientes” (<i>customers</i>), é uma ferramenta utilizada com o objetivo de identificar os processos que verdadeiramente acrescentam valor, assim como seus responsáveis. Essa abordagem proporciona à empresa uma orientação clara para identificar oportunidades de aprimoramento (LOPES, 2021).  
+                        </p>
+                        <div class="grafismo">
+                            <div class="destaque borda-colorida icone importante">
+                                <p>
+                                    No SIPOC, os processos são mapeados de forma mais ampla e a análise oferece a vantagem de propiciar a todos os participantes do processo uma compreensão mais clara do seu escopo e da sua integração no âmbito do negócio (SLACK et al., 2023, p. 19). 
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <p>
+                            Além disso, tem o potencial de levantar questões cruciais que ocasionalmente podem ser negligenciadas, por exemplo, quais informações os fornecedores do processo precisam fornecer exatamente e qual é a maneira adequada de comunicá-las? Quais são as etapas críticas do processo e quem é o responsável por cada uma delas? (SLACK et al., 2023). 
+                        </p>
+                        <p>No entanto, para que os benefícios sejam obtidos conforme a aplicação do SIPOC, é necessário conhecer cada uma de suas partes (GONZÁLES; PRADO, 2021). 
+                        </p>
+                        
+                        <figure class="my-5">
+                            <div class="figure-img mx-auto mb-4">
+                                <img class="img-fluid d-block mx-auto" src="img/info01.jpg" alt="">
+                            </div>
+                            <figcaption class="figure-caption text-center">
+                                
+                            </figcaption>
+                        </figure>
+                        <div class="acessivel only-print">
+                            S – Suppliers (Fornecedores): indivíduo ou empresa que disponibiliza recursos para o processo. <br>
+                            I – Inputs (Entradas): engloba todos os elementos necessários para a execução do processo, incluindo recursos, informações, materiais e colaboradores. <br>
+                            P – Process (Processos): conjunto de atividades que converte recursos em produtos. <br>
+                            O – Outputs (Saídas): refere-se ao produto ou serviço originado de cada processo. <br>
+                            C – Costumers (Clientes): o destinatário das atividades e resultados, podendo ser interno ou externo ao processo. <br>
+                                            
+                        </div>
+                        <p>
+                            A figura, a seguir, detalha como o SIPOC é estruturado e quais são as informações relevantes em cada uma das partes.  
+                        </p>
+                        <figure class="my-5">
+                            <div class="figure-img mx-auto mb-4">
+                                <img class="img-fluid d-block mx-auto" src="img/fig.jpg" alt="Diagrama SIPOC contendo cinco colunas, com os seguintes itens: Fornecedores (suppliers): fornecedores externos e internos; segunda coluna: Entradas (inputs): materiais, pessoas, informação, conhecimento, equipamentos e instalações; terceira coluna: Processo (process); abaixo, desenho de um fluxograma com retângulos e losangos ligados por setas; quarta coluna: Saídas (outputs): produtos tangíveis e intangíveis, características e informação; quinta coluna: Clientes (customers): clientes externos.  ">
+                            </div>
+                            <figcaption class="figure-caption text-center">Estrutura e informações do diagrama SIPOC  <br>
+
+                                Fonte: Marques; Requeijo (2009) 
+                                
+                            </figcaption>
+                        </figure>
+                        <p>
+                            O SIPOC concentra-se no processo e nas atividades que dele derivam. Portanto, o passo a passo de aplicação do SIPOC inicia do centro: 
+                        </p>
+                        <ul class="custom-bullet">
+                            <li>1º Passo: nomear o processo </li>
+                            <li>2º Passo: especificar as saídas </li>
+                            <li>3º Passo: definir os clientes </li>
+                            <li>4º Passo: apresentar as entradas </li>
+                            <li>5º Passo: identificar os fornecedores </li>
+                            <li>6º Passo: determinar as macroatividades do processo mapeado </li>
+                        </ul>
+                        <p>
+                            Nas próximas figuras, é verificada a aplicação da ferramenta nos processos de recrutamento e de atendimento cirúrgico, respectivamente. No primeiro exemplo, observe que existem processos nos quais há a possibilidade de que o fornecedor e o cliente sejam o mesmo, dessa maneira, é o diretor funcional que solicita o recrutamento e recebe o novo membro da equipe após esse processo. No segundo exemplo, verifica-se que mais de uma saída podem estar atribuídas ao mesmo cliente, como no caso do serviço de prontuário do paciente. Da mesma forma, isso poderia acontecer com os fornecedores e entradas durante o mapeamento de outro processo. 
+                        </p>
+                        <figure class="my-5">
+                            <div class="figure-img mx-auto mb-4">
+                                <img class="img-fluid d-block mx-auto" src="img/fig.jpg" alt="SIPOC de um processo de recrutamento em cinco colunas, conforme seguem: primeira coluna: Fornecedores: Diretor funcional, Gerente de projeto e Agência de recrutamento; segunda coluna: Entradas: Solicitação de recrutamento, Plano de recursos de longo prazo, Relatórios do mercado de trabalho; terceira coluna: Processo: recrutamento, abaixo há o desenho de um fluxograma de bloco com retângulos ligando as seguintes atividades por setas: Combinar as características essenciais e desejáveis, Autorizar orçamento e prazos, Contratar agência de recrutamento, Combinar sobre a lista de candidatos, Fazer oferta e negociar condições, Confirmar data de início e arrumar posse; quarta coluna: Saídas: Novo membro qualificado e experiente na equipe, Registros de pessoal concluídos e Autorização para pagamento; quinta coluna: Diretor funcional, Gerente de projeto e Novo recrutado.  ">
+                            </div>
+                            <figcaption class="figure-caption text-center">SIPOC de um processo de recrutamento <br>
+
+                                Fonte: Slack (2023) 
+                                
+                            </figcaption>
+                        </figure>
+
+                        <figure class="my-5">
+                            <div class="figure-img mx-auto mb-4">
+                                <img class="img-fluid d-block mx-auto" src="img/fig.jpg" alt="SIPOC de um processo de atendimento cirúrgico em cinco colunas, conforme seguem: primeira coluna, Fornecedores: anestesiologista, central de material e esterilização, centro de parto humanizado e farmácia; segunda coluna, Entradas: procedimento de anestesia, disponibilização de materiais esterilizados, tratamento materno-infantil e disponibilidade de material médico e medicamentos; terceira coluna, Fluxo de atividades, abaixo, há o desenho de um fluxograma de bloco com retângulos ligando por setas as seguintes atividades: recepcionar, realizar anestesia, realizar cirurgia, acompanhar recuperação pós-anestésica, acompanhar recuperação pós-operatória, liberar; quarta coluna, Saídas: cirurgia realizada, documentação e registros correspondentes aos procedimentos da assistência prestada; quinta coluna, unidade de terapia intensiva, unidade de internação, serviço de prontuário do paciente, faturamento, controladoria. ">
+                            </div>
+                            <figcaption class="figure-caption text-center">SIPOC de um processo de atendimento cirúrgico <br>
+
+                                Fonte: Blog EmGotas (c2024)  
+                                
+                            </figcaption>
+                        </figure>
+                        <p>
+                            A norma ABNT NBR ISO 9001:2015 recomenda que o SIPOC seja utilizado para entender um processo e identificar as oportunidades de melhoria. Além disso, enfatiza a importância do monitoramento e medição dos processos para garantir a qualidade dos produtos ou serviços entregues aos clientes. Na figura a seguir, consta o diagrama SIPOC adaptado à medição e ao monitoramento.
+                        </p>
+                        <p>Dessa forma, ao usar o SIPOC, é importante incluir o monitoramento e a medição como parte do processo, a fim de garantir seu funcionamento conforme o esperado e resultados de acordo com as expectativas dos clientes, o que pode ser verificado por meio de indicadores de desempenho, como tempo de ciclo, taxa de defeitos, satisfação do cliente, entre outros. 
+                        </p>
+                        <figure class="my-5">
+                            <div class="figure-img mx-auto mb-4">
+                                <img class="img-fluid d-block mx-auto" src="img/fig04.jpg" alt="Diagrama SIPOC adaptado a medição e monitoramento, em cinco colunas, conforme seguem: primeira coluna: Fontes de entrada, processos antecedentes, por exemplo, em provedores (internos e externos), em clientes, em outras partes interessadas pertinentes; segunda coluna: Entradas: matéria, energia, informação, por exemplo, na forma de material, recurso, requisito; terceira coluna: Atividades delimitadas pelo ponto de partida e ponto de chegada; quarta coluna: Saídas: matéria, energia, informação, por exemplo, na forma de produto, serviço, decisão; quinta coluna: recebedores de saídas: processos subsequentes, por exemplo, clientes (internos ou externos), em outras partes interessadas pertinentes. Abaixo de todas as colunas, está: Possíveis controles e pontos para monitorar e medir desempenho. ">
+                            </div>
+                            <figcaption class="figure-caption text-center">Diagrama SIPOC adaptado a medição e monitoramento <br>
+
+                                Fonte: ABNT NBR ISO 9001 (2015) 
+                                
+                            </figcaption>
+                        </figure>
+                        
+                        <h3 id="titulo4"> BPM (Business Process Management) </h3>
+                        <p>
+                            O <i>Business Process Management</i> (BPM), traduzido como “Gerenciamento de Processos de Negócio”, é conceituado pelo Guia CBOK BPM (2021, p. 34) como:  
+                        </p>
+                        <div class="grafismo">
+                            <div class="destaque borda-colorida icone">
+                                <p>
+                                    Uma disciplinada abordagem de gestão para identificar, desenhar, executar, documentar, medir, monitorizar e controlar processos de negócio automatizados e não automatizados para alcançar resultados consistentes e direcionados, alinhados com os objetivos estratégicos de uma Organização. O BPM envolve a definição, melhoria, inovação e gestão deliberada, colaborativa e cada vez mais apoiada pela tecnologia, em que os processos de negócio numa visão ponta a ponta (end-to-end) impulsionam os resultados do negócio, criam valor para os Clientes e permitem que uma Organização atinja os seus objetivos alinhados com o negócio com mais agilidade.  
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <p>
+                            O padrão do BPM é definido mundialmente pela Association of Business Process Management Professionals International (ABPMP), ou Associação Internacional de Profissionais de Gerenciamento de Processos de Negócios, que é uma organização profissional, sem fins lucrativos, independente de fornecedores, dedicada ao avanço dos conceitos de gestão de processos de negócios e suas práticas. 
+                        </p>
+                        <h3> Âmbitos das iniciativas BPM  </h3>
+                        <p>
+                            O BPM apresenta um meio para que o foco seja em resultados e atua em três âmbitos (CBOK BPM, 2021, p. 38): 
+                        </p>
+                        <ul class="custom-bullet">
+                            <li>   <i> Business Process Improvement (BPI)</i>: traduzido como “melhoria dos processos de negócio”, é um projeto singular que objetiva promover melhorias no alinhamento de um processo com a estratégia organizacional e a expectativa dos clientes. Para isso, podem ser aplicados o Ciclo de Vida BPM ou as metodologias Gestão Lean ou Seis Sigma, por exemplo.  </li>
+                            <li>    <i>Enterprise Process Management (EPM)</i>: em português, gestão corporativa de processos, trata-se da aplicação de princípios, métodos e processos BPM, de forma personalizada na empresa. Assim, os objetivos são garantir que os processos de ponta a ponta estejam em sintonia com sua estratégia e recursos e oferecer um guia de governança para gerenciar e avaliar as iniciativas de BPM. </li>
+                            <li>    Melhoria contínua dos processos de negócio: é uma abordagem para monitorar o desempenho dos processos, a fim de garantir que se tornem mais eficientes e eficazes. Para isso, é utilizado um sistema de <i>feedback</i> (retorno) ágil, que permite realizar os ajustes com rapidez quando necessário. </li>
+                        </ul>
+                        <h4>Princípios Básicos do BPM</h4>
+                        <p>
+                            De acordo com o CBOK BPM (2021, p. 39), os princípios básicos do BPM são: 
+                        </p>
+                        <ul>
+                            <li>A mudança nos negócios é uma forma de gestão focada no desempenho. </li>
+                            <li>A mudanças na empresa devem envolver todas as partes interessadas relevantes nos processos. </li>
+                            <li>Ao mudar os processos de negócios, é importante olhar de fora para dentro, focando nas necessidades dos clientes. </li>
+                            <li>Os processos de negócio devem ser gerenciados de maneira completa no interior da organização. </li>
+                            <li>As mudanças nos negócios devem levar em consideração o que é importante para as partes interessadas. </li>
+                            <li>As alterações nos processos de negócios precisam estar alinhadas com a estratégia geral da empresa e os objetivos específicos. </li>
+                            <li>A organização deve segmentar os processos primários e interfuncionais que agregam valor aos clientes. </li>
+                            <li>A mudança nos negócios envolve tanto as pessoas quanto os processos. </li>
+                            <li>O BPM é uma viagem, não um destino final. </li>
+                            <li>Os processos de negócios precisam ser gerenciados de forma contínua em um modelo de ciclo de vida. </li>
+                        </ul>
+                        <h4>Ciclo de Vida BPM </h4>
+                        <p>
+                            O ciclo de vida é um conjunto de interativo de atividades organizadas em fases. O ciclo de vida do BPM utiliza a seguinte estrutura:  
+                        </p>
+                        
+                <!-- Inicio painel versão mobile -->
+                <div class="painel-organizacoes-mob no-print mb-5" aria-hidden="true">
+                    <div class="row no-print">
+                        <button type="button" class="btn-estrutura-mob" data-bs-toggle="modal" data-bs-target="#modal1">
+                            Fase 1 – Alinhamento com a estratégia e os objetivos 
+                        </button>
+                        <button type="button" class="btn-divisao-trabalho-mob" data-bs-toggle="modal"
+                            data-bs-target="#modal2">
+                            Fase 2 – Mudanças de arquitetura 
+                        </button>
+                        <button type="button" class="btn-coordenacao-mob" data-bs-toggle="modal"
+                            data-bs-target="#modal3">
+                            Fase 3 – Desenvolver iniciativas 
+                        </button>
+                        <button type="button" class="btn-ambiente-mob" data-bs-toggle="modal" data-bs-target="#modal4">
+                            Fase 4 – Implementar mudanças 
+                        </button>
+                        <button type="button" class="btn-cultura-mob" data-bs-toggle="modal" data-bs-target="#modal5">
+                            Fase 5 – Medir o sucesso 
+                        </button>
+                        
+                    </div>
+                </div>
+                <!-- Fim painel versão mobile -->
+                <!-- Inicio modais painel -->
+                <div class="modal fade no-print" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Fase 1: Alinhamento com a estratégia e os objetivos </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="grafismo grafismoLeft">
+                                <div class="modal-body">
+                                    <p>
+                                        O ciclo de vida BPM inicia com a construção de uma estratégia e um plano focado nos processos, o que envolve entender os objetivos e as estratégias da organização para proporcionar uma proposta de valor interessante aos clientes. O plano estratégico é como um guia que ajuda a gerenciar constantemente os processos centrados no cliente e cria uma base para uma abordagem completa que alinha os processos com a estratégia geral e os objetivos organizacionais, integrando estratégia, pessoas, processos e sistemas. Nesta fase, são identificados os processos que precisam de mudanças, além disso, garante-se que as métricas desses processos estejam de acordo com as metas da organização. Também é importante determinar as funções e as responsabilidades do centro de excelência BPM, do patrocínio executivo e dos recursos necessários (CBOK BPM, 2021). 
+                                    </p>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-sweep-to-right"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade no-print" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Fase 2: Mudanças de arquitetura </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="grafismo grafismoLeft">
+                                <div class="modal-body">
+                                    <p> Na fase 2, é realizado o trabalho de modelação, análise, desenho e medição do desempenho de processos. Nesta etapa, para identificar os principais processos organizacionais atuais e interfuncionais, em relação às metas e aos objetivos desejados, podem ser utilizadas metodologias como fluxograma e SIPOC, vistos anteriormente, e o Business Process Model e Notation (BPMN), ou Modelo e Notação em Processos e Negócios, que será abordado posteriormente nesta seção. Os especialistas analisam informações, como planos estratégicos, modelos de processos, medições de desempenho e mudanças no ambiente, para entender completamente quais são as prioridades nos processos de negócio que serão introduzidos na organização. Todas as etapas de desenho têm como foco mostrar como as novas funções vão agregar valor aos clientes (CBOK BPM, 2021). 
+
+                                    </p>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-sweep-to-right"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade no-print" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Fase 3: Desenvolver iniciativas </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="grafismo grafismoLeft">
+                                <div class="modal-body">
+                                    <p>
+                                        É a fase na qual todos os planos serão desenvolvidos para posterior implementação. Alguns exemplos de planos apresentados no CBOK BPM (2021) são: plano de formação em processos, de gestão em mudança, de projeto, de mudança tecnológica e de realização de benefícios. 
+                                    </p>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-sweep-to-right"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade no-print" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Fase 4: implementar mudanças </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="grafismo grafismoLeft">
+                                <div class="modal-body">
+                                    <p>
+                                        A fase 4 é quando a organização implementa os planos desenvolvidos na fase 3, coordenados e geridos pelo patrocinador do programa e pelo gestor do projeto. Nesta etapa, é necessário ter um cronograma bem estruturado para cada tarefa e atividade, com informações sobre dependências, predecessores, entre outros detalhes. A implementação inclui o uso da tecnologia e a transição para o novo sistema, juntamente com a estabilização dos processos e tecnologia (CBOK BPM, 2021). 
+                                    </p>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-sweep-to-right"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade no-print" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Fase 5: Medir o sucesso </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="grafismo grafismoLeft">
+                                <div class="modal-body">
+                                    <p>
+                                        A fase 5 inclui verificação dos benefícios alcançados em comparação com os benefícios planejados inicialmente. Além disso, estabelece um modelo permanente de gestão corporativa de processos e governança para a organização, o que envolve medir e monitorar constantemente os processos de negócios e a tecnologia. Todos os detalhes sobre os processos de negócio, gestão da mudança, realização de benefícios e planos tecnológicos são armazenados em repositórios de documentos. Por fim, um plano de melhoria contínua é colocado em prática, e a pessoa responsável pelo processo assume a liderança assim que a iniciativa geral chega ao fim do projeto (CBOK BPM, 2021). 
+                                    </p>
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-sweep-to-right"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        <!-- <div>
+                            (Botão) Fase 1: Alinhamento com a estratégia e os objetivos 
+
+                            O ciclo de vida BPM inicia com a construção de uma estratégia e um plano focado nos processos, o que envolve entender os objetivos e as estratégias da organização para proporcionar uma proposta de valor interessante aos clientes. O plano estratégico é como um guia que ajuda a gerenciar constantemente os processos centrados no cliente e cria uma base para uma abordagem completa que alinha os processos com a estratégia geral e os objetivos organizacionais, integrando estratégia, pessoas, processos e sistemas. Nesta fase, são identificados os processos que precisam de mudanças, além disso, garante-se que as métricas desses processos estejam de acordo com as metas da organização. Também é importante determinar as funções e as responsabilidades do centro de excelência BPM, do patrocínio executivo e dos recursos necessários (CBOK BPM, 2021). 
+
+                            
+
+                            (Botão) Fase 2: Mudanças de arquitetura 
+
+                            Na fase 2, é realizado o trabalho de modelação, análise, desenho e medição do desempenho de processos. Nesta etapa, para identificar os principais processos organizacionais atuais e interfuncionais, em relação às metas e aos objetivos desejados, podem ser utilizadas metodologias como fluxograma e SIPOC, vistos anteriormente, e o Business Process Model e Notation (BPMN), ou Modelo e Notação em Processos e Negócios, que será abordado posteriormente nesta seção. Os especialistas analisam informações, como planos estratégicos, modelos de processos, medições de desempenho e mudanças no ambiente, para entender completamente quais são as prioridades nos processos de negócio que serão introduzidos na organização. Todas as etapas de desenho têm como foco mostrar como as novas funções vão agregar valor aos clientes (CBOK BPM, 2021). 
+
+                            
+
+                            (Botão) Fase 3: Desenvolver iniciativas 
+
+                            É a fase na qual todos os planos serão desenvolvidos para posterior implementação. Alguns exemplos de planos apresentados no CBOK BPM (2021) são: plano de formação em processos, de gestão em mudança, de projeto, de mudança tecnológica e de realização de benefícios. 
+
+                            
+
+                            (Botão) Fase 4: implementar mudanças 
+
+                            A fase 4 é quando a organização implementa os planos desenvolvidos na fase 3, coordenados e geridos pelo patrocinador do programa e pelo gestor do projeto. Nesta etapa, é necessário ter um cronograma bem estruturado para cada tarefa e atividade, com informações sobre dependências, predecessores, entre outros detalhes. A implementação inclui o uso da tecnologia e a transição para o novo sistema, juntamente com a estabilização dos processos e tecnologia (CBOK BPM, 2021). 
+
+                            (Botão) Fase 5: Medir o sucesso 
+
+                            A fase 5 inclui verificação dos benefícios alcançados em comparação com os benefícios planejados inicialmente. Além disso, estabelece um modelo permanente de gestão corporativa de processos e governança para a organização, o que envolve medir e monitorar constantemente os processos de negócios e a tecnologia. Todos os detalhes sobre os processos de negócio, gestão da mudança, realização de benefícios e planos tecnológicos são armazenados em repositórios de documentos. Por fim, um plano de melhoria contínua é colocado em prática, e a pessoa responsável pelo processo assume a liderança assim que a iniciativa geral chega ao fim do projeto (CBOK BPM, 2021). 
+                        </div> -->
+                        
+                        <h4>Tipos de processos	 </h4>
+                        <p>
+                            Na visão ponta a ponta, os processos de negócio são classificados em três tipos (CBOK BPM, 2021, p. 42):  
+                        </p>
+                        
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Processo primário </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Processo de suporte </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Processo de gerenciamento </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            São os processos principais ou ponta a ponta, ou seja, aqueles que apresentam as atividades essenciais realizadas para alcançar a missão da organização. Desse modo, são os processos que estão diretamente ligados à experiência do cliente com os produtos ou serviços. </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            São os processos que propiciam o apoio para os processos primários. Assim, agregam valor para outros processos, e não diretamente para os clientes. 
+                            </div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Tem como objetivo medir, monitorar controlar e administrar a organização. É relevante para garantir que as operações ocorram conforme os objetivos e as metas de desempenho adotadas. </div>
+                    </div>
+                        <!-- <p>
+
+Processo primário 
+
+São os processos principais ou ponta a ponta, ou seja, aqueles que apresentam as atividades essenciais realizadas para alcançar a missão da organização. Desse modo, são os processos que estão diretamente ligados à experiência do cliente com os produtos ou serviços. 
+
+Processo de suporte 
+
+São os processos que propiciam o apoio para os processos primários. Assim, agregam valor para outros processos, e não diretamente para os clientes. 
+
+Processo de gerenciamento 
+
+Tem como objetivo medir, monitorar controlar e administrar a organização. É relevante para garantir que as operações ocorram conforme os objetivos e as metas de desempenho adotadas. 
+                        </p> -->
+                        <p>
+                            Na maioria das organizações, os processos primários representam 20% das atividades corporativas, os processos de suporte constituem 70% e os processos de gestão representam 10% (CBOK BPM, 2021, p. 42). 
+                        </p>
+
+                        <h4> Compromisso organizacional </h4>
+                        <p>
+                            O gerenciamento de processos demanda a participação de todos os níveis da organização, desde a liderança executiva até o nível operacional, exigindo, assim, um comprometimento significativo da empresa (CBOK BPM, 2013). Ao contrário das organizações tradicionais focadas em funções específicas (como vendas, marketing, finanças e produção), o gerenciamento de processos de ponta a ponta ultrapassa essas fronteiras. Essa abordagem introduz novas funções e responsabilidades, como donos de processos, analistas e arquitetos de processos que são encarregadas do desenho abrangente dos processos e precisam colaborar com gerentes funcionais e se adaptar a novas estruturas de governança interfuncionais, que transformam a maneira como as organizações tomam decisões e alocam recursos (CBOK BPM, 2013).  
+                        </p>
+                        <div class="grafismo">
+                            <div class="destaque borda-colorida icone importante">
+                                <p>
+                                    O sucesso do BPM demanda um comprometimento que se estende desde a liderança executiva, responsável por definir e apoiar a prática de BPM, até a gestão funcional, que deve colaborar com donos e gerentes de processos na concepção e na execução de processos interfuncionais, envolvendo também os membros de equipes funcionais e altamente especializadas (CBOK BPM, 2013).
+                                </p>
+                            </div>
+                        </div>
+
+                        <h4>
+                           <i>Business Process Model</i> e <i>Notation</i> (BPMN) 
+                        </h4>
+                        <p>
+                            Na área processos gerenciais, existem inúmeras ferramentas que podem auxiliar os gestores no levantamento e na avaliação do desempenho de tarefas específicas e, consequentemente, causam impacto nas tomadas de decisão. A BPMN, ou notação de modelagem de processos de negócio, consiste em uma representação gráfica utilizando símbolos específicos para mapear detalhadamente todos os processos de uma organização (BARRETO; SARAIVA, 2019). 
+                        </p>
+                        <p>O diagrama derivado do modelo BPMN é facilmente compreensível, e todos os envolvidos no processo, sejam técnicos, gestores, analistas ou assistentes, terão capacidade de compreender satisfatoriamente o fluxo pelo qual as tarefas são executadas (BARRETO; SARAIVA, 2019). O BPMN oferece um conjunto robusto de símbolos para descrever diferentes partes dos processos de negócio. Assim como outras notações modernas, esses símbolos representam relações específicas, como fluxos de trabalho e ordem das etapas (CBOK BPM, 2021). A simbologia do diagrama BPMN pode ser dividida em quatro grupos (HEFLO, c2015-2024): 
+                        </p>
+                        <div class="grafismo">
+                            <div class="destaque borda-colorida icone importante">
+                                <ul class="custom-bullet">
+                                    <li>Objetos de fluxo: são as atividades simbolizadas por quadrados, os eventos simbolizados por círculos e os gateways ou pontos de decisão simbolizados por losangos. </li>
+                                    <li>Swim lanes: são as piscinas ou representação dos processos e participantes como um todo e as raias que representam as áreas. As organizações são compostas por diferentes áreas ou setores que se relacionam entre si. Em muitos processos, é possível observar que seu fluxo ocorre nessa interface entre as áreas. Assim, utilizam-se as definições de piscina e raias para retratar a movimentação das tarefas entre os diferentes setores de trabalho.  </li>
+                                    <li>Objetos de conexão: são as setas que ligam os elementos e podem ser contínuas, representando o fluxo de atividades, tracejadas, representando o fluxo de mensagens, ou pontilhadas, associando artefatos e elementos do fluxo. </li>
+                                    <li>Artefatos: são empregados para incorporar a documentação visual ao diagrama, por exemplo, para indicar a existência de um formulário. 
+                                    </li>
+                                </ul>
+                        
+                            </div>
+                        </div>
+                                <p>
+                                    Nas figuras a seguir, são apresentados, respectivamente, alguns símbolos da metodologia BPMN e o diagrama BPMN do processo de recrutamento e seleção de um novo funcionário, desde o levantamento da demanda pelo setor solicitante, passando pela aprovação da gerência até o encerramento do processo seletivo realizado pelo setor de recursos humanos.  
+                                </p>
+                                <figure class="my-5">
+                                    <div class="figure-img mx-auto mb-4">
+                                        <img class="img-fluid d-block mx-auto" src="./img/grafico3.png" alt="Simbologia BPMN em quatro quadros, conforme seguem: primeiro quadro, à esquerda, Conectores, com uma seta contínua para o fluxo de atividades, seta tracejada para fluxo de mensagens e seta pontilhada para artefatos e elementos do fluxo. Segundo quadro, abaixo, Gateways: losango com x no meio - exclusivo: o fluxo segue por uma condição exclusiva, losango com cruz no meio - paralelo: o fluxo se divide em outros que ocorrem em paralelo, losango com círculo no meio: o fluxo segue por uma condição inclusiva para cada fluxo de sequência é avaliada uma fórmula, se for retornado o valor verdadeiro, o caminho é usado; losango com estrela no meio - complexo: controla condições complexas de divergência e também convergência; losango com pentágono circunscrito no meio - inicial exclusivo (eventos): divide o fluxo iniciando um processo ao ocorrer um evento exclusivo; losango com pentágono circunscrito por um círculo duplo no meio - intermediário exclusivo (eventos): usado para dividir o fluxo, iniciando um processo ao ocorrer um evento exclusivo. Terceiro quadro, ao meio, Atividades: retângulo: tarefa simples; retângulo com engrenagem: tarefa de serviço; retângulo com carta preta: tarefa de envio de mensagem; retângulo com carta branca: tarefa de recebimento de mensagens; retângulo com dedo indicador apontando para a direita: tarefa manual; retângulo com desenho de pessoa: tarefa de usuário; retângulo com símbolo tag de fechamento: a tarefa de script; retângulo com símbolo 3 linhas de itens: tarefa de regra de negócio. Último quadro, ao lado, Eventos, composto por: eventos iniciais (círculos verdes): círculo: início de processo simples; círculo com carta no meio: o processo é iniciado com a chegada de uma mensagem; círculo com relógio no meio: tempo o processo é iniciado por uma condição de tempo; símbolo com documento no meio: uma condição lógica determina o início do evento: círculo com triângulo no meio: um sinal vindo de outro processo que inicia esse processo; círculo com pentágono no meio: um de muitos eventos possíveis inicia o processo; círculo com cruz no meio: múltiplos eventos devem ocorrer para iniciar o processo. Eventos intermediários (círculos azuis):  círculo com certa apontada para cima: escalação, uma exceção de negócio inicia o processo; círculo com seta apontada para a esquerda: um link é acessado durante o processo. Eventos finais: (círculo vermelho), círculo com contorno: final. ">
+                                    </div>
+                                    <figcaption class="figure-caption text-center">Simbologia BPMN <br>
+
+                                        Fonte: Heflo (c2015-2024) 
+                                        
+                                    </figcaption>
+                                </figure>
+                                    <figure class="my-5">
+                                    <div class="figure-img mx-auto mb-4">
+                                        <img class="img-fluid d-block mx-auto" src="./img/grafico3.png" alt="Diagrama BPMN de recrutamento e seleção. O início é representado por um círculo, após há atividades sequenciais representadas em retângulos e pontos de decisão representados por losangos ligados por setas. As etapas do processo estão localizadas nas raias da área que pertencem. O fluxo de atividades segue dessa forma: Requisitar recrutamento (na área solicitante), a descrição de trabalho existe? (losango com uma cruz no meio), para não, criar descrição de trabalho (área de Recursos Humanos), para sim, após criação de descrição de trabalho, segue para gerência, requisição aprovada? (losango com x no meio), para não, pedido rejeitado(círculo). Requisição aprovada? (losango com x no meio), para sim, volta o fluxo para Recursos Humanos, anunciar vaga de emprego, processo de seleção, novos candidatos exigidos? (losango com cruz no meio), para sim, anunciar vaga de emprego, para não, contratação, fim. ">
+                                    </div>
+                                    <figcaption class="figure-caption text-center">Diagrama BPMN de recrutamento e seleção <br>
+                                        Fonte: Adaptado de Narciso (2016) 
+                                    </figcaption>
+                                </figure>
+                                <h3 id="titulo5">Encerramento </h3>
+                                <p>
+                                    Conforme observado ao longo deste conhecimento, o mapeamento de processos é crucial para a compreensão de atividades, a identificação de pontos de melhoria e a otimização de desempenho global. Além disso, ao mapear processos, é possível observar como as áreas de uma organização interagem entre si. Por fim, a eficiência organizacional e a implementação de um sistema de gestão de qualidade exigem a identificação e o mapeamento dos processos, como será visto ao longo do curso.  
+                                </p>
                     </div>
                 </div>
         </section>
