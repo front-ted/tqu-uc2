@@ -49,7 +49,8 @@ body{
 
 .btn-estrutura {
     background: url('./img/painel1_bt1.png') no-repeat;
-    background-color: red;
+    /* background-color: red; */
+    color: transparent;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -67,7 +68,7 @@ body{
 .btn-divisao-trabalho {
     background: url('./img/painel1_bt2.png');
     background-size: 100%;
-    background-color: red;
+    color: transparent;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -84,7 +85,7 @@ body{
 .btn-coordenacao {
     background: url('./img/painel1_bt3.png');
     background-size: 100%;    
-    background-color: red;
+    color: transparent;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -101,7 +102,7 @@ body{
 .btn-ambiente {
     background: url('./img/painel1_bt4.png');
     background-size: 100%;
-    background-color: red;
+    color: transparent;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -118,7 +119,7 @@ body{
 .btn-cultura {
     background: url('./img/painel1_bt5.png');
     background-size: 100%;
-    background-color: red;
+    color: transparent;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -135,7 +136,7 @@ body{
 .btn-adaptacao {
     background: url('./img/painel1_bt6.png');
     position: absolute;
-    background-color: red;
+    color: transparent;
     border-radius: 50%;
     width: 40px;
     height: 40px;

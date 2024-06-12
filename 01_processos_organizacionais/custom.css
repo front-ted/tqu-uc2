@@ -32,8 +32,10 @@ body {
 /* painel */
 .painel-mapeamento {
     background: url('img/painel01_bg.jpg');
-    width: 901px;
-    height: 501px;
+    width: 100%;
+    min-height: 501px;
+    height: 100%;
+    padding-bottom: 20px;
     background-size: cover;
     position: relative;
     flex-wrap: wrap;
@@ -126,7 +128,8 @@ body {
 /* inicio painel 2 */
 .painel-piramede {
     background: url('img/painel02_layout.jpg');
-    width: 601px;
+    max-width: 601px;
+    width: 100%;
     height: 331px;
     margin: 0 auto;
     background-size: cover;
@@ -136,6 +139,7 @@ body {
 }
 /* bts */
 .bt-painel-piramede {
+    position: absolute;
     background-color: transparent;
     width: 267px;
     height: 72px;
@@ -145,21 +149,33 @@ body {
     transition: all 0.3 ease-in;
 }
 .btnMacroprocesso {
+    position: absolute;
+    right: 123px;
+    top: 10px;
     color: #84b1d1;
     margin-top: 5px;
     margin-left: 250px;
 }
 .btnSubprocessos {
+    position: absolute;
+    right: 60px;
+    top: 100px;
     color: #9fc3d7;
     margin-top: -2px;
     margin-left: 295px;
 }
 .btnAtividades {
+    position: absolute;
+    right: 0;
+    top: 172px;
     color: #1e88bb;
     margin-top: 5px;
     margin-left: 351px;
 }
 .btnTarefas {
+    position: absolute;
+    right: 0;
+    top: 252px;
     color: #024a8a;
     margin-top: 5px;
     margin-left: 399px;
@@ -182,54 +198,84 @@ body {
 /* inicio painel 3 */
 .painel-metodologias {
     background: url('img/painel03_layout.png');
-    width: 930px;
-    height: 300px;
-    background-size: cover;
+    max-width: 930px;
+    min-height: 300px;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
     position: relative;
     flex-wrap: wrap;
     display: flex;
 }
+
 /* bts */
 .bt-painel-metodologias {
-    width: 167px;
-    height: 72px;
+    transform: rotate(45deg);
+    position: absolute;
+    background-color: transparent;
+    color: transparent;
+
+    width: 100px;
+    height: 100px;
     border: unset;
-    margin-top: 25px;
-    margin-left: 30px;
+    /* margin-top: 25px; */
+    /* margin-left: 30px; */
     transition: all 0.3 ease-in;
 }
 .btnBPM {
+    top: 50%;
+    left: 4%;
     /* background: url('img/painel01_bt1_.png') no-repeat; */
 }
 .btnSixSigma {
+    top: 51px;
+    left: 13.5%;
     /* background: url('img/painel01_bt2_.png') no-repeat; */
 }
 .btnLEAN {
+    top: 47%;
+    left: 23%;
     /* background: url('img/painel01_bt3_.png') no-repeat; */
 }
 .btnISO9000 {
+    
+    top: 51px;
+    left: 31%;
     /* background: url('img/painel01_bt4_.png') no-repeat; */
 }
 .btnTQM {
+    top: 45%;
+    left: 40%;
     /* background: url('img/painel01_bt5_.png') no-repeat; */
 }
 .btnScrum {
+    top: 51px;
+    left: 49%;
     /* background: url('img/painel01_bt6_.png') no-repeat; */
 }
 .btnKaizen {
+    top: 47%;
+    left: 57%;
     /* background: url('img/painel01_bt10_.png') no-repeat; */
 }
 .btnPDD {
+    top: 51px;
+    left: 66%;
     /* background: url('img/painel01_bt7_.png') no-repeat; */
 }
 .btnTOC {
+    
+    top: 50%;
+    left: 74%;
     /* background: url('img/painel01_bt8_.png') no-repeat; */
 }
 .btnDesignThinking {
+    top: 51px;
+    left: 83.5%;
     /* background: url('img/painel01_bt9_.png') no-repeat; */
 }
 
-    .btnBPM:hover {
+    /* .btnBPM:hover {
         background: url('img/painel01_bt1_.png') no-repeat;
     }
     .btnSixSigma:hover {
@@ -249,7 +295,7 @@ body {
     .btnTOC:hover {
         background: url('img/painel01_bt8_.png') no-repeat;}
     .btnDesignThinking:hover {
-        background: url('img/painel01_bt9_.png') no-repeat;}
+        background: url('img/painel01_bt9_.png') no-repeat;} */
     
 
 /* fim painel 2 */
@@ -314,4 +360,13 @@ body {
 @media screen and (max-width:820px) {
     .elemento-direita{display: none;}
     .elemento-esquerda{display: none;}
+}
+
+@media screen and (max-width:600px) {
+    .btnMacroprocesso {
+        right: 0;
+    }
+    .btnSubprocessos {
+        right: 0;
+    }
 }
