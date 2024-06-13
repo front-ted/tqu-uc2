@@ -370,10 +370,68 @@ tr {
     background-attachment: fixed !important;
 }
 
+/*  */
 
+.btn-estrutura-mob:hover {
+    background: url('img/bt01b.png');
+}
+    .btn-estrutura-mob {
+    background: url('img/bt01.png');
+    background-size: 100%;
+    display: block;
+    width: 181px;
+    height: 126px;
+    border: unset;
+}
 
+.btn-divisao-trabalho-mob:hover{
+    background: url('img/bt02b.png');
+}
+    .btn-divisao-trabalho-mob{
+    background: url('img/bt02.png');
+    background-size: 100%;
+    display: block;
+    width: 168px;
+    height: 126px;
+    border: unset;
 
+}
+.btn-coordenacao-mob:hover{
+    background: url('img/bt03b.png');
+}
+.btn-coordenacao-mob{
+    background: url('img/bt03.png');
+    background-size: 100%;
+    display: block;
+    width: 168px;
+    height: 126px;
+    border: unset;
 
+}
+.btn-ambiente-mob:hover{
+    background: url('img/bt04b.png');
+}
+    .btn-ambiente-mob{
+    background: url('img/bt04.png');
+    background-size: 100%;
+    display: block;
+    width: 168px;
+    height: 126px;
+    border: unset;
+
+}
+.btn-cultura-mob:hover{
+    background: url('img/bt05b.png');
+}
+    .btn-cultura-mob{
+        background: url('img/bt05.png');
+    background-size: 100%;
+    display: block;
+    width: 168px;
+    height: 126px;
+    border: unset;
+
+}
 @media only screen and (max-width:1440px) {
     .elemento-direita {
         position: absolute;
