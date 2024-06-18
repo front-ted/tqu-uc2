@@ -138,7 +138,7 @@ p {
     height: 42px;
     display: block;
     position: fixed;
-    bottom: 50px;
+    bottom: 40px;
     right: 50px;
     z-index: 900;
 }
@@ -963,7 +963,7 @@ tbody td:first-child {
     position: fixed;
     z-index: 900;
     right: 50px;
-    bottom: 110px;
+    bottom: 90px;
     cursor: pointer;
     transition: all 0.4s;
     background: url('../images/modo_escuro.svg');
