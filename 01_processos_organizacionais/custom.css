@@ -29,6 +29,14 @@ body {
 	height: auto;
 	overflow-x: hidden;
 }
+
+.img-jpg{
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+
 /* painel */
 .painel-mapeamento {
     background: url('img/painel01_bg.jpg');
@@ -40,6 +48,7 @@ body {
     position: relative;
     flex-wrap: wrap;
     display: flex;
+    border-radius: 20px;
 }
 /* bts */
 .bt-painel-mapeamento {
@@ -84,29 +93,29 @@ body {
     background: url('img/painel01_bt11_.png') no-repeat;
 }
 
-    .btnVisão:hover {
-        background: url('img/painel01_bt1.png') no-repeat;
-    }
-    .btnIdentificação:hover {
-        background: url('img/painel01_bt2.png') no-repeat;}
-    .btnPadronização:hover {
-        background: url('img/painel01_bt3.png') no-repeat;}
-    .btnDelimitação:hover {
-        background: url('img/painel01_bt4.png') no-repeat;}
-    .btnPrevisão:hover {
-        background: url('img/painel01_bt5.png') no-repeat;}
-    .btnMelhor:hover {
-        background: url('img/painel01_bt6.png') no-repeat;}
-    .btnEntendimento:hover {
-        background: url('img/painel01_bt7.png') no-repeat;}
-    .btnEstimativa:hover {
-        background: url('img/painel01_bt8.png') no-repeat;}
-    .btnTomada:hover {
-        background: url('img/painel01_bt9.png') no-repeat;}
-    .btnConformidade:hover {
-        background: url('img/painel01_bt10.png') no-repeat;}
-    .btnTreinamento:hover {
-        background: url('img/painel01_bt11.png') no-repeat;}
+.btnVisão:hover {
+    background: url('img/painel01_bt1.png') no-repeat;
+}
+.btnIdentificação:hover {
+    background: url('img/painel01_bt2.png') no-repeat;}
+.btnPadronização:hover {
+    background: url('img/painel01_bt3.png') no-repeat;}
+.btnDelimitação:hover {
+    background: url('img/painel01_bt4.png') no-repeat;}
+.btnPrevisão:hover {
+    background: url('img/painel01_bt5.png') no-repeat;}
+.btnMelhor:hover {
+    background: url('img/painel01_bt6.png') no-repeat;}
+.btnEntendimento:hover {
+    background: url('img/painel01_bt7.png') no-repeat;}
+.btnEstimativa:hover {
+    background: url('img/painel01_bt8.png') no-repeat;}
+.btnTomada:hover {
+    background: url('img/painel01_bt9.png') no-repeat;}
+.btnConformidade:hover {
+    background: url('img/painel01_bt10.png') no-repeat;}
+.btnTreinamento:hover {
+    background: url('img/painel01_bt11.png') no-repeat;}
 
 .btn-estrutura {
     background: url('./img/painel1_bt1.png') no-repeat;
@@ -127,7 +136,7 @@ body {
 /* fim painel 1 */
 /* inicio painel 2 */
 .painel-piramede {
-    background: url('img/painel02_layout.jpg');
+    background: url('img/painel2_layout.png');
     max-width: 601px;
     width: 100%;
     height: 331px;
@@ -142,11 +151,11 @@ body {
     position: absolute;
     background-color: transparent;
     width: 267px;
-    height: 72px;
+    height: 70px;
     border: unset;
     font-size: 20px;
     font-weight: bold;
-    transition: all 0.3 ease-in;
+    transition: all 0.5 ease-in;
 }
 .btnMacroprocesso {
     position: absolute;
@@ -181,18 +190,16 @@ body {
     margin-left: 399px;
 }
     
-    .btnMacroprocesso:hover {
-        /* background: url('img/painel01_bt1.png') no-repeat; */
-    }
-    .btnSubprocessos:hover {
-        /* background: url('img/painel01_bt2.png') no-repeat; */
-    }
-    .btnAtividades:hover {
-        /* background: url('img/painel01_bt3.png') no-repeat; */
-    }
-    .btnTarefas:hover {
-        /* background: url('img/painel01_bt4.png') no-repeat; */
-    }
+.btnMacroprocesso:hover, .btnSubprocessos:hover {
+    left: 30%;
+    background: url('img/bt_hover.png')  no-repeat;
+}
+
+.btnAtividades:hover, .btnTarefas:hover  {
+    left: 25%;
+    background: url('img/bt_hover.png')  no-repeat;
+}
+
     
 /* fim painel 2 */
 /* inicio painel 3 */
@@ -214,7 +221,6 @@ body {
     position: absolute;
     background-color: transparent;
     color: transparent;
-
     width: 100px;
     height: 100px;
     border: unset;
@@ -225,49 +231,40 @@ body {
 .btnBPM {
     top: 50%;
     left: 4%;
-    /* background: url('img/painel01_bt1_.png') no-repeat; */
 }
 .btnSixSigma {
     top: 51px;
     left: 13.5%;
-    /* background: url('img/painel01_bt2_.png') no-repeat; */
 }
 .btnLEAN {
     top: 47%;
     left: 23%;
-    /* background: url('img/painel01_bt3_.png') no-repeat; */
 }
 .btnISO9000 {
     
     top: 51px;
     left: 31%;
-    /* background: url('img/painel01_bt4_.png') no-repeat; */
 }
 .btnTQM {
     top: 45%;
     left: 40%;
-    /* background: url('img/painel01_bt5_.png') no-repeat; */
 }
 .btnScrum {
     top: 51px;
     left: 49%;
-    /* background: url('img/painel01_bt6_.png') no-repeat; */
 }
 .btnKaizen {
     top: 47%;
     left: 57%;
-    /* background: url('img/painel01_bt10_.png') no-repeat; */
 }
 .btnPDD {
     top: 51px;
     left: 66%;
-    /* background: url('img/painel01_bt7_.png') no-repeat; */
 }
 .btnTOC {
     
     top: 50%;
     left: 74%;
-    /* background: url('img/painel01_bt8_.png') no-repeat; */
 }
 .btnDesignThinking {
     top: 51px;
