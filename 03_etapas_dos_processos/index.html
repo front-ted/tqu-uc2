@@ -47,30 +47,7 @@
             <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"></div>
         </div>
     </header>
-    <!--Menu lateral-->
-    <!-- <button class="bt-hamburguer" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
-        aria-controls="offcanvasWithBackdrop"></button>
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
-        aria-labelledby="offcanvasWithBackdropLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Técnico em Qualidade</h5>
-            <button type="button" class="bt-fecharmenu text-reset" data-bs-dismiss="offcanvas"
-                aria-label="Close"></button>
-        </div>
-        <nav id="nav-offcanvas" class="offcanvas-body">
-            <ul>
-                <li><a href="#titulo1">Introdução</a></li>
-                <li><a href="#titulo2">Organizações</a></li>
-                <li class="espacamento"><a href="#titulo3">Partes interessadas</a></li>
-                <li class="espacamento"><a href="#titulo4">Missão</a></li>
-                <li class="espacamento"><a href="#titulo5">Visão </a></li>
-                <li class="espacamento"><a href="#titulo6">Valores</a></li>
-                <li class="espacamento"><a href="#titulo7">Objetivos</a></li>
-                <li><a href="#titulo8">Desafio</a></li>
-                <li><a href="#titulo9">Encerramento</a></li>
-            </ul>
-        </nav>
-    </div> -->
+   
     <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->
     <section id="booklet">
         <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
@@ -88,179 +65,184 @@
                 </p>
                 <p>O mapeamento e a gestão dos processos podem seguir as orientações disponíveis nas normas ABNT NBR ISO 9001 e ABNT NBR ISO 9004, que sugerem a utilização do ciclo PDCA – <i>Plan, Do, Check, Act</i> (Planejar, Fazer, Verificar e Agir) para abordar, gerenciar e melhorar os processos das organizações, conforme descrito a seguir. 
                 </p>
+
                 <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo:</p>
-                <div aria-hidden="true">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    Plan (Planejar)
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
+
+                <div class="painel-pdca">
+                    <button type="button" class="bt-painel-pdca bt-plan" data-bs-toggle="modal" data-bs-target="#modalPlan"><img src="img/bt_hover.png" alt="" class="bt-hover"></button>
+
+                    <button type="button" class="bt-painel-pdca bt-do" data-bs-toggle="modal" data-bs-target="#modalDo"><img src="img/bt_hover.png" alt="" class="bt-hover"></button>
+
+                    <button type="button" class="bt-painel-pdca bt-check" data-bs-toggle="modal" data-bs-target="#modalCheck"><img src="img/bt_hover.png" alt="" class="bt-hover"></button>
+
+                    <button type="button" class="bt-painel-pdca bt-action" data-bs-toggle="modal" data-bs-target="#modalAction"><img src="img/bt_hover.png" alt="" class="bt-hover"></button>
+                </div>
+                
+
+                <div class="no-print" aria-hidden="true">
+                    <div class="modal fade" id="modalPlan" tabindex="-1" aria-labelledby="modalPlan" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalPlan">Plan (Planejar)</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
                                     <p>
-                                        O primeiro passo no uso do método PDCA para a abordagem de processos é o mapeamento de processos. Nessa etapa, a organização deve realizar o planejamento e definir claramente os objetivos dos processos, identificar as partes interessadas e estabelecer as métricas que serão usadas para medir o desempenho do processo. 
+                                        O primeiro passo no uso do método PDCA para a abordagem de processos é o <b>mapeamento</b> de processos. Nessa etapa, a organização deve realizar o planejamento e definir claramente os objetivos dos processos, identificar as partes interessadas e estabelecer as métricas que serão usadas para medir o desempenho do processo. 
                                     </p>
-                                    <p>    Fase 1. A identificação dos processos necessários para atender às necessidades e às expectativas das partes interessadas. </p>
-                                    <p>    Fase 2 (As-Is). A determinação e sequência de interação desses processos. </p>
-                                    <p>    Fase 3 (To-Be). A determinação de critérios e métodos necessários para assegurar que a operação e o controle desses processos sejam eficazes. </p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Do (Fazer) 
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>Após planejar, é hora de executar os processos. Durante esta etapa, a organização deve seguir os procedimentos (documentação) estabelecidos e coletar dados sobre o desempenho do processo. 
+                                    <p>
+                                        Fase 1. A identificação dos processos necessários para atender às necessidades e às expectativas das partes interessadas. 
                                     </p>
- 
-
-                                <p>   Fase 4. A disponibilidade de autoridades, recursos e informações necessárias para apoiar a operação e o monitoramento desses processos. 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                     Check (Checar) 
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p> 
-
-                                        A próxima fase é checar, onde você deve analisar os dados coletados para avaliar o desempenho dos processos em relação aos objetivos estabelecidos (padronizar). Se o desempenho não atender às expectativas, é hora de agir e implementar mudanças para melhorar o processo. 
-                                    </p>
-                                <p>   Fase 5. O monitoramento, a medição e a análise desses processos. 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                     Action (Agir) 
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>Por fim, a fase de agir envolve a implementação das mudanças e a monitorização contínua do processo para garantir que os objetivos sejam alcançados. O método PDCA é um ciclo contínuo de melhoria, então, após implementar as mudanças (melhorar), você deve começar de novo com a fase de planejamento. 
-                                    </p>
-                                <p>   Fase 6. A implementação de ações necessárias para atingir os resultados planejados e a melhoria desses processos. 
+                                    <p>    
+                                        Fase 2 (<i>As-Is</i>). A determinação e sequência de interação desses processos. </p>
+                                    <p>    
+                                        Fase 3 (<i>To-Be</i>). A determinação de critérios e métodos necessários para assegurar que a operação e o controle desses processos sejam eficazes. 
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="acessivel visually-hidden no-print">
-                    <p>Plan (Planejar)</p>
-                              
-                                    <p>
-                                        O primeiro passo no uso do método PDCA para a abordagem de processos é o mapeamento de processos. Nessa etapa, a organização deve realizar o planejamento e definir claramente os objetivos dos processos, identificar as partes interessadas e estabelecer as métricas que serão usadas para medir o desempenho do processo. 
-                                    </p>
-                                    <p>    Fase 1. A identificação dos processos necessários para atender às necessidades e às expectativas das partes interessadas. </p>
-                                    <p>    Fase 2 (As-Is). A determinação e sequência de interação desses processos. </p>
-                                    <p>    Fase 3 (To-Be). A determinação de critérios e métodos necessários para assegurar que a operação e o controle desses processos sejam eficazes. </p>
-                                 
-                                <p>Do (Fazer)</p>
-                               
-                                    <p>Após planejar, é hora de executar os processos. Durante esta etapa, a organização deve seguir os procedimentos (documentação) estabelecidos e coletar dados sobre o desempenho do processo. 
-                                    </p>
- 
 
-                                <p>   Fase 4. A disponibilidade de autoridades, recursos e informações necessárias para apoiar a operação e o monitoramento desses processos. 
+                    <div class="modal fade" id="modalDo" tabindex="-1" aria-labelledby="modalDo" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalDo">Do (Fazer)</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Após planejar, é hora de executar os processos. Durante esta etapa, a organização deve seguir os procedimentos (<b>documentação</b>) estabelecidos e coletar dados sobre o desempenho do processo. 
                                     </p>
-                               
-                                <p>Check (Checar) </p>
-                               
+                                    <p>   
+                                        Fase 4. A disponibilidade de autoridades, recursos e informações necessárias para apoiar a operação e o monitoramento desses processos. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="modalCheck" tabindex="-1" aria-labelledby="modalCheck" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalCheck">Check (Checar)</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
                                     <p> 
 
-                                        A próxima fase é checar, onde você deve analisar os dados coletados para avaliar o desempenho dos processos em relação aos objetivos estabelecidos (padronizar). Se o desempenho não atender às expectativas, é hora de agir e implementar mudanças para melhorar o processo. 
+                                        A próxima fase é checar, onde você deve analisar os dados coletados para avaliar o desempenho dos processos em relação aos objetivos estabelecidos (<b>padronizar</b>). Se o desempenho não atender às expectativas, é hora de agir e implementar mudanças para melhorar o processo. 
                                     </p>
-                                <p>   Fase 5. O monitoramento, a medição e a análise desses processos. 
+                                    <p>   
+                                        Fase 5. O monitoramento, a medição e a análise desses processos. 
                                     </p>
-                                <p>Action (Agir) </p>
-                                    <p>Por fim, a fase de agir envolve a implementação das mudanças e a monitorização contínua do processo para garantir que os objetivos sejam alcançados. O método PDCA é um ciclo contínuo de melhoria, então, após implementar as mudanças (melhorar), você deve começar de novo com a fase de planejamento. 
-                                    </p>
-                                <p>   Fase 6. A implementação de ações necessárias para atingir os resultados planejados e a melhoria desses processos. 
-                    
-                </div>
-                <p>Representação do ciclo PDCA aplicado à abordagem de processos 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    Fonte: Senac EAD (2024) </p>
+                    <div class="modal fade" id="modalAction" tabindex="-1" aria-labelledby="modalAction" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalAction">Action (Agir)</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Por fim, a fase de agir envolve a implementação das mudanças e a monitorização contínua do processo para garantir que os objetivos sejam alcançados. O método PDCA é um ciclo contínuo de melhoria, então, após implementar as mudanças (<b>melhorar</b>), você deve começar de novo com a fase de planejamento. 
+                                    </p>
+                                    <p>   
+                                        Fase 6. A implementação de ações necessárias para atingir os resultados planejados e a melhoria desses processos. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="acessivel visually-hidden print">
+                    <h4>Plan (Planejar)</h4>
+                    <p>
+                        O primeiro passo no uso do método PDCA para a abordagem de processos é o <b>mapeamento</b> de processos. Nessa etapa, a organização deve realizar o planejamento e definir claramente os objetivos dos processos, identificar as partes interessadas e estabelecer as métricas que serão usadas para medir o desempenho do processo. 
+                    </p>
+                    <p>    
+                        Fase 1. A identificação dos processos necessários para atender às necessidades e às expectativas das partes interessadas. 
+                    </p>
+                    <p>    
+                        Fase 2 (<i>As-Is</i>). A determinação e sequência de interação desses processos. 
+                    </p>
+                    <p>    
+                        Fase 3 (<i>To-Be</i>). A determinação de critérios e métodos necessários para assegurar que a operação e o controle desses processos sejam eficazes. 
+                    </p>
+                                 
+                    <h4>Do (Fazer)</h4>
+                    <p>
+                        Após planejar, é hora de executar os processos. Durante esta etapa, a organização deve seguir os procedimentos (<b>documentação</b>) estabelecidos e coletar dados sobre o desempenho do processo. 
+                    </p>
+                    <p>   
+                        Fase 4. A disponibilidade de autoridades, recursos e informações necessárias para apoiar a operação e o monitoramento desses processos. 
+                    </p>
+                    
+                    <h4>Check (Checar) </h4>
+                    <p>
+                        A próxima fase é checar, onde você deve analisar os dados coletados para avaliar o desempenho dos processos em relação aos objetivos estabelecidos (<b>padronizar</b>). Se o desempenho não atender às expectativas, é hora de agir e implementar mudanças para melhorar o processo. 
+                    </p>
+                    <p>   
+                        Fase 5. O monitoramento, a medição e a análise desses processos.     
+                    </p>
+
+                    <h4>Action (Agir) </h4>
+                    <p>
+                        Por fim, a fase de agir envolve a implementação das mudanças e a monitorização contínua do processo para garantir que os objetivos sejam alcançados. O método PDCA é um ciclo contínuo de melhoria, então, após implementar as mudanças (<b>melhorar</b>), você deve começar de novo com a fase de planejamento. 
+                    </p>
+                    <p>   
+                        Fase 6. A implementação de ações necessárias para atingir os resultados planejados e a melhoria desses processos. 
+                    </p>
+                </div>
+                <figcaption class="figure-caption text-center mb-5">
+                    Representação do ciclo PDCA aplicado à abordagem de processos <br>
+                    Fonte: Senac EAD (2024) 
+                </figcaption>                
                 
                 <p> Em linhas gerais, deve-se considerar três fases para um mapeamento de processos, na etapa “Planejar”.                                                               
                 </p>
                 <ul class="custom-bullet">
                     <li>Fase 1: identificar os processos a serem mapeados.  </li>
-                    <li>Fase 2 (As-Is): entender todos os detalhes do processo atual.   </li>
-                    <li>Fase 3 (To-Be): olhar para o futuro a fim de projetar e criar processos melhorados.   </li>
+                    <li>Fase 2 (<i>As-Is</i>): entender todos os detalhes do processo atual.   </li>
+                    <li>Fase 3 (<i>To-Be</i>): olhar para o futuro a fim de projetar e criar processos melhorados.   </li>
                 </ul>
                 <p>Estudante, para conhecer o PDCA detalhadamente, clique ou toque para visualizar cada etapa (Planejar, Fazer, Verificar e Agir), contendo as seis fases que fazem parte de todo o ciclo.  
                 </p>
-                <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo:</p>
+
+                <p class="no-print">Clique ou toque para visualizar o conteúdo:</p>
+
                 <div class="painel-organizacoes no-print mb-5" aria-hidden="true">
                     <div class="row no-print">
-                        <button type="button" class="btn-estrutura" data-bs-toggle="modal" data-bs-target="#modal1">
-                            1
+                        <button type="button" class="btn-estrutura btn-painel-organizacoes" data-bs-toggle="modal" data-bs-target="#modal1">
+                            
                         </button>
-                        <button type="button" class="btn-divisao-trabalho" data-bs-toggle="modal"
+                        <button type="button" class="btn-divisao-trabalho btn-painel-organizacoes" data-bs-toggle="modal"
                             data-bs-target="#modal2">
-                            2
+                            
                         </button>
-                        <button type="button" class="btn-coordenacao" data-bs-toggle="modal" data-bs-target="#modal3">
-                            3
+                        <button type="button" class="btn-coordenacao btn-painel-organizacoes" data-bs-toggle="modal" data-bs-target="#modal3">
+                            
                         </button>
-                        <button type="button" class="btn-ambiente" data-bs-toggle="modal" data-bs-target="#modal4">
-                            4
+                        <button type="button" class="btn-ambiente btn-painel-organizacoes" data-bs-toggle="modal" data-bs-target="#modal4">
+                            
                         </button>
-                        <button type="button" class="btn-cultura" data-bs-toggle="modal" data-bs-target="#modal5">
-                            5
+                        <button type="button" class="btn-cultura btn-painel-organizacoes" data-bs-toggle="modal" data-bs-target="#modal5">
+                           
                         </button>
-                        <button type="button" class="btn-adaptacao mt-3" data-bs-toggle="modal"
+                        <button type="button" class="btn-adaptacao btn-painel-organizacoes" data-bs-toggle="modal"
                             data-bs-target="#modal6">
-                            6
+                            
                         </button>
                     </div>
-                </div>
-                <!-- Inicio painel versão mobile -->
-                <!-- <div class="painel-organizacoes-mob no-print mb-5 d-block d-sm-none" aria-hidden="true">
-                    <div class="row no-print">
-                        <button type="button" class="btn-estrutura-mob" data-bs-toggle="modal" data-bs-target="#modal1">
-                        </button>
-                        <button type="button" class="btn-divisao-trabalho-mob" data-bs-toggle="modal"
-                            data-bs-target="#modal2">
-                        </button>
-                        <button type="button" class="btn-coordenacao-mob" data-bs-toggle="modal"
-                            data-bs-target="#modal3">
-                        </button>
-                        <button type="button" class="btn-ambiente-mob" data-bs-toggle="modal" data-bs-target="#modal4">
-                        </button>
-                        <button type="button" class="btn-cultura-mob" data-bs-toggle="modal" data-bs-target="#modal5">
-                        </button>
-                        <button type="button" class="btn-adaptacao-mob mt-3" data-bs-toggle="modal"
-                            data-bs-target="#modal6">
-                        </button>
-                    </div>
-                </div> -->
-                <!-- Fim painel versão mobile -->
-                <!-- Inicio modais painel -->
+
                 <div class="modal fade no-print" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-xl">
@@ -294,27 +276,33 @@
                                     </p>
                                     <figure class="my-5">
                                         <div class="figure-img mx-auto mb-4">
-                                            <img class="img-fluid d-block mx-auto" src="img/fig01.png" alt="Diagrama descrevendo sequencialmente alguns processos envolvidos no gerenciamento, dentro da organização, da satisfação dos clientes, tais como atendimento, comercial, projetos, produção e logística. ">
+                                            <img class="img-fluid d-block mx-auto" src="img/fig03.png" alt="">
                                         </div>
-                                        <figcaption class="figure-caption text-center">Diagrama de processos comuns nas organizações <br>
-
+                                        <figcaption class="figure-caption text-center">
+                                            Diagrama de processos comuns nas organizações <br>
                                             Fonte: Senac EAD (2024) 
-                                            
                                         </figcaption>
                                     </figure>
+
+                                    <p class="acessivel no-print visually-hidden">
+                                        Diagrama descrevendo sequencialmente alguns processos envolvidos no gerenciamento, dentro da organização, da satisfação dos clientes, tais como atendimento, comercial, projetos, produção e logística. 
+                                    </p>
+
+
+
                                     <p>
                                         Após definidos os processos da organização, seu mapeamento pode ser realizado de diversas maneiras, mas geralmente envolve a criação de uma representação esquemática de um processo mostrando todos os passos de um processo. Isso permite que os analistas identifiquem gargalos, redundâncias e outras oportunidades de melhoria. A seguir, é apresentada uma representação de um processo e suas etapas.  
                                     </p>
                                     <div class="table-responsive">
                                         <table class="text-center align-middle tabela-parametro">
-                                            <th>
+                                            <thead>
                                                 <td>Fornecedores de Entradas</td>
                                                 <td>Entradas </td>
                                                 <td>Atividades </td>
                                                 <td>Saídas </td>
                                                 <td>Recebedores de Saídas </td>
                                                 <td>Monitoramento ou Medição</td>
-                                            </th>
+                                            </thead>
                                             <tr>
                                                 <td>Processos anteriores </td>
                                                 <td>Matéria </td>
@@ -375,9 +363,10 @@
                                                 <td></td>
                                             </tr>
                                         </table>
-                                        <p>
-                                            Representação de um processo <br>Fonte: Adaptado de ISO 9004:2019 
-                                        </p>
+                                        <figcaption class="figure-caption text-center">
+                                            Representação de um processo <br>
+                                            Fonte: Adaptado de ISO 9004:2019 
+                                        </figcaption>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="botao hvr-sweep-to-right"
@@ -419,7 +408,7 @@
                                     <p>
                                         Essa trilha de 10 passos tem base nas orientações da NBR ISO 9004:2019 para a determinação de processos. Vale ressaltar que esses passos não devem ser vistos como uma receita, mas sim como uma sugestão para organizar o mapeamento de forma eficiente. 
                                     </p>
-                                    <p>
+                                    <p class="no-print">
                                         Clique ou toque para visualizar os cinco primeiros passos detalhadamente. 
                                     </p>
                                     <div class="no-print" aria-hidden="true">
@@ -476,25 +465,39 @@
                                                         </p>
                                                         <div class="table-responsive">
                                                             <table class="text-center align-middle tabela-parametro">
-                                                                <th>
+                                                                <thead>
                                                                     <td>Fornecedores de Entradas </td>
                                                                     <td>Entradas </td>
-                                                                </th>
+                                                                    <td>Atividades</td>
+                                                                    <td>Saídas</td>
+                                                                    <td>Recebedores de Saídas</td>
+                                                                    <td>Monitoramento ou Medição</td>
+                                                                </thead>
                                                                 <tr>
-                                                                    <td>Processos anteriores 
+                                                                    <td>Processos anteriores <br>
 
-                                                                        Fornecedores internos ou externos 
+                                                                        Fornecedores internos ou externos <br>
                                                                         
-                                                                        Clientes e outras partes interessadas </td>
-                                                                    <td>Matéria 
+                                                                        Clientes e outras partes interessadas 
+                                                                    </td>                             
+                                                                    <td>Matéria <br>
 
-                                                                        Energia 
+                                                                        Energia <br>
                                                                         
-                                                                        Recursos 
+                                                                        Recursos <br>
                                                                         
-                                                                        Informações </td>
+                                                                        Informações 
+                                                                    </td>
+                                                                    <td></td> 
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
                                                                 </tr>
                                                             </table>
+                                                            <figcaption class="figure-caption text-center mb-5">
+                                                                Representação de um processo com destaque para fornecedores e entradas <br>
+                                                                Fonte: Senac EAD (2024) 
+                                                            </figcaption>
                                                         </div>
                                                         
                                                     </div>
@@ -515,11 +518,27 @@
                                                         </p>
                                                         <div class="table-responsive">
                                                             <table class="text-center align-middle tabela-parametro">
-                                                                <th><td>Atividades </td></th>
+                                                                <thead>
+                                                                    <td>Fornecedores de Entradas</td>
+                                                                    <td>Entradas</td>
+                                                                    <td>Atividades</td>
+                                                                    <td>Saídas</td>
+                                                                    <td>Recebedores de Saídas</td>
+                                                                    <td>Monitoramento ou Medição</td>
+                                                                </thead>
                                                                 <tr>
-                                                                    <td>Atividades que transformam as entradas em saídas </td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td>Atividades que transformam as entradas em saídas</td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
                                                                 </tr>
                                                             </table>
+                                                            <figcaption class="figure-caption text-center mb-5">
+                                                                Representação de um processo com destaque para atividades <br>
+                                                                Fonte: Senac EAD (2024) 
+                                                            </figcaption>
                                                         </div>
                                                         
                                                     </div>
@@ -540,31 +559,36 @@
                                                         </p>
                                                         <div class="table-responsive">
                                                             <table class="text-center align-middle tabela-parametro">
-                                                                <th>
-                                                                    <td>Saídas </td>
-                                                                    <td>Recebedores de Saídas </td>
-                                                                </th>
+                                                                <thead>
+                                                                    <td>Fornecedores de Entradas</td>
+                                                                    <td>Entradas</td>
+                                                                    <td>Atividades</td>
+                                                                    <td>Saídas</td>
+                                                                    <td>Recebedores de Saídas</td>
+                                                                    <td>Monitoramento ou Medição</td>
+                                                                </thead>
                                                                 <tr>
-                                                                    <td>Matéria 
-
-                                                                        Energia 
-                                                                        
-                                                                        Recursos 
-                                                                        
-                                                                        Informações 
-                                                                        
-                                                                        Produtos 
-                                                                        
-                                                                        Serviços 
-                                                                        
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td>Matéria <br>
+                                                                        Energia <br>
+                                                                        Recursos <br>
+                                                                        Informações <br>
+                                                                        Produtos <br>
+                                                                        Serviços <br>
                                                                         Decisões </td>
-                                                                    <td>Processos sequentes 
-
-                                                                        Fornecedores internos ou externos 
-                                                                        
-                                                                        Clientes e outras partes interessadas </td>
+                                                                    <td>Processos sequentes <br>
+                                                                        Fornecedores internos ou externos <br>
+                                                                        Clientes e outras partes interessadas <br>
+                                                                    </td>
+                                                                    <td></td>
                                                                 </tr>
                                                             </table>
+                                                            <figcaption class="figure-caption text-center mb-5">
+                                                                Representação de um processo com destaque para saídas e recebedores <br>
+                                                                Fonte: Senac EAD (2024) 
+                                                            </figcaption>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -599,6 +623,7 @@
 
                                     </p>
                                     <div class="no-print" aria-hidden="true">
+
                                         <div class="accordion" id="accordionExample3">
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="heading3One1">
@@ -741,8 +766,7 @@
 
                                                     </div>
                                                 </div>
-                                            </div>
-                                            
+                                            </div>    
                                         </div>
                                     </div>
 
@@ -768,15 +792,22 @@
                                 <div class="modal-body">
                                     <p>
                                         Após concluir a etapa de planejamento, é hora de executar (Do) o processo documentado. Durante essa etapa, as partes envolvidas devem ser treinadas e conscientizadas para seguir os procedimentos (documentação) estabelecidos em cada processo e registrar dados sobre o desempenho do processo, conforme indicado no documento. </p>
-                                        <p>Documentar o mapeamento de processos é essencial para a gestão do conhecimento de qualquer organização. O objetivo dessa documentação é registrar, de maneira clara e objetiva, todos os processos que ocorrem na empresa, desde as necessidades dos clientes até a sua satisfação.</p>
-                                    <p>A norma ISO 10013 dispõe de diretrizes para a documentação de sistemas de gestão da qualidade. O objetivo principal dessa norma é fornecer orientações para a criação de documentos que facilitem a implementação, a manutenção e a melhoria dos sistemas de gestão da qualidade. Isso inclui a identificação dos documentos necessários, a definição de seus formatos e conteúdo e a definição de responsabilidades para a criação, a revisão e a aprovação dos documentos. A norma ABNT NBR ISO 10013 estabelece requisitos essenciais para a gestão e o controle de documentos, promovendo uma estrutura padronizada a fim de garantir a eficiência e a eficácia do processo. Isso inclui a definição de um sistema de numeração claro e preciso, a identificação exata de versões e revisões, além do estabelecimento de prazos claros para a revisão e a atualização dos documentos. Ao aderir a esses requisitos, as organizações podem assegurar que seus documentos sejam gerenciados de forma eficiente, promovendo a conformidade com os requisitos normativos e fomentando a melhoria contínua do sistema de gestão da qualidade. </p>
-                                    <p>A seguir, observe um modelo para registro do processo em formato de procedimento documentado. 
+                                        <p>Documentar o mapeamento de processos é essencial para a gestão do conhecimento de qualquer organização. O objetivo dessa documentação é registrar, de maneira clara e objetiva, todos os processos que ocorrem na empresa, desde as necessidades dos clientes até a sua satisfação.
                                     </p>
-                                    <h1>Design/Diagramação: Criar em formato de documento ‘modelo’</h1>
                                     <p>
-                                        Representação de um registro para procedimento documentado <br>
-                                        Fonte: Senac EAD (2024) 
+                                        A norma ISO 10013 dispõe de diretrizes para a documentação de sistemas de gestão da qualidade. O objetivo principal dessa norma é fornecer orientações para a criação de documentos que facilitem a implementação, a manutenção e a melhoria dos sistemas de gestão da qualidade. Isso inclui a identificação dos documentos necessários, a definição de seus formatos e conteúdo e a definição de responsabilidades para a criação, a revisão e a aprovação dos documentos. A norma ABNT NBR ISO 10013 estabelece requisitos essenciais para a gestão e o controle de documentos, promovendo uma estrutura padronizada a fim de garantir a eficiência e a eficácia do processo. Isso inclui a definição de um sistema de numeração claro e preciso, a identificação exata de versões e revisões, além do estabelecimento de prazos claros para a revisão e a atualização dos documentos. Ao aderir a esses requisitos, as organizações podem assegurar que seus documentos sejam gerenciados de forma eficiente, promovendo a conformidade com os requisitos normativos e fomentando a melhoria contínua do sistema de gestão da qualidade. 
                                     </p>
+                                    <figure class="my-5">
+                                        <div class="figure-img  mb-4">
+                                            <img class="img-fluid mx-auto d-block " src="img/_doc.jpg">
+                                        </div>
+                                        <figcaption class="figure-caption text-center">
+                                            Representação de um registro para procedimento documentado <br>
+                                            Fonte: Senac EAD (2024) 
+                                        </figcaption>
+                                      </figure>         
+
+                                    
                                     <p>
                                         Os mapas de processos auxiliam os analistas a identificarem gargalos, ineficiências, riscos e oportunidades de melhoria nos processos da empresa. Além disso, permitem que a organização saiba exatamente quem é responsável por cada etapa do processo, ajudando a evitar falhas e não conformidades. Para documentar o mapeamento de processos, é importante utilizar uma linguagem simples e objetiva, que possa ser entendida por todos os colaboradores da empresa. É recomendável também utilizar diagramas e fluxogramas para ilustrar os processos, tornando a documentação mais fácil de ser compreendida. 
                                     </p>
@@ -784,25 +815,29 @@
                                     </p>
                                     <figure class="my-5">
                                         <div class="figure-img mx-auto mb-4">
-                                            <img class="img-fluid d-block mx-auto" src="img/fig04.png" alt="Diagrama que descreve sequencialmente os processos de necessidades dos clientes, organização e satisfação dos clientes no topo. Abaixo seguem comercial, atendimento ao cliente, projetos e produção. A seguir, logística e os processos de recursos humanos, compras/finanças e manutenção dentro da organização. ">
+                                            <img class="img-fluid d-block mx-auto" src="img/fig04.png" alt="">
                                         </div>
-                                        <figcaption class="figure-caption text-center">Diagrama dos principais processos e apoio de uma organização mapeados <br>
+                                        <figcaption class="figure-caption text-center">
+                                            Diagrama dos principais processos e apoio de uma organização mapeados <br>
                                             Fonte: Senac EAD (2024) 
                                         </figcaption>
                                     </figure>
+                                    <p class="acessivel no-print visually-hidden">
+                                        Diagrama que descreve sequencialmente os processos de necessidades dos clientes, organização e satisfação dos clientes no topo. Abaixo seguem comercial, atendimento ao cliente, projetos e produção. A seguir, logística e os processos de recursos humanos, compras/finanças e manutenção dentro da organização. 
+                                    </p>
                                     <p>
                                         Agora serão detalhados os processos descritos no diagrama em uma tabela, destacando a interconexão entre eles e sua contribuição para o sucesso global da organização. 
                                     </p>
                                     <div class="table-responsive">
                                         <table class="text-center align-middle tabela-parametro">
-                                            <th>
+                                            <thead>
                                                 <td>Fontes de Entrada</td>
                                                 <td>Entradas </td>
                                                 <td>Processo </td>
                                                 <td>Saídas </td>
                                                 <td>Recebedores de Saída </td>
                                                 <td>Monitoramento ou Medição</td>
-                                            </th>
+                                            </thead>
                                             <tr>
                                                 <td>Clientes e outras partes interessadas.</td>
                                                 <td>Necessidades dos clientes 
@@ -998,11 +1033,10 @@
                                                 <td> Tempo de máquinas paradas</td>
                                             </tr>
                                         </table>
-                                        <p>
+                                        <figcaption class="figure-caption text-center">
                                             Representação da inter-relações de processos mapeados em uma organização. <br>
-
-Fonte Senac EAD (2024) 
-                                        </p>
+                                            Fonte: Senac EAD (2024) 
+                                        </figcaption>
                                     </div>
 
                                     <div class="modal-footer">
@@ -1061,14 +1095,14 @@ Fonte Senac EAD (2024)
                                     </p>   
                                     <div class="table-responsive">
                                         <table class="text-center align-middle tabela-parametro">
-                                            <th>
+                                            <thead>
                                                 <td>Fornecedores de entrada </td>
                                                 <td>Entradas </td>
                                                 <td>Atividades </td>
                                                 <td>Saídas </td>
                                                 <td>Recebedores de saída </td>
                                                 <td>Monitoramento ou medição </td>
-                                            </th>
+                                            </thead>
                                             <tr>
                                                 <td>Programação e controle de produção (PCP) </td>
                                                 <td>Pedidos 
@@ -1102,9 +1136,9 @@ Fonte Senac EAD (2024)
                                                     Prazos de entrega </td>
                                             </tr>
                                         </table>
-                                        <p>
+                                        <figcaption class="figure-caption text-center mb-5">
                                             Representação de um processo de produção de pizzas <br> Fonte: Senac EAD (2024) 
-                                        </p>
+                                        </figcaption>
                                     </div>
                                     <p>
                                         Conforme as informações coletadas, é possível utilizar um fluxograma para visualizar o mapa do processo e analisar oportunidades de melhorias. 
@@ -1114,10 +1148,9 @@ Fonte Senac EAD (2024)
                                         <div class="figure-img mx-auto mb-4">
                                             <img class="img-fluid d-block mx-auto" src="img/fig05.png" alt="Fluxograma sequencial de um processo de produção de pizzas, com os seguintes passos: início, receber o pedido, preparar os ingredientes, preparar a massa, montar a pizza, assar, retirar do forno, embalar, liberar para a entrega, fim. ">
                                         </div>
-                                        <figcaption class="figure-caption text-center">Fluxograma do processo de produção de pizzas <br>
-
+                                        <figcaption class="figure-caption text-center">
+                                            Fluxograma do processo de produção de pizzas <br>
                                             Fonte: Senac EAD (2024) 
-                                            
                                         </figcaption>
                                     </figure>
                                     <p>
@@ -1127,10 +1160,9 @@ Fonte Senac EAD (2024)
                                         <div class="figure-img mx-auto mb-4">
                                             <img class="img-fluid d-block mx-auto" src="img/fig06.png" alt="Fluxograma de um processo de produção de pizzas, com os seguintes passos: início, receber o pedido, preparar os ingredientes, preparar a massa, montar a pizza, assar, retirar do forno, embalar, liberar para a entrega, fim. ">
                                         </div>
-                                        <figcaption class="figure-caption text-center">Fluxograma do processo de produção de pizzas otimizado <br>
-
+                                        <figcaption class="figure-caption text-center">
+                                            Fluxograma do processo de produção de pizzas otimizado <br>
                                             Fonte: Senac EAD (2024) 
-                                            
                                         </figcaption>
                                     </figure>
                                     <div class="grafismo">
@@ -1152,17 +1184,22 @@ Fonte Senac EAD (2024)
                         </div>
                     </div>
                 </div>
+                </div>
+                
+                
                 <!-- Fim modais painel -->
                 <div class="acessivel only-print">
 
                 </div>
+
+
                 <p>
                     As análises dos processos devem ser realizadas com o acompanhamento dos responsáveis e as partes interessadas. É importante escolher a metodologia mais adequada à organização, considerando suas necessidades e objetivos. Além disso, a melhoria dos processos mapeados exige um compromisso contínuo da organização em relação à gestão da qualidade. É fundamental monitorar regularmente os processos para identificar novas oportunidades de melhoria e garantir que as mudanças implementadas estejam produzindo os resultados desejados. Com uma abordagem sistemática e focada na melhoria contínua, a organização pode alcançar um alto nível de eficiência e qualidade em seus processos. 
                 </p>
-                <h3>Encerramento  
-                    </h3>
+                <h3>Encerramento</h3>
+
                 <p>
-Conforme mencionado, os processos desempenham um papel fundamental na implementação, manutenção e melhoria das estratégias da empresa. Ao compreender, medir e aprimorar esses processos, a organização não só avança em direção aos seus objetivos, mas também cultiva uma cultura organizacional que valoriza o impacto positivo dos seus produtos e serviços na vida das pessoas. 
+                    Conforme mencionado, os processos desempenham um papel fundamental na implementação, manutenção e melhoria das estratégias da empresa. Ao compreender, medir e aprimorar esses processos, a organização não só avança em direção aos seus objetivos, mas também cultiva uma cultura organizacional que valoriza o impacto positivo dos seus produtos e serviços na vida das pessoas. 
                 </p>
                 
                 
@@ -1238,6 +1275,27 @@ Conforme mencionado, os processos desempenham um papel fundamental na implementa
             document.body.appendChild(scriptElem);
 
     </script>
+
+<script>
+    document.querySelectorAll('.bt-painel-pdca').forEach(botao => {
+        const img = botao.querySelector('.bt-hover');
+
+        console.log(botao);
+
+
+        botao.addEventListener('mouseover', () => {
+            img.classList.add('bt-hover-ativo');
+        });
+
+        botao.addEventListener('mouseout', () => {
+            img.classList.remove('bt-hover-ativo');
+        });
+    });
+</script>
+
+
+
+
 </body>
 
 </html>

@@ -38,6 +38,51 @@ body{
     z-index: 11;
 }
 
+
+.painel-pdca{
+    width: 901px;
+    height: 301px;
+    background: url('img/fig02.png') no-repeat;
+    position: relative;
+}
+
+.bt-painel-pdca{
+    position: absolute;
+    height: 213px;
+    width: 140px;
+    border-radius: 50%;
+    top: 15%;
+    background: transparent;
+    border: none;
+}
+
+.bt-plan{
+    left: 5%;
+}
+
+.bt-do{
+    left: 30%;
+}
+
+.bt-check{
+    left: 55%;
+}
+
+.bt-action{
+    left: 80%;
+}
+
+.bt-hover{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+}
+
+.bt-hover-ativo{
+    display: block;
+}
+
 .painel-organizacoes {
     background: url('img/fig01.png');
     width: 511px;
@@ -47,106 +92,67 @@ body{
     position: relative;
 }
 
-.btn-estrutura {
-    background: url('./img/painel1_bt1.png') no-repeat;
-    /* background-color: red; */
-    color: transparent;
+.btn-painel-organizacoes{
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    border: unset;
     position: absolute;
-    margin-left: 60%;
-    margin-top: 1%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    
 }
 
-.btn-estrutura:hover {
-    background: url('./img/painel1_bt1_hover.png') no-repeat;
-    border: unset;
+.btn-painel-organizacoes:hover{
+    scale: 1.5;
+    transition: 0.3s ease;
 }
+
+.btn-estrutura {
+    background: url('./img/painel/bt01.png') no-repeat;
+    background-size: cover;
+    margin-left: 68%;
+    margin-top: 0%;
+}
+
 
 .btn-divisao-trabalho {
-    background: url('./img/painel1_bt2.png');
-    background-size: 100%;
-    color: transparent;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    border: unset;
-    position: absolute;
-    margin-left: 76%;
-    margin-top: 8%;
+    background: url('./img/painel/bt02.png');
+    background-size: cover;
+    margin-left: 81%;
+    margin-top: 10%;
 }
 
-.btn-divisao-trabalho:hover {
-    background: url('./img/painel1_bt2_hover.png');
-}
+
 
 .btn-coordenacao {
-    background: url('./img/painel1_bt3.png');
-    background-size: 100%;    
-    color: transparent;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    border: unset;
-    position: absolute;
-    margin-left: 87%;
-    margin-top: 20%;
+    background: url('./img/painel/bt03.png');
+    background-size: cover;
+    margin-left: 93%;
+    margin-top: 25%;
 }
 
-.btn-coordenacao:hover {
-    background: url('./img/painel1_bt3_hover.png');
-}
 
 .btn-ambiente {
-    background: url('./img/painel1_bt4.png');
-    background-size: 100%;
-    color: transparent;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    border: unset;
-    position: absolute;
-    margin-left: 93%;
-    margin-top: 34%;
+    background: url('./img/painel/bt04.png');
+    background-size: cover;
+    margin-left: 83%;
+    margin-top: 80%;
 }
 
-.btn-ambiente:hover {
-    background: url('./img/painel1_bt4_hover.png');
-}
 
 .btn-cultura {
-    background: url('./img/painel1_bt5.png');
-    background-size: 100%;
-    color: transparent;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    border: unset;
-    position: absolute;
-    margin-left: 82%;
-  margin-top: 80%;
+    background: url('./img/painel/bt05.png');
+    background-size: cover;
+    margin-left: 12%;
+    margin-top: 80%;
 }
 
-.btn-cultura:hover {
-    background: url('./img/painel1_bt5_hover.png');
-}
+
 
 .btn-adaptacao {
-    background: url('./img/painel1_bt6.png');
-    position: absolute;
-    color: transparent;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    border: unset;
-    margin-left: 13%;
-    top: 76%;
-}
-
-.btn-adaptacao:hover {
-    background: url('./img/painel1_bt6_hover.png');
+    background: url('./img/painel/bt06.png');
+    background-size: cover;
+    margin-left: 18%;
+    margin-top: 2%;
 }
 
 .btn-missao {
