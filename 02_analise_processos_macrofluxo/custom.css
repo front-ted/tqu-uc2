@@ -287,6 +287,13 @@ a:hover {
 
 
 
+
+.tabela-setor-atendimento td{
+    border-color: white;
+}
+
+
+
 @media screen and (max-width:1440px) {
     .borda-esquerda {
         border-left-width: 5px;
