@@ -17,6 +17,11 @@
     margin-top: -10%;
 }
 
+.img-jpg{
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
 body {
     /* background-image: url('../../01_experimentacao/img/textura.png'); */
     /* background-image: radial-gradient(farthest-corner at -2% 25%, #92ACCE 0%, transparent 25%), radial-gradient(farthest-corner at 50% 100%, #CF9993 0%, transparent 15%); */
