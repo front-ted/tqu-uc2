@@ -59,6 +59,7 @@ body{
     top: 15%;
     background: transparent;
     border: none;
+    color: transparent;
 }
 
 .bt-plan{
@@ -576,7 +577,35 @@ body{
     background: unset
 }
 
-
+@media screen and (max-width:1000px) {
+    .painel-pdca{
+        background: none;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+    
+    .bt-painel-pdca{
+        margin: auto;
+        position: relative;
+        height: 213px;
+        width: 140px;
+        color: black;
+        top: unset;
+        left:unset;
+        background: transparent;
+        border-radius: 25px;
+    border-width: 3px;
+    border-style: solid;
+    background: #fff;
+    padding: 10px 25px;
+    font-weight: bold;
+    }
+    
+    
+    
+}
 
 
 
