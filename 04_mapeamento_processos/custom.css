@@ -17,7 +17,7 @@
     margin-top: -10%;
 }
 
-.img-jpg{
+.img-jpg {
     border-radius: 20px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
@@ -33,7 +33,8 @@ body {
     /* height: auto;
     overflow-x: hidden; */
 }
-.bloco-1{
+
+.bloco-1 {
     /* background: url('img/bg1.jpg'); */
     background-size: cover;
     padding-top: 100px;
@@ -41,7 +42,8 @@ body {
     background-attachment: fixed !important;
 
 }
-.bloco-2{
+
+.bloco-2 {
     /* background: url('img/bg2.jpg'); */
     background-attachment: fixed !important;
     background-size: 100%;
@@ -50,14 +52,16 @@ body {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.bloco-3{
+
+.bloco-3 {
     /* background: url('img/bg3.jpg'); */
     background-attachment: fixed !important;
     background-size: cover;
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.bloco-4{
+
+.bloco-4 {
     /* background: url('img/bg4.jpg'); */
     background-attachment: fixed !important;
     background-size: 100%;
@@ -66,7 +70,8 @@ body {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.bloco-5{
+
+.bloco-5 {
     /* background: url('img/bg5.jpg'); */
     background-attachment: fixed !important;
     background-size: cover;
@@ -76,7 +81,8 @@ body {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.bloco-6{
+
+.bloco-6 {
     background-attachment: fixed !important;
     background-size: cover;
     background-size: 100%;
@@ -85,6 +91,7 @@ body {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 .bloco-2 {
     /* background-image: linear-gradient(to right top, rgba(128, 172, 211, 0.5), rgba(227, 144, 140, 0.5), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)); */
     /* url(caminho/para/sua/imagem.jpg);
@@ -339,35 +346,39 @@ tr {
     margin-top: -15%;
 }
 
-.bloco-paralax{
+.bloco-paralax {
     width: 100%;
     height: 400px;
     background: url(img/bg1.jpg);
     background-size: cover;
     background-attachment: fixed !important;
 }
-.bloco-paralax2{
+
+.bloco-paralax2 {
     width: 100%;
     height: 400px;
     background: url(img/bg2.jpg);
     background-size: cover;
     background-attachment: fixed !important;
 }
-.bloco-paralax3{
+
+.bloco-paralax3 {
     width: 100%;
     height: 400px;
     background: url(img/bg3.jpg);
     background-size: cover;
     background-attachment: fixed !important;
 }
-.bloco-paralax4{
+
+.bloco-paralax4 {
     width: 100%;
     height: 400px;
     background: url(img/bg4.jpg);
     background-size: cover;
     background-attachment: fixed !important;
 }
-.bloco-paralax5{
+
+.bloco-paralax5 {
     width: 100%;
     height: 400px;
     background: url(img/bg5.jpg);
@@ -380,7 +391,8 @@ tr {
 .btn-estrutura-mob:hover {
     background: url('img/bt01b.png');
 }
-    .btn-estrutura-mob {
+
+.btn-estrutura-mob {
     background: url('img/bt01.png');
     background-size: 100%;
     display: block;
@@ -389,10 +401,11 @@ tr {
     border: unset;
 }
 
-.btn-divisao-trabalho-mob:hover{
+.btn-divisao-trabalho-mob:hover {
     background: url('img/bt02b.png');
 }
-    .btn-divisao-trabalho-mob{
+
+.btn-divisao-trabalho-mob {
     background: url('img/bt02.png');
     background-size: 100%;
     display: block;
@@ -401,10 +414,12 @@ tr {
     border: unset;
 
 }
-.btn-coordenacao-mob:hover{
+
+.btn-coordenacao-mob:hover {
     background: url('img/bt03b.png');
 }
-.btn-coordenacao-mob{
+
+.btn-coordenacao-mob {
     background: url('img/bt03.png');
     background-size: 100%;
     display: block;
@@ -413,10 +428,12 @@ tr {
     border: unset;
 
 }
-.btn-ambiente-mob:hover{
+
+.btn-ambiente-mob:hover {
     background: url('img/bt04b.png');
 }
-    .btn-ambiente-mob{
+
+.btn-ambiente-mob {
     background: url('img/bt04.png');
     background-size: 100%;
     display: block;
@@ -425,11 +442,13 @@ tr {
     border: unset;
 
 }
-.btn-cultura-mob:hover{
+
+.btn-cultura-mob:hover {
     background: url('img/bt05b.png');
 }
-    .btn-cultura-mob{
-        background: url('img/bt05.png');
+
+.btn-cultura-mob {
+    background: url('img/bt05.png');
     background-size: 100%;
     display: block;
     width: 168px;
@@ -437,6 +456,7 @@ tr {
     border: unset;
 
 }
+
 @media only screen and (max-width:1440px) {
     .elemento-direita {
         position: absolute;
@@ -578,4 +598,37 @@ tr {
         flex-direction: column;
         margin: 10% 10%;
     }
+}
+
+/* ODA */
+.link-oda-fluxograma {
+    display: block;
+    background-color: white;
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    border: 4px solid #80ACD3;
+    box-shadow: 2px 2px 2px #333;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition-duration: .2s;
+}
+.link-oda-fluxograma:hover {
+    box-shadow: 4px 4px 6px #333;
+    color: #333;
+}
+.link-oda-fluxograma svg {
+    margin-bottom: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.link-oda-fluxograma svg path {
+    fill: #CF9993;
 }

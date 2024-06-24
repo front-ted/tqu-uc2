@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Técnico em Qualidade - Elaboração de fluxogramas</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/dragula.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div id="wrapper" class="oda-fluxograma">
+        <div class="loader">
+            <!-- 2 -->
+            <p>Carregando...</p>
+            <div class="loadicon loader--style2" title="1">
+                <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px"
+                    viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                    <path fill="white"
+                        d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+                        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25"
+                            to="360 25 25" dur="0.6s" repeatCount="indefinite" />
+                    </path>
+                </svg>
+            </div>
+            <img src="assets/img/senac_logo.svg" alt="">
+        </div>
+        <div class="tela-inicial">
+            <div class="msg lefty">
+                <h3>Elaboração de fluxogramas</h3>
+                <p>A capacidade de elaborar fluxogramas precisos é fundamental no campo da qualidade, pois permite uma
+                    análise detalhada dos procedimentos e facilita a identificação de oportunidades de melhoria e a
+                    implementação de soluções eficazes. Este exercício prático visa não apenas reforçar a teoria
+                    estudada, mas também preparar você para aplicar essas competências na realidade dos ambientes
+                    organizacionais, nos quais a busca pela otimização dos processos e elevação dos padrões de qualidade
+                    é constante. </p>
+                <button class="btn-fluxograma btn-start">Iniciar</button>
+            </div>
+        </div>
+        <div class="tela-1 tela">
+            <div class="backdrop">
+                <div class="msg hidden">
+                    <h4>Cenário 1</h4>
+                    <p>Você é o técnico em qualidade de uma rede de padarias e, depois de inspecionar os produtos de
+                        diferentes filiais, percebeu uma grande variação de cores, formatos e tamanhos do pão francês.
+                        Assim, para uniformizar o produto, você propõe um mapeamento do processo. Para isso, você
+                        entrevista um padeiro experiente da organização, que lhe apresenta o processo produtivo e
+                        enfatiza a importância das etapas de pesagem e mistura dos ingredientes, da cilindragem e
+                        modelação da massa e temperatura e tempo de assamento do pão.</p>
+                    <p>Com base nas informações coletadas, organize as atividades em um fluxograma, clicando no botão a
+                        seguir. </p>
+                    <button class="btn-fluxograma start-fluxograma">Elaborar fluxograma</button>
+                </div>
+            </div>
+            <div class="fluxograma-1 modelo">
+                <div class="load"></div>
+                <div class="fluxograma-row flex-end">
+                    <div class="circulo elemento seta-dir">Início</div>
+                    <div class="retangulo elemento seta-dir">Medir os ingredientes</div>
+                    <div class="retangulo elemento seta-dir">Misturar os ingredientes</div>
+                    <div class="retangulo elemento seta-dir">Cilindrar a massa</div>
+                    <div class="retangulo elemento seta-baixo">Dividir a massa</div>
+                </div>
+                <div class="fluxograma-row flex-end">
+                    <div id="losango-1" class="losango elemento">As porções têm 70g?
+                        
+                        <img src="assets/img/arrow-down.svg" alt="" class="seta">
+                    </div>
+                    <div class="nao-1">
+                        <img src="assets/img/seta1.svg" alt="">
+                        <p>Não</p>
+                    </div>
+                </div>
+                <div class="fluxograma-row reverse-row">
+                    <div class="retangulo elemento seta-esq">Modelar a massa</div>
+                    <div class="retangulo elemento seta-esq">Fermentação</div>
+                    <div class="retangulo elemento seta-esq">Preaquecer o forno</div>
+                    <div class="nao-2">
+                        <img src="assets/img/seta2.svg" alt="">
+                        <p>Não</p>
+                    </div>
+                    <div id="losango-2" class="losango elemento">Forno a 230 ºC?
+                        <div class="seta">
+                            <p>Sim</p>
+                            <img src="assets/img/arrow-right.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="retangulo elemento seta-baixo">Assar os pães</div>
+                </div>
+                <div class="fluxograma-row flex-start">
+                    <div class="retangulo elemento seta-dir">Embalar os pães</div>
+                    <div class="circulo elemento">Fim</div>
+                </div>
+                <div class="mobile">
+                    <div class="mobile-row">
+                        <div class="circulo elemento seta-baixo">Início</div>
+                        <div class="retangulo elemento seta-baixo">Medir os ingredientes</div>
+                        <div class="retangulo elemento seta-baixo">Misturar os ingredientes</div>
+                        <div class="retangulo elemento seta-baixo">Cilindrar a massa</div>
+                        <div class="retangulo elemento seta-baixo">Dividir a massa</div>
+                        <div id="losango-1" class="losango elemento">As porções têm 70g?
+                            <p class="sim-1">Sim</p>
+                            <img src="assets/img/arrow-down.svg" alt="" class="seta">
+                        </div>
+                        <div class="nao-1">
+                            <img src="assets/img/seta1.svg" alt="">
+                            <p>Não</p>
+                        </div>
+                    </div>
+                    <div class="mobile-row row-reverse">
+                        <div class="retangulo elemento seta-cima">Modelar a massa</div>
+                        <div class="retangulo elemento seta-cima">Fermentação</div>
+                        <div class="retangulo elemento seta-cima">Preaquecer o forno</div>
+                        <div class="nao-2">
+                            <img src="assets/img/seta2.svg" alt="">
+                            <p>Não</p>
+                        </div>
+                        <div id="losango-2" class="losango elemento">Forno a 230 ºC?
+                            <div class="seta">
+                                <p>Sim</p>
+                                <img src="assets/img/arrow-right.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="retangulo elemento seta-cima">Assar os pães</div>
+                        <div class="retangulo elemento seta-cima">Embalar os pães</div>
+                    <div class="circulo elemento">Fim</div>
+                    </div>
+                </div>
+            </div>
+            <div class="fluxograma-1 game-container">
+                <div class="fluxograma-row flex-end">
+                    <div class="circulo elemento seta-dir">Início</div>
+                    <div class="slot slot-1 seta-dir elemento retangulo"></div>
+                    <div class="slot slot-2 seta-dir elemento retangulo"></div>
+                    <div class="slot slot-3 seta-dir elemento retangulo"></div>
+                    <div class="slot slot-4 retangulo elemento seta-baixo"></div>
+                </div>
+                <div class="fluxograma-row flex-end">
+                    <div id="losango-1" class="losango elemento">As porções têm 70g?
+                        <img src="assets/img/arrow-down.svg" alt="" class="seta">
+                    </div>
+                    <div class="nao-1">
+                        <img src="assets/img/seta1.svg" alt="">
+                        <p>Não</p>
+                    </div>
+                </div>
+                <div class="fluxograma-row reverse-row">
+                    <div class="slot slot-5 retangulo elemento seta-esq"></div>
+                    <div class="slot slot-6 retangulo elemento seta-esq"></div>
+                    <div class="slot slot-7 retangulo elemento seta-esq"></div>
+                    <div class="nao-2">
+                        <img src="assets/img/seta2.svg" alt="">
+                        <p>Não</p>
+                    </div>
+                    <div id="losango-2" class="losango elemento">Forno a 230 ºC?
+                        <div class="seta">
+                            <p>Sim</p>
+                            <img src="assets/img/arrow-right.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="slot slot-8 retangulo elemento seta-baixo"></div>
+                </div>
+                <div class="fluxograma-row flex-start">
+                    <div class="slot slot-9 retangulo elemento seta-dir"></div>
+                    <div class="circulo elemento">Fim</div>
+                </div>
+                
+                <p class="feedback-negativo">Ops! Este não é o local dessa etapa do fluxograma! Tente novamente.</p>
+                <div class="feedback-positivo">
+                    <p>Parabéns! Você completou corretamente este fluxograma.</p>
+                    <button class="btn-fluxograma btn-continuar">
+                        Próximo
+                    </button>
+                </div>
+                <div class="fluxograma-row card-container">
+                    <div data-target="slot-3" class="retangulo elemento card">Cilindrar a massa</div>
+                    <div data-target="slot-2" class="retangulo elemento card">Misturar os ingredientes</div>
+                    <div data-target="slot-5" class="retangulo elemento card">Modelar a massa</div>
+                    <div data-target="slot-4" class="retangulo elemento card">Dividir a massa</div>
+                    <div data-target="slot-1" class="retangulo elemento card">Medir os ingredientes</div>
+                    <div data-target="slot-8" class="retangulo elemento card">Assar os pães</div>
+                    <div data-target="slot-9" class="retangulo elemento card">Embalar os pães</div>
+                    <div data-target="slot-6" class="retangulo elemento card">Fermentação</div>
+                    <div data-target="slot-7" class="retangulo elemento card">Preaquecer o forno</div>
+                </div>
+                <div class="mobile">
+                    <div class="flex">
+                        <div class="mobile-row">
+                            <div class="circulo elemento seta-baixo">Início</div>
+                            <div class="slot slot-1 retangulo elemento seta-baixo"></div>
+                            <div class="slot slot-2 retangulo elemento seta-baixo"></div>
+                            <div class="slot slot-3 retangulo elemento seta-baixo"></div>
+                            <div class="slot slot-4 retangulo elemento seta-baixo"></div>
+                            <div id="losango-1" class="losango elemento">As porções têm 70g?
+                                <p class="sim-1">Sim</p>
+                                <img src="assets/img/arrow-down.svg" alt="" class="seta">
+                            </div>
+                            <div class="nao-1">
+                                <img src="assets/img/seta1.svg" alt="">
+                                <p>Não</p>
+                            </div>
+                        </div>
+                        <div class="mobile-row row-reverse">
+                            <div class="slot slot-5 retangulo elemento seta-cima"></div>
+                            <div class="slot slot-6 retangulo elemento seta-cima"></div>
+                            <div class="slot slot-7 retangulo elemento seta-cima"></div>
+                            <div class="nao-2">
+                                <img src="assets/img/seta2.svg" alt="">
+                                <p>Não</p>
+                            </div>
+                            <div id="losango-2" class="losango elemento">Forno a 230 ºC?
+                                <div class="seta">
+                                    <p>Sim</p>
+                                    <img src="assets/img/arrow-right.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="slot slot-8 retangulo elemento seta-cima"></div>
+                            <div class="slot slot-9 retangulo elemento seta-cima"></div>
+                            <div class="circulo elemento">Fim</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tela-2 tela">
+            <div class="backdrop">
+                <div class="msg hidden">
+                    <h4>Cenário 2</h4>
+                    <p>Agora, imagine que você é o técnico em qualidade de uma instituição de ensino superior e está
+                        realizando o mapeamento do processo de seleção de candidatos para o curso de pós-graduação. Para
+                        compreender o processo, você realiza uma entrevista com o secretário do curso de pós-graduação,
+                        que lhe apresenta como é realizada a divulgação do curso, o sistema no qual os alunos enviam a
+                        documentação, os critérios utilizados na análise da documentação, as etapas do processo seletivo
+                        e a forma de contato com o candidato aprovado. A partir das informações obtidas, você ordenou as
+                        atividades observadas em um fluxograma. </p>
+                    <p>Com base nas informações coletadas, organize as atividades em um fluxograma, clicando no botão a
+                        seguir. </p>
+                    <button class="btn-fluxograma start-fluxograma">Elaborar fluxograma</button>
+                </div>
+            </div>
+            <div class="fluxograma-2 modelo">
+                <div class="load"></div>
+                <div class="fluxograma-row flex-end">
+                    <div class="circulo elemento seta-dir">Início</div>
+                    <div class="retangulo elemento seta-dir">Divulgação do material do curso</div>
+                    <div class="retangulo elemento seta-dir">Abertura das inscrições</div>
+                    <div class="retangulo elemento seta-dir">Ficha de inscrição e outros documentos</div>
+                    <div id="losango-3" class="losango elemento">
+                        <p>Candidato apresentou toda a documentação?</p>
+                        <span class="sim-1">Sim</span>
+                        <span class="nao-1">Não</span>
+                        <img src="assets/img/arrow-right.svg" alt="" class="seta">
+                        <img src="assets/img/arrow-down.svg" alt="" class="seta">
+                    </div>
+                    <img src="assets/img/seta4.svg" alt="" class="seta-4">
+                    <div class="retangulo elemento">
+                        Solicitar novamente a documentação
+                    </div>
+                </div>
+                <div class="fluxograma-row reverse-row pr">
+                    <div class="retangulo elemento pt seta-baixo">
+                        Processo seletivo
+                    </div>
+                    <div class="retangulo elemento pt seta-esq mb">Candidato aprovado
+                        <span class="sim-2">Sim</span>
+                        <span class="nao-2">Não</span>
+                    </div>
+                    <div class="retangulo elemento pt seta-baixo">Comunicação ao aprovado</div>
+                    
+                </div>
+                <div class="fluxograma-row reverse-row pr-2">
+                    <div class="circulo elemento mt">Fim</div>
+                    <div class="circulo elemento mt">Fim</div>
+                </div>
+                <div class="mobile">
+                    <div class="mobile-row">
+                        <div class="circulo elemento seta-baixo">Início</div>
+                        <div class="retangulo elemento seta-baixo">Divulgação do material do curso</div>
+                        <div class="retangulo elemento seta-baixo">Abertura das inscrições</div>
+                        <div class="retangulo elemento seta-baixo">Ficha de inscrição e outros documentos</div>
+                        <div id="losango-1" class="losango elemento"><p>Candidato apresentou toda a documentação?</p>
+                            <p class="sim-1">Sim</p>
+                            <img src="assets/img/arrow-down.svg" alt="" class="seta">
+                            <img src="assets/img/arrow-down.svg" alt="" class="seta-mobile">
+                            <p class="nao-mobile">Não</p>
+                        </div>
+                        <div class="retangulo elemento">Solicitar novamente a documentação</div>
+                    </div>
+                    <div class="mobile-row row-reverse">
+                        <div class="nao-1">
+                            <img src="assets/img/seta4.svg" class="seta-4-mobile">
+                            <p>Não</p>
+                        </div>
+                        <div class="retangulo elemento seta-cima">Processo seletivo</div>
+                        <div class="retangulo elemento seta-cima">Candidato aprovado</div>
+                        <div class="retangulo elemento seta-cima">Comunicação ao aprovado</div>
+                    <div class="circulo elemento">Fim</div>
+                    </div>
+                </div>
+            </div>
+            <div class="fluxograma-2 game-container">
+                <div class="fluxograma-row flex-end">
+                    <div class="circulo elemento seta-dir">Início</div>
+                    <div class="slot-10 slot retangulo elemento seta-dir"></div>
+                    <div class="slot-11 slot retangulo elemento seta-dir"></div>
+                    <div class="slot-12 slot retangulo elemento seta-dir"></div>
+                    <div id="losango-3" class="losango elemento">
+                        <p>Candidato apresentou toda a documentação?</p>
+                        <span class="sim-1">Sim</span>
+                        <span class="nao-1">Não</span>
+                        <img src="assets/img/arrow-right.svg" alt="" class="seta">
+                        <img src="assets/img/arrow-down.svg" alt="" class="seta">
+                    </div>
+                    <img src="assets/img/seta4.svg" alt="" class="seta-4">
+                    <div class="slot slot-13 retangulo elemento">
+
+                    </div>
+                </div>
+                <div class=" fluxograma-row flex-end pr">
+                    <div class="slot-14 slot retangulo elemento pt seta-baixo">
+
+                    </div>
+                    <div class="slot slot-15 retangulo elemento pt seta-esq mb">
+                        <span class="sim-2">Sim</span>
+                        <span class="nao-2">Não</span>
+                    </div>
+                    <div class="slot slot-16 retangulo elemento pt seta-esq"></div>
+                </div>
+                <div class="fluxograma-row reverse-row flex-start pr-2">
+                    <div class="circulo elemento mt">Fim</div>
+                    <div class="circulo elemento mt">Fim</div>
+                </div>
+                <p class="feedback-negativo">Ops! Este não é o local dessa etapa do fluxograma! Tente novamente.</p>
+                <div class="feedback-positivo">
+                    <p>Parabéns! Você completou corretamente este fluxograma.</p>
+                    <button class="btn-fluxograma btn-continuar">
+                        Próximo
+                    </button>
+                </div> 
+                <div class="fluxograma-row card-container">
+                    <div data-target="slot-11" class="retangulo elemento card">Abertura das inscrições</div>
+                    <div data-target="slot-14" class="retangulo elemento card">
+                        Processo seletivo
+                    </div>
+                    <div data-target="slot-12" class="retangulo elemento card">Ficha de inscrição e outros documentos
+                    </div>
+                    <div data-target="slot-10" class="retangulo elemento card">Divulgação do material do curso</div>
+                    <div data-target="slot-13" class="retangulo elemento card">Solicitar novamente a documentação</div>
+                    <div data-target="slot-16" class="retangulo elemento card">Comunicação ao aprovado</div>
+                    <div data-target="slot-15" class="retangulo elemento card">Candidato aprovado</div>
+                </div>
+                <div class="mobile">
+                    <div class="mobile-row">
+                        <div class="slot circulo elemento seta-baixo">Início</div>
+                        <div class="slot slot-10 retangulo elemento seta-baixo"></div>
+                        <div class="slot slot-11 retangulo elemento seta-baixo"></div>
+                        <div class="slot slot-12 retangulo elemento seta-baixo"></div>
+                        <div id="losango-1" class="losango elemento"><p>Candidato apresentou toda a documentação?</p>
+                            <p class="sim-1">Sim</p>
+                            <img src="assets/img/arrow-down.svg" alt="" class="seta">
+                            <img src="assets/img/arrow-down.svg" alt="" class="seta-mobile">
+                            <p class="nao-mobile">Não</p>
+                        </div>
+                        <div class="slot slot-13 retangulo elemento"></div>
+                    </div>
+                    <div class="mobile-row row-reverse">
+                        <div class="nao-1">
+                            <img src="assets/img/seta4.svg" class="seta-4-mobile">
+                            <p>Não</p>
+                        </div>
+                        <div class="slot slot-14 retangulo elemento seta-cima"></div>
+                        <div class="slot slot-15 retangulo elemento seta-cima"></div>
+                        <div class="slot slot-16 retangulo elemento seta-cima"></div>
+                    <div class="circulo elemento">Fim</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tela-final tela">
+            <div class="msg hidden">
+                <h3>Parabéns! Você completou a atividade.</h3>
+                <p>Esperamos que, com esta atividade prática de montagem de fluxogramas, você tenha consolidado sua
+                    habilidade de visualizar e estruturar processos de maneira eficiente e lógica. Encorajamos você a
+                    continuar praticando e aprofundando seus conhecimentos sobre os diferentes tipos de fluxogramas em
+                    situações reais, a fim de se tornar um profissional cada vez mais qualificado. </p>
+                <button class="btn-fluxograma btn-restart">Reiniciar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/dragula.min.js"></script>
+    <script src="assets/js/game-custom.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
