@@ -9,6 +9,13 @@
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+.sombra{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
 .bloco1 {
     background: url('img/bg_bloco01.jpg') ;
     background-size: cover;

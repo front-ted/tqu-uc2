@@ -139,7 +139,7 @@ p {
     display: block;
     position: fixed;
     bottom: 40px;
-    right: 50px;
+    left: 10px;
     z-index: 900;
 }
 
@@ -962,7 +962,7 @@ tbody td:first-child {
     height: 42px;
     position: fixed;
     z-index: 900;
-    right: 50px;
+    left: 10px;
     bottom: 90px;
     cursor: pointer;
     transition: all 0.4s;

@@ -193,16 +193,6 @@ body {
 .bt-hover-ativo{
     display: block;
 }
-    
-/* .btnMacroprocesso:hover, .btnSubprocessos:hover {
-    left: 30%;
-    background: url('img/bt_hover.png')  no-repeat;
-}
-
-.btnAtividades:hover, .btnTarefas:hover  {
-    left: 25%;
-    background: url('img/bt_hover.png')  no-repeat;
-} */
 
     
 /* fim painel 2 */
@@ -332,6 +322,82 @@ body {
     .elemento-direita {display: none;}
 }
 
+@media screen and (max-width:900px) {
+
+    .painel-metodologias {
+        background: none;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+
+    .bt-painel-metodologias {
+        transform: unset;
+        position: relative;
+        background-color: transparent;
+        width: 200px;
+        height: unset;
+        border: unset;
+        margin: auto;
+        border-radius: 25px;
+        border-width: 3px;
+        border-style: solid;
+        background: #fff;
+        padding: 10px 25px;
+        font-weight: bold;
+        color: #1A447F;
+    }
+
+    .bt-painel-metodologias::before {
+        border-radius: 30px;
+    }
+
+
+
+    .btnBPM {
+        top: unset;
+        left: unset;
+    }
+    .btnSixSigma {
+        top: unset;
+        left: unset;
+    } 
+    .btnLEAN {
+        top: unset;
+        left: unset;
+    }
+    .btnISO9000 {
+        top: unset;
+        left: unset;
+    }
+    .btnTQM {
+        top: unset;
+        left: unset;
+    }
+    .btnScrum {
+        top: unset;
+        left: unset;
+    }
+    .btnKaizen {
+        top: unset;
+        left: unset;
+    }
+    .btnPDD {
+        top: unset;
+        left: unset;
+    }
+    .btnTOC {
+        top: unset;
+        left: unset;
+    }
+    .btnDesignThinking {
+        top: unset;
+        left: unset;
+    } 
+
+
+}
+
 
 @media screen and (max-width:820px) {
     .elemento-direita{display: none;}
@@ -342,6 +408,22 @@ body {
         margin-left: -30px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:600px) {
    
