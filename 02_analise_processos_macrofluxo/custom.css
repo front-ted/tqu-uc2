@@ -285,6 +285,77 @@ a:hover {
     margin-right: 2%;
 }
 
+.bt-respostas {
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px #444;
+    background-color: #fff;
+    margin: 30px auto 0px auto;
+    display: block;
+    color: #3973B1;
+    font-family: Urbanist-ExtraBold;
+}
+
+.img-canvas {
+    position: relative;
+}
+
+.img-canvas .x-erro {
+    position: absolute;
+    /* width: 2vw; */
+    transition: 200ms;
+    opacity: 0;
+    pointer-events:none;
+}
+
+.x-erro{
+    color: #fff;
+    border: none;
+    background-color: #e90035;
+    width: 70px;
+    border-radius: 20px;
+    font-weight: 400;
+}
+
+
+.img-canvas .x-erro:hover {
+   cursor: pointer;
+   transform: scale(1.1)
+}
+.img-canvas .x-erro-1 {
+    left: 15%;
+    top: 1%;
+}
+.img-canvas .x-erro-2 {
+    top: 15%;
+    left: 30%;
+}
+.img-canvas .x-erro-3 {
+    top: 11%;
+    left: 52%;
+}
+.img-canvas .x-erro-4 {
+    top: 53%;
+    left: 70%;
+}
+.img-canvas .x-erro-5 {
+    top: 44%;
+    right: 11%;
+}
+.img-canvas .x-erro-6 {
+    top: 71%;
+    left: 87%;
+}
+.img-canvas .x-erro-7 {
+    top: 96%;
+    left: 82%;
+}
+
+#mostrar-respostas {
+    display: none;
+}
 
 
 
