@@ -625,8 +625,10 @@ body{
 
 @media screen and (max-width:820px) {
     .painel-organizacoes {
-        scale: 0.8;
-        margin-left: -10%;
+        background: url('img/painel/fig01_mobile.png') no-repeat;
+        width: 330px;
+        height: 350px;
+        background-size: contain;
     }
 
     .btn-globo:hover,
@@ -747,10 +749,10 @@ body{
         display: none;
     }
 
-    .modal {
+    /* .modal {
         position: fixed;
         top: 140px;
-    }
+    } */
 
     .painel-missao .col {
         flex: 1;
@@ -945,4 +947,7 @@ body{
 
 
 
+}
+@media print{
+    .tabela-setor-atendimento td{border-color: #92acce !important;}
 }

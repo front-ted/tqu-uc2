@@ -51,7 +51,6 @@
   }
   img, .equacoes, figure, .print-proteger {
     page-break-inside: avoid !important;
-    max-width: 500px !important;
   }
   a[href]:after {
     content: " (" attr(href) ")";
@@ -104,6 +103,7 @@
     margin: 1rem 0;
     font-family: 'Libre Franklin Bold';
     color: black;
+    margin-left: 0 !important;
   }
   p{
     font-size: 12pt;
@@ -133,6 +133,8 @@
     white-space:normal!important;
     border: 0!important;
   }
+
+  .bloco-1, .bloco-2, .bloco-3, .bloco-5, .bloco-6{padding: 0 !important;}
 
   /*paindel de abas*/
   .painel-abas .tab-content{

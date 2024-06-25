@@ -13,7 +13,8 @@
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-
+.bloco3 figcaption, .bloco7 figcaption,
+.bloco9 figcaption{color: #000;}
 
 
 .bloco1 {
@@ -370,7 +371,9 @@ a:hover {
     border-color: white;
 }
 
-
+@media print{
+    .tabela-setor-atendimento td{border-color: #92acce !important;}
+}
 
 @media screen and (max-width:1440px) {
     .borda-esquerda {

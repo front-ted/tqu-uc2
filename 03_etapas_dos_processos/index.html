@@ -72,7 +72,7 @@
 
                 <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo:</p>
 
-                <div class="painel-pdca">
+                <div class="painel-pdca no-print">
                     <button type="button" class="bt-painel-pdca bt-plan" data-bs-toggle="modal" data-bs-target="#modalPlan"><img src="img/bt_hover.png" alt="" class="bt-hover">Plan</button>
 
                     <button type="button" class="bt-painel-pdca bt-do" data-bs-toggle="modal" data-bs-target="#modalDo"><img src="img/bt_hover.png" alt="" class="bt-hover">Do</button>
@@ -206,7 +206,7 @@
                         Fase 6. A implementação de ações necessárias para atingir os resultados planejados e a melhoria desses processos. 
                     </p>
                 </div>
-                
+                <img src="img/fig02.png" class="only-print mx-auto my-5" aria-hidden="true">
                 <figcaption class="figure-caption text-center mb-5">
                     Representação do ciclo PDCA aplicado à abordagem de processos <br>
                     Fonte: Senac EAD (2024) 
@@ -250,7 +250,7 @@
 
                     <div class="modal fade no-print" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
 								aria-hidden="true">
-								<div class="modal-dialog">
+								<div class="modal-dialog modal-lg-xl">
 										<div class="modal-content">
 												<div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel">Fase 1: Identificação dos processos necessários  </h5>
@@ -301,12 +301,12 @@
                                         <div class="table-responsive">
                                             <table class="text-center align-middle tabela-parametro">
                                                 <thead>
-                                                    <td>Fornecedores de Entradas</td>
+                                                    <td>Fornecedores de entrada</td>
                                                     <td>Entradas </td>
                                                     <td>Atividades </td>
                                                     <td>Saídas </td>
-                                                    <td>Recebedores de Saídas </td>
-                                                    <td>Monitoramento ou Medição</td>
+                                                    <td>Recebedores de saída</td>
+                                                    <td>Monitoramento ou medição</td>
                                                 </thead>
                                                 <tr>
                                                     <td>Processos anteriores </td>
@@ -472,12 +472,12 @@
                                                             <div class="table-responsive">
                                                                 <table class="text-center align-middle tabela-parametro">
                                                                     <thead>
-                                                                        <td>Fornecedores de Entradas </td>
+                                                                        <td>Fornecedores de entrada</td>
                                                                         <td>Entradas </td>
                                                                         <td>Atividades</td>
                                                                         <td>Saídas</td>
-                                                                        <td>Recebedores de Saídas</td>
-                                                                        <td>Monitoramento ou Medição</td>
+                                                                        <td>Recebedores de saída</td>
+                                                                        <td>Monitoramento ou medição</td>
                                                                     </thead>
                                                                     <tr>
                                                                         <td>Processos anteriores <br>
@@ -525,12 +525,12 @@
                                                             <div class="table-responsive">
                                                                 <table class="text-center align-middle tabela-parametro">
                                                                     <thead>
-                                                                        <td>Fornecedores de Entradas</td>
+                                                                        <td>Fornecedores de entrada</td>
                                                                         <td>Entradas</td>
                                                                         <td>Atividades</td>
                                                                         <td>Saídas</td>
-                                                                        <td>Recebedores de Saídas</td>
-                                                                        <td>Monitoramento ou Medição</td>
+                                                                        <td>Recebedores de saída</td>
+                                                                        <td>Monitoramento ou medição</td>
                                                                     </thead>
                                                                     <tr>
                                                                         <td></td>
@@ -566,12 +566,12 @@
                                                             <div class="table-responsive">
                                                                 <table class="text-center align-middle tabela-parametro">
                                                                     <thead>
-                                                                        <td>Fornecedores de Entradas</td>
+                                                                        <td>Fornecedores de entrada</td>
                                                                         <td>Entradas</td>
                                                                         <td>Atividades</td>
                                                                         <td>Saídas</td>
-                                                                        <td>Recebedores de Saídas</td>
-                                                                        <td>Monitoramento ou Medição</td>
+                                                                        <td>Recebedores de saída</td>
+                                                                        <td>Monitoramento ou medição</td>
                                                                     </thead>
                                                                     <tr>
                                                                         <td></td>
@@ -664,12 +664,12 @@
                                                             <div class="table-responsive">
                                                                 <table class="text-center align-middle tabela-parametro">
                                                                     <thead>
-                                                                        <td>Fornecedores de Entradas</td>
+                                                                        <td>Fornecedores de entrada</td>
                                                                         <td>Entradas </td>
                                                                         <td>Atividades </td>
                                                                         <td>Saídas </td>
-                                                                        <td>Recebedores de Saídas </td>
-                                                                        <td>Monitoramento ou Medição</td>
+                                                                        <td>Recebedores de saída</td>
+                                                                        <td>Monitoramento ou medição</td>
                                                                     </thead>
                                                                     <tr>
                                                                         <td>Clientes e outras partes interessadas </td>
@@ -721,6 +721,10 @@
                                                                         Pesquisa de satisfação dos clientes</td>
                                                                 </table>
                                                             </div>
+                                                            <figcaption class="figure-caption text-center mb-5">
+                                                                Representação de um processo comercial<br>                                                                
+                                                                Fonte: Senac EAD (2024)
+                                                            </figcaption>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -810,6 +814,7 @@
                                         <p>
                                             A norma ISO 10013 dispõe de diretrizes para a documentação de sistemas de gestão da qualidade. O objetivo principal dessa norma é fornecer orientações para a criação de documentos que facilitem a implementação, a manutenção e a melhoria dos sistemas de gestão da qualidade. Isso inclui a identificação dos documentos necessários, a definição de seus formatos e conteúdo e a definição de responsabilidades para a criação, a revisão e a aprovação dos documentos. A norma ABNT NBR ISO 10013 estabelece requisitos essenciais para a gestão e o controle de documentos, promovendo uma estrutura padronizada a fim de garantir a eficiência e a eficácia do processo. Isso inclui a definição de um sistema de numeração claro e preciso, a identificação exata de versões e revisões, além do estabelecimento de prazos claros para a revisão e a atualização dos documentos. Ao aderir a esses requisitos, as organizações podem assegurar que seus documentos sejam gerenciados de forma eficiente, promovendo a conformidade com os requisitos normativos e fomentando a melhoria contínua do sistema de gestão da qualidade. 
                                         </p>
+                                        <p>A seguir, observe um modelo para registro do processo em formato de procedimento documentado.</p>
                                         <figure class="my-5">
                                             <div class="figure-img  mb-4">
                                                 <img class="img-fluid mx-auto d-block img-jpg" src="img/_doc.jpg">
@@ -844,12 +849,12 @@
                                         <div class="table-responsive">
                                             <table class="text-center align-middle tabela-parametro">
                                                 <thead>
-                                                    <td>Fontes de Entrada</td>
+                                                    <td>Fornecedores de entrada</td>
                                                     <td>Entradas </td>
                                                     <td>Processo </td>
                                                     <td>Saídas </td>
-                                                    <td>Recebedores de Saída </td>
-                                                    <td>Monitoramento ou Medição</td>
+                                                    <td>Recebedores de saída</td>
+                                                    <td>Monitoramento ou medição</td>
                                                 </thead>
                                                 <tr>
                                                     <td>Clientes e outras partes interessadas.</td>
@@ -883,7 +888,7 @@
                                                         </td>
                                                     <td>Índice de orçamentos aprovados 
                                                         
-                                                        Pesquisa de Satisfação dos Clientes</td>
+                                                        Pesquisa de satisfação dos clientes</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Clientes 
@@ -962,7 +967,7 @@
                                                         
                                                         Serviços. 
                                                         
-                                                        Registros de Inspeção </td>
+                                                        Registros de inspeção </td>
                                                     <td>
                                                             
                                                         
@@ -1035,7 +1040,7 @@
                                                     <td>COMPRAS</td>
                                                     <td>Compras de produtos e serviços </td>
                                                     <td> Processos </td>
-                                                    <td>Qualificações e Avaliações de Fornecedores</td>
+                                                    <td>Qualificações e avaliações de fornecedores</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Processos </td>
@@ -1126,24 +1131,18 @@
                                                         
                                                         Prazos de entrega</td>
                                                     <td>Início 
-
-                                                        1. Receber o pedido 
-                                                        
-                                                        2. Preparar os ingredientes 
-                                                        
-                                                        3. Preparar a massa 
-                                                        
-                                                        4. Montar a pizza 
-                                                        
-                                                        5. Assar 
-                                                        
-                                                        6. Retirar do forno 
-                                                        
-                                                        7. Embalar 
-                                                        
-                                                        8. Liberar para entrega 
-                                                        
-                                                        Fim </td>
+                                                        <ol class="text-start">
+                                                            <li>Receber o pedido </li>
+                                                            <li>Preparar os ingredientes </li>
+                                                            <li>Preparar a massa </li>
+                                                            <li>Montar a pizza </li>
+                                                            <li>Assar </li>
+                                                            <li>Retirar do forno </li>
+                                                            <li>Embalar </li>
+                                                            <li>Liberar para entrega </li>
+                                                        </ol>
+                                                        Fim 
+                                                    </td>
                                                     <td>Pizza pronta para entrega e consumo </td>
                                                     <td>Expedição </td>
                                                     <td>Tempo de produção 
@@ -1251,12 +1250,12 @@
                     <div class="table-responsive">
                         <table class="text-center align-middle tabela-parametro">
                             <thead>
-                                <td>Fornecedores de Entradas</td>
+                                <td>Fornecedores de entrada</td>
                                 <td>Entradas </td>
                                 <td>Atividades </td>
                                 <td>Saídas </td>
-                                <td>Recebedores de Saídas </td>
-                                <td>Monitoramento ou Medição</td>
+                                <td>Recebedores de saída</td>
+                                <td>Monitoramento ou medição</td>
                             </thead>
                             <tr>
                                 <td>Processos anteriores </td>
@@ -1373,12 +1372,12 @@
                     <div class="table-responsive">
                         <table class="text-center align-middle tabela-parametro">
                             <thead>
-                                <td>Fornecedores de Entradas </td>
+                                <td>Fornecedores de entrada</td>
                                 <td>Entradas </td>
                                 <td>Atividades</td>
                                 <td>Saídas</td>
-                                <td>Recebedores de Saídas</td>
-                                <td>Monitoramento ou Medição</td>
+                                <td>Recebedores de saída</td>
+                                <td>Monitoramento ou medição</td>
                             </thead>
                             <tr>
                                 <td>Processos anteriores <br>
@@ -1415,12 +1414,12 @@
                     <div class="table-responsive">
                         <table class="text-center align-middle tabela-parametro">
                             <thead>
-                                <td>Fornecedores de Entradas</td>
+                                <td>Fornecedores de entrada</td>
                                 <td>Entradas</td>
                                 <td>Atividades</td>
                                 <td>Saídas</td>
-                                <td>Recebedores de Saídas</td>
-                                <td>Monitoramento ou Medição</td>
+                                <td>Recebedores de saída</td>
+                                <td>Monitoramento ou medição</td>
                             </thead>
                             <tr>
                                 <td></td>
@@ -1445,12 +1444,12 @@
                     <div class="table-responsive">
                         <table class="text-center align-middle tabela-parametro">
                             <thead>
-                                <td>Fornecedores de Entradas</td>
+                                <td>Fornecedores de entrada</td>
                                 <td>Entradas</td>
                                 <td>Atividades</td>
                                 <td>Saídas</td>
-                                <td>Recebedores de Saídas</td>
-                                <td>Monitoramento ou Medição</td>
+                                <td>Recebedores de saída</td>
+                                <td>Monitoramento ou medição</td>
                             </thead>
                             <tr>
                                 <td></td>
@@ -1496,12 +1495,12 @@
                     <div class="table-responsive">
                         <table class="text-center align-middle tabela-parametro">
                             <thead>
-                                <td>Fornecedores de Entradas</td>
+                                <td>Fornecedores de entrada</td>
                                 <td>Entradas </td>
                                 <td>Atividades </td>
                                 <td>Saídas </td>
-                                <td>Recebedores de Saídas </td>
-                                <td>Monitoramento ou Medição</td>
+                                <td>Recebedores de saída</td>
+                                <td>Monitoramento ou medição</td>
                             </thead>
                             <tr>
                                 <td>Clientes e outras partes interessadas </td>
@@ -1585,6 +1584,7 @@
                     <p>
                         A norma ISO 10013 dispõe de diretrizes para a documentação de sistemas de gestão da qualidade. O objetivo principal dessa norma é fornecer orientações para a criação de documentos que facilitem a implementação, a manutenção e a melhoria dos sistemas de gestão da qualidade. Isso inclui a identificação dos documentos necessários, a definição de seus formatos e conteúdo e a definição de responsabilidades para a criação, a revisão e a aprovação dos documentos. A norma ABNT NBR ISO 10013 estabelece requisitos essenciais para a gestão e o controle de documentos, promovendo uma estrutura padronizada a fim de garantir a eficiência e a eficácia do processo. Isso inclui a definição de um sistema de numeração claro e preciso, a identificação exata de versões e revisões, além do estabelecimento de prazos claros para a revisão e a atualização dos documentos. Ao aderir a esses requisitos, as organizações podem assegurar que seus documentos sejam gerenciados de forma eficiente, promovendo a conformidade com os requisitos normativos e fomentando a melhoria contínua do sistema de gestão da qualidade. 
                     </p>
+                    <p>A seguir, observe um modelo para registro do processo em formato de procedimento documentado. </p>
                     <figure class="my-5">
                         <div class="figure-img  mb-4">
                             <img class="img-fluid mx-auto d-block img-jpg" src="img/_doc.jpg">
@@ -1619,12 +1619,12 @@
                     <div class="table-responsive">
                         <table class="text-center align-middle tabela-parametro">
                             <thead>
-                                <td>Fontes de Entrada</td>
+                                <td>Fornecedores de entrada</td>
                                 <td>Entradas </td>
                                 <td>Processo </td>
                                 <td>Saídas </td>
-                                <td>Recebedores de Saída </td>
-                                <td>Monitoramento ou Medição</td>
+                                <td>Recebedores de saída</td>
+                                <td>Monitoramento ou medição</td>
                             </thead>
                             <tr>
                                 <td>Clientes e outras partes interessadas.</td>
@@ -1658,7 +1658,7 @@
                                     </td>
                                 <td>Índice de orçamentos aprovados 
                                     
-                                    Pesquisa de Satisfação dos Clientes</td>
+                                    Pesquisa de satisfação dos clientes</td>
                             </tr>
                             <tr>
                                 <td>Clientes 
@@ -1737,7 +1737,7 @@
                                     
                                     Serviços. 
                                     
-                                    Registros de Inspeção </td>
+                                    Registros de inspeção </td>
                                 <td>
                                         
                                     
@@ -1810,7 +1810,7 @@
                                 <td>COMPRAS</td>
                                 <td>Compras de produtos e serviços </td>
                                 <td> Processos </td>
-                                <td>Qualificações e Avaliações de Fornecedores</td>
+                                <td>Qualificações e avaliações de fornecedores</td>
                             </tr>
                             <tr>
                                 <td>Processos </td>
@@ -1851,7 +1851,7 @@
                                 <td>Entradas </td>
                                 <td>Atividades </td>
                                 <td>Saídas </td>
-                                <td>Recebedores de saída </td>
+                                <td>Recebedores de saída</td>
                                 <td>Monitoramento ou medição </td>
                             </thead>
                             <tr>
@@ -1862,24 +1862,18 @@
                                     
                                     Prazos de entrega</td>
                                 <td>Início 
-
-                                    1. Receber o pedido 
-                                    
-                                    2. Preparar os ingredientes 
-                                    
-                                    3. Preparar a massa 
-                                    
-                                    4. Montar a pizza 
-                                    
-                                    5. Assar 
-                                    
-                                    6. Retirar do forno 
-                                    
-                                    7. Embalar 
-                                    
-                                    8. Liberar para entrega 
-                                    
-                                    Fim </td>
+                                    <ol>
+                                        <li>Receber o pedido </li>
+                                        <li>Preparar os ingredientes </li>
+                                        <li>Preparar a massa </li>
+                                        <li>Montar a pizza </li>
+                                        <li>Assar </li>
+                                        <li>Retirar do forno </li>
+                                        <li>Embalar </li>
+                                        <li>Liberar para entrega </li>
+                                    </ol>
+                                    Fim 
+                                </td>
                                 <td>Pizza pronta para entrega e consumo </td>
                                 <td>Expedição </td>
                                 <td>Tempo de produção 

@@ -51,7 +51,7 @@
   }
   img, .equacoes, figure, .print-proteger {
     page-break-inside: avoid !important;
-    max-width: 500px !important;
+    margin: 0 auto;
   }
   a[href]:after {
     content: " (" attr(href) ")";
@@ -84,6 +84,7 @@
   }
   h2, h2.visually-hidden{
     font-size: 20pt;
+    margin-left: 0;
   }
   h3, h3.visually-hidden{
     font-size: 18pt;   
@@ -104,6 +105,7 @@
     margin: 1rem 0;
     font-family: 'Libre Franklin Bold';
     color: black;
+    margin-left: 0;
   }
   p{
     font-size: 12pt;
