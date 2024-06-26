@@ -51,6 +51,7 @@
   }
   img, .equacoes, figure, .print-proteger {
     page-break-inside: avoid !important;
+    width: auto !important;
   }
   a[href]:after {
     content: " (" attr(href) ")";
