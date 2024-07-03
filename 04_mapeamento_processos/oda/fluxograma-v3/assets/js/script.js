@@ -54,6 +54,22 @@ $('.opcao').click(function () {
 
 })
 
+$(document).ready(function() {
+    
+  
+    function shuffleButtons(id) {
+        const $buttons = $('#'+id+' .modal-body button'); 
+        const $parent = $buttons.parent();
+      for (let i = $buttons.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [$buttons[i], $buttons[j]] = [$buttons[j], $buttons[i]]; // Troca os elementos
+      }
+      $buttons.detach().appendTo($parent); // Reinsere no DOM na nova ordem
+    }
+  
+    shuffleButtons("modal-fluxograma-1"); // Embaralhar ao carregar a página
+    shuffleButtons("modal-fluxograma-2"); // Embaralhar ao carregar a página
+  });
 // $('.btn-start').click(function () {
 // $('.tela-inicial').fadeOut();
 // $('.tela-1 .msg').removeClass('hidden');
