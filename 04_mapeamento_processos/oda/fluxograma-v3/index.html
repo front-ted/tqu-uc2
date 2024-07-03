@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montagem de fluxograma</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/dragula.min.css"> -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="obj-fluxograma" class="wrapper-fluxograma">
+            <div class="tela-inicial tela">
+                <div class="msg">
+                    <h2>Elaboração de fluxogramas</h2>
+                    <p>A capacidade de elaborar fluxogramas precisos é fundamental no campo da qualidade, pois permite
+                        uma análise detalhada dos procedimentos e facilita a identificação de oportunidades de melhoria
+                        e a implementação de soluções eficazes. Este exercício prático visa não apenas reforçar a teoria
+                        estudada, mas também preparar você para aplicar essas competências na realidade dos ambientes
+                        organizacionais, nos quais a busca pela otimização dos processos e elevação dos padrões de
+                        qualidade é constante. </p>
+                    <button class="start-btn">Iniciar</button>
+                </div>
+            </div>
+            <div class="tela-1 tela">
+                <div class="backdrop">
+                    <div class="msg hidden">
+                        <h3>Cenário 1</h3>
+                        <p>Você é o técnico em qualidade de uma rede de padarias e, depois de inspecionar os produtos de
+                            diferentes filiais, percebeu uma grande variação de cores, formatos e tamanhos do pão
+                            francês. Assim, para uniformizar o produto, você propõe um mapeamento do processo. Para
+                            isso, você entrevista um padeiro experiente da organização, que lhe apresenta o processo
+                            produtivo e enfatiza a importância das etapas de pesagem e mistura dos ingredientes, da
+                            cilindragem e modelação da massa e temperatura e tempo de assamento do pão.</p>
+                        <p>Com base nas informações coletadas, organize as atividades em um fluxograma, clicando no
+                            botão a seguir. </p>
+                        <button class="start-btn">Elaborar fluxograma</button>
+                    </div>
+                </div>
+                <div class="fluxograma-container fluxograma-1">
+                    <img src="assets/img/fluxo1.png" alt="" class="fluxograma-bg">
+                    <img src="assets/img/fluxo1_mobile.png" alt="" class="fluxograma-bg__mobile">
+                    <p>Início</p>
+                    <p>As porções têm 70g?</p>
+                    <p>Forno a 230 oC?</p>
+                    <p>Fim</p>
+                    <button data-option="1" class="select-option active" data-bs-toggle="modal" data-bs-target="#modal-fluxograma-1"></button>
+                    <button data-option="2" class="select-option" data-bs-toggle="modal" data-bs-target="#modal-fluxograma-1"></button>
+                    <button data-option="3" class="select-option" data-bs-toggle="modal" data-bs-target="#modal-fluxograma-1"></button>
+                    <button data-option="4" class="select-option" data-bs-toggle="modal" data-bs-target="#modal-fluxograma-1"></button>
+                    <button data-option="5" class="select-option" data-bs-toggle="modal" data-bs-target="#modal-fluxograma-1"></button>
+                    <button data-option="6" class="select-option" data-bs-toggle="modal" data-bs-target="#modal-fluxograma-1"></button>
+                    <button data-option="7" class="select-option" data-bs-toggle="modal" data-bs-target="#modal-fluxograma-1"></button>
+                    <button data-option="8" class="select-option" data-bs-toggle="modal" data-bs-target="#modal-fluxograma-1"></button>
+                    <button data-option="9" class="select-option" data-bs-toggle="modal" data-bs-target="#modal-fluxograma-1"></button>
+                </div>
+            </div>
+            <div class="tela-2 tela">
+                <div class="backdrop">
+                    <div class="msg">
+                        <h3>Cenário 2</h3>
+                        <p>Agora, imagine que você é o técnico em qualidade de uma instituição de ensino superior e está
+                            realizando o mapeamento do processo de seleção de candidatos para o curso de pós-graduação.
+                            Para compreender o processo, você realiza uma entrevista com o secretário do curso de
+                            pós-graduação, que lhe apresenta como é realizada a divulgação do curso, o sistema no qual
+                            os alunos enviam a documentação, os critérios utilizados na análise da documentação, as
+                            etapas do processo seletivo e a forma de contato com o candidato aprovado. A partir das
+                            informações obtidas, você ordenou as atividades observadas em um fluxograma.</p>
+                        <p>Com base nas informações coletadas, organize as atividades em um fluxograma, clicando no
+                            botão a seguir. </p>
+                        <button class="start-btn">Elaborar fluxograma</button>
+                    </div>
+                </div>
+                <div class="fluxograma-container fluxograma-2">
+                    <img src="assets/img/fluxo2.png" alt="" class="fluxograma-bg">
+                    <img src="assets/img/fluxo2_mobile.png" alt="" class="fluxograma-bg__mobile">
+                    <p>Início</p>
+                    <p>Candidato apresentou toda a documentação?</p>
+                    <p>Candidato aprovado?</p>
+                    <p>Fim</p>
+                    <p>Fim</p>
+                    <button class="select-option" data-bs-toggle="modal" data-bs-target="#modal-fluxograma-2"></button>
+                    <button class="select-option" data-bs-toggle="modal" data-bs-target="#modal-fluxograma-2"></button>
+                    <button class="select-option" data-bs-toggle="modal" data-bs-target="#modal-fluxograma-2"></button>
+                    <button class="select-option" data-bs-toggle="modal" data-bs-target="#modal-fluxograma-2"></button>
+                    <button class="select-option" data-bs-toggle="modal" data-bs-target="#modal-fluxograma-2"></button>
+                    <button class="select-option" data-bs-toggle="modal" data-bs-target="#modal-fluxograma-2"></button>
+                </div>
+            </div>
+            <div class="tela-final tela">
+                <div class="backdrop">
+                    <div class="msg">
+                        <h2>Parabéns! Você completou a atividade.</h2>
+                        <p>Esperamos que, com esta atividade prática de montagem de fluxogramas, você tenha consolidado sua
+                            habilidade de visualizar e estruturar processos de maneira eficiente e lógica. Encorajamos você
+                            a continuar praticando e aprofundando seus conhecimentos sobre os diferentes tipos de
+                            fluxogramas em situações reais, a fim de se tornar um profissional cada vez mais qualificado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal fluxograma 1 -->
+    <div class="modal fade" id="modal-fluxograma-1" tabindex="-1" aria-labelledby="modal-fluxograma-1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-fluxograma-1Label">Selecione uma opção</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <button data-answer="1" class="opcao" data-bs-dismiss="modal">
+                        Medir os ingredientes
+                    </button>
+                    <button data-answer="2" class="opcao" data-bs-dismiss="modal">
+                        Misturar os ingredientes
+                    </button>
+                    <button data-answer="3" class="opcao" data-bs-dismiss="modal">
+                        Cilindrar a massa
+                    </button>
+                    <button data-answer="4" class="opcao" data-bs-dismiss="modal">
+                        Dividir a massa
+                    </button>
+                    <button data-answer="5" class="opcao" data-bs-dismiss="modal">
+                        Modelar a massa
+                    </button>
+                    <button data-answer="6" class="opcao" data-bs-dismiss="modal">
+                        Fermentação
+                    </button>
+                    <button data-answer="7" class="opcao" data-bs-dismiss="modal">
+                        Preaquecer o forno
+                    </button>
+                    <button data-answer="8" class="opcao" data-bs-dismiss="modal">
+                        Assar os pães
+                    </button>
+                    <button data-answer="9" class="opcao" data-bs-dismiss="modal">
+                        Embalar os pães
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal fluxograma 2 -->
+    <div class="modal fade" id="modal-fluxograma-2" tabindex="-1" aria-labelledby="modal-fluxograma-2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-fluxograma-2Label">Selecione uma opção</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <button class="opcao" data-bs-dismiss="modal">
+                        Divulgação do material do curso
+                    </button>
+                    <button class="opcao" data-bs-dismiss="modal">
+                        Abertura das inscrições
+                    </button>
+                    <button class="opcao" data-bs-dismiss="modal">
+                        Ficha de inscrição e outros documentos
+                    </button>
+                    <button class="opcao" data-bs-dismiss="modal">
+                        Solicitar novamente a documentação 
+                    </button>
+                    <button class="opcao" data-bs-dismiss="modal">
+                        Processo seletivo  
+                    </button>
+                    <button class="opcao" data-bs-dismiss="modal">
+                        Comunicação ao aprovado  
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-fluxograma-erro" tabindex="-1" aria-labelledby="modal-fluxograma-erroLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-fluxograma-erroLabel">Ops!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Esta não é a opção correta para esta posição do fluxograma. Tente novamente!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/dragula.min.js"></script> -->
+    <!-- <script src="assets/js/game-custom.js"></script> -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
